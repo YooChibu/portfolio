@@ -1,7 +1,7 @@
 # 👋 안녕하세요, 유치부입니다
 
 <div align="center">
-  <img src="https://via.placeholder.com/200x200/667eea/ffffff?text=유치부" alt="유치부 프로필" width="200" height="200" style="border-radius: 50%; border: 5px solid #667eea;">
+  <img src="Images/ycb2.png" alt="유치부 프로필" width="200" height="200" style="border-radius: 50%; border: 5px solid #667eea;">
   
   ### 🚀 웹/백엔드 개발자
   

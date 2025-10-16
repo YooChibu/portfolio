@@ -539,9 +539,20 @@ section {
     gap: 0.5rem;
 }
 
+.project-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.project-links .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
 /* Contact Section */
 .contact {
-    background: white;
+    background: #f8f9fa;
 }
 
 .contact-content {
@@ -561,7 +572,7 @@ section {
     align-items: center;
     gap: 1rem;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: white;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -773,4 +784,51 @@ section {
 .back-to-top:hover {
     background: #0056b3 !important;
     transform: scale(1.1) !important;
+}
+
+/* Personal Projects Section */
+.personal-projects {
+    background: white;
+}
+
+.personal-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-left: 4px solid #ffd700;
+    position: relative;
+}
+
+.personal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.personal-card::before {
+    content: '✨';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.personal-card .project-header h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.personal-card .project-company {
+    color: #ffd700;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.personal-card .tech-tag {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
 }
