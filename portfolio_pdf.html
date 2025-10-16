@@ -191,13 +191,13 @@
         }
 
         .experience-title {
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             font-weight: bold;
             color: #333;
         }
 
         .experience-company {
-            font-size: 1rem;
+            font-size: 1.1rem;
             color: #667eea;
             font-weight: 600;
         }
@@ -313,6 +313,12 @@
 
         /* Print Styles */
         @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
             body {
                 background: white;
             }
@@ -329,6 +335,206 @@
             
             .experience-item {
                 page-break-inside: avoid;
+            }
+            
+            /* 색상 유지 */
+            .skill-category {
+                background: #f8f9fa !important;
+                border-left: 4px solid #667eea !important;
+            }
+            
+            .skill-tag {
+                background: #667eea !important;
+                color: white !important;
+            }
+            
+            .stat {
+                background: #f8f9fa !important;
+                border-left: 4px solid #667eea !important;
+            }
+            
+            .stat-number {
+                color: #667eea !important;
+            }
+            
+            .section-title {
+                color: #333 !important;
+            }
+            
+            .section-title::before {
+                background: #667eea !important;
+            }
+            
+            .experience-item {
+                background: #f8f9fa !important;
+                border-left: 4px solid #667eea !important;
+            }
+            
+            .experience-title {
+                color: #333 !important;
+            }
+            
+            .experience-company {
+                color: #667eea !important;
+            }
+            
+            .experience-date {
+                color: #666 !important;
+            }
+            
+            .tech-stack {
+                color: #667eea !important;
+            }
+            
+            /* 링크 스타일 */
+            a {
+                color: #667eea !important;
+                text-decoration: underline !important;
+            }
+
+            /* 인쇄 시 PDF 저장 버튼 숨김 */
+            .print-button {
+                display: none !important;
+                visibility: hidden !important;
+            }
+            
+            /* 그리드 레이아웃 강제 적용 */
+            .stats {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 15px !important;
+            }
+            
+            .skills-grid {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 20px !important;
+            }
+            
+            .contact-info {
+                display: flex !important;
+                justify-content: center !important;
+                gap: 30px !important;
+                flex-wrap: wrap !important;
+            }
+            
+            .contact-item {
+                display: flex !important;
+                align-items: center !important;
+                gap: 5px !important;
+                background: #f8f9fa !important;
+                padding: 8px 12px !important;
+                border-radius: 8px !important;
+                border: 1px solid #e9ecef !important;
+            }
+            
+            /* 통계 카드 강제 스타일 */
+            .stat {
+                background: #f8f9fa !important;
+                border: 1px solid #e9ecef !important;
+                border-left: 4px solid #667eea !important;
+                border-radius: 8px !important;
+                padding: 15px !important;
+                text-align: center !important;
+                display: block !important;
+            }
+            
+            .stat-number {
+                color: #667eea !important;
+                font-size: 1.5rem !important;
+                font-weight: bold !important;
+                display: block !important;
+            }
+            
+            .stat-label {
+                color: #666 !important;
+                font-size: 0.8rem !important;
+                margin-top: 5px !important;
+            }
+            
+            /* 스킬 카테고리 강제 스타일 */
+            .skill-category {
+                background: #f8f9fa !important;
+                border: 1px solid #e9ecef !important;
+                border-left: 4px solid #667eea !important;
+                border-radius: 8px !important;
+                padding: 15px !important;
+                display: block !important;
+            }
+            
+            .skill-category h3 {
+                color: #333 !important;
+                font-size: 1.1rem !important;
+                margin-bottom: 10px !important;
+            }
+            
+            .skill-tags {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                gap: 5px !important;
+            }
+            
+            .skill-tag {
+                background: #667eea !important;
+                color: white !important;
+                padding: 4px 8px !important;
+                border-radius: 12px !important;
+                font-size: 0.8rem !important;
+                font-weight: 500 !important;
+                display: inline-block !important;
+            }
+            
+            /* 섹션 제목 강제 스타일 */
+            .section-title {
+                color: #333 !important;
+                font-size: 1.4rem !important;
+                font-weight: bold !important;
+                margin-bottom: 15px !important;
+                padding-bottom: 5px !important;
+                border-bottom: 2px solid #667eea !important;
+                display: flex !important;
+                align-items: center !important;
+                gap: 10px !important;
+            }
+            
+            .section-title::before {
+                content: '' !important;
+                width: 4px !important;
+                height: 20px !important;
+                background: #667eea !important;
+                display: block !important;
+            }
+            
+            /* About Me 섹션 그리드 레이아웃 강제 적용 */
+            .about-content {
+                display: grid !important;
+                grid-template-columns: 1fr 2fr !important;
+                gap: 20px !important;
+                align-items: start !important;
+            }
+            
+            .profile-image {
+                text-align: center !important;
+            }
+            
+            .profile-image img {
+                width: 120px !important;
+                height: 120px !important;
+                border-radius: 50% !important;
+                border: 3px solid #667eea !important;
+            }
+            
+            .about-text {
+                font-size: 0.95rem !important;
+                line-height: 1.7 !important;
+            }
+            
+            /* 통계 섹션 4열 그리드 강제 적용 */
+            .stats {
+                display: grid !important;
+                grid-template-columns: repeat(4, 1fr) !important;
+                gap: 15px !important;
+                margin-top: 20px !important;
             }
         }
 
@@ -431,10 +637,7 @@
                         <span class="skill-tag">.NET Core</span>
                         <span class="skill-tag">ASP.NET</span>
                         <span class="skill-tag">Classic ASP</span>
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">C/C++</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Java(Spring Boot)</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -442,14 +645,14 @@
                     <div class="skill-tags">
                         <span class="skill-tag">MS-SQL</span>
                         <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">SQL</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>💻 프론트엔드</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">jQuery</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>                        
                         <span class="skill-tag">HTML5</span>
                         <span class="skill-tag">CSS3</span>
                     </div>
@@ -458,9 +661,7 @@
                     <h3>🔌 API & 기타</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">REST API</span>
-                        <span class="skill-tag">JWT</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Git/GitHub</span>
                         <span class="skill-tag">Jira</span>
                     </div>
                 </div>
@@ -474,8 +675,8 @@
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <div class="experience-title">페이먼츠플랫폼팀 팀원</div>
                         <div class="experience-company">페이레터</div>
+                        <div class="experience-title">페이먼츠플랫폼팀 팀원</div>
                     </div>
                     <div class="experience-date">2022.08 ~ 2025.04</div>
                 </div>
@@ -495,8 +696,8 @@
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <div class="experience-title">개발본부 차장 팀원</div>
                         <div class="experience-company">핀업</div>
+                        <div class="experience-title">개발본부 차장 팀원</div>
                     </div>
                     <div class="experience-date">2017.06 ~ 2022.07</div>
                 </div>
@@ -516,8 +717,8 @@
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <div class="experience-title">개발팀 과장 팀장</div>
                         <div class="experience-company">스트롱홀드</div>
+                        <div class="experience-title">개발팀 과장 팀장</div>
                     </div>
                     <div class="experience-date">2014.12 ~ 2015.10</div>
                 </div>
@@ -535,8 +736,8 @@
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <div class="experience-title">운영팀 대리(주임연구원) 팀원</div>
                         <div class="experience-company">페이레터</div>
+                        <div class="experience-title">운영팀 대리(주임연구원) 팀원</div>
                     </div>
                     <div class="experience-date">2011.07 ~ 2014.09</div>
                 </div>
@@ -554,8 +755,8 @@
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <div class="experience-title">웹개발 사원(연구원)</div>
                         <div class="experience-company">제이앤씨(J&C)</div>
+                        <div class="experience-title">웹개발 사원(연구원)</div>
                     </div>
                     <div class="experience-date">2008.01 ~ 2011.06</div>
                 </div>
@@ -568,6 +769,33 @@
                     </ul>
                 </div>
                 <div class="tech-stack">기술스택: Classic ASP, MS-SQL, JQuery(JavaScript)</div>
+            </div>
+        </section>
+
+        <!-- Personal Projects Section -->
+        <section class="section">
+            <h2 class="section-title">개인 프로젝트</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-company">개인 프로젝트</div>
+                        <div class="experience-title">타워 디펜스 게임</div>
+                    </div>
+                    <div class="experience-date">2025.06</div>
+                </div>
+                <div class="experience-position">웹 기반 게임 개발</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>Cursor AI를 활용한 웹 게임 개발</li>
+                        <li>HTML5 Canvas API 기반 게임 엔진 구현</li>
+                        <li>15종 맵, 9가지 타워, 업적 시스템 구현</li>
+                        <li>반응형 웹 디자인 및 다국어 지원</li>
+                        <li>게임 저장/불러오기 및 통계 시스템</li>
+                        <li>참고링크: <a href="https://chipgames.github.io/" target="_blank">https://chipgames.github.io (플레이)</a></li>
+                    </ul>
+                </div>
+                <div class="tech-stack">기술스택: HTML5, CSS3, JavaScript, Canvas API, Cursor AI</div>
             </div>
         </section>
 
@@ -656,6 +884,7 @@
         if (!window.matchMedia('print').matches) {
             const printButton = document.createElement('button');
             printButton.innerHTML = '🖨️ PDF로 저장';
+            printButton.className = 'print-button';
             printButton.style.cssText = `
                 position: fixed;
                 top: 20px;
