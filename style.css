@@ -308,14 +308,14 @@ section {
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
-    margin-left: 0;
+    margin-left: -20%;
     margin-right: 50%;
     padding-right: 2rem;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
     margin-left: 50%;
-    margin-right: 0;
+    margin-right: -20%;
     padding-left: 2rem;
 }
 
