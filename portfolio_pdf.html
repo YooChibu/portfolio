@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유치부 - 웹/백엔드 개발자 포트폴리오</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: #667eea;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .profile-image {
+            text-align: center;
+        }
+
+        .profile-image img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #667eea;
+        }
+
+        .about-text {
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Experience Section */
+        .experience-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .experience-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .experience-company {
+            font-size: 1rem;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .experience-date {
+            font-size: 0.9rem;
+            color: #666;
+            white-space: nowrap;
+        }
+
+        .experience-position {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .experience-description {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .experience-description ul {
+            margin-left: 20px;
+        }
+
+        .experience-description li {
+            margin-bottom: 3px;
+        }
+
+        .tech-stack {
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        /* Education Section */
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .education-info h3 {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 3px;
+        }
+
+        .education-details {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .education-date {
+            font-size: 0.9rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        /* Certificates Section */
+        .certificate-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .certificate-item:last-child {
+            border-bottom: none;
+        }
+
+        .certificate-name {
+            font-size: 0.9rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .certificate-date {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .contact-icon {
+            width: 20px;
+            text-align: center;
+            color: #667eea;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                padding: 15mm;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            .experience-item {
+                page-break-inside: avoid;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page {
+                width: 100%;
+                padding: 15px;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="name">유치부</h1>
+            <p class="title">웹/백엔드 개발자</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>dbclqn@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>010-9344-4047</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>경기 광주시 고산동</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/120x120/667eea/ffffff?text=유치부" alt="유치부 프로필">
+                </div>
+                <div class="about-text">
+                    <p>
+                        지난 15년 6개월간 다양한 산업군에서 웹 및 백엔드 개발자로 근무하며, 
+                        결제 시스템, 교육 플랫폼, 투자 콘텐츠 서비스 등 여러 형태의 웹 서비스를 개발하고 운영해왔습니다.
+                    </p>
+                    <p>
+                        최근에는 페이레터에서 아프리카TV 전용 헥토펌뱅, URL 결제, 애플페이 등 다양한 결제 서비스를 개발하였고, 
+                        기존 레거시(Classic ASP) 시스템을 .NET Core 기반으로 리팩토링하는 프로젝트를 개발하였습니다.
+                    </p>
+                    <p>
+                        '신뢰는 성실함에서 비롯된다'는 신조를 가지고, 맡은 일은 끝까지 책임지고 완수해왔습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">년 경력</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">회사 경험</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">기술 스택</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">책임감</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2 class="section-title">기술 스택</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>🔧 백엔드</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">.NET Core</span>
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">Classic ASP</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Spring Boot</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🗄️ 데이터베이스</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MS-SQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>💻 프론트엔드</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">jQuery</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🔌 API & 기타</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">JWT</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Jira</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section">
+            <h2 class="section-title">경력 사항</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">페이먼츠플랫폼팀 팀원</div>
+                        <div class="experience-company">페이레터</div>
+                    </div>
+                    <div class="experience-date">2022.08 ~ 2025.04</div>
+                </div>
+                <div class="experience-position">웹개발 · 페이먼츠 플랫폼팀 / 선임연구원/팀원</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>.NET Core 기반 결제 시스템 리뉴얼 및 리팩토링</li>
+                        <li>아프리카TV 전용 헥토펌뱅, URL 결제, 애플페이 등 신규 결제 서비스 개발</li>
+                        <li>자금세탁방지(AML) 시스템 구축: 가맹점 정보 갱신 자동화 및 위험군 식별 로직 구현</li>
+                        <li>정산 및 통계 DB 구조 개선을 위한 DB 분리 설계 및 성능 최적화</li>
+                        <li>내부 관리자용 백오피스 웹 시스템 유지보수 및 기능 확장</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">기술스택: .NET Core(MVC), Classic ASP, ASP.NET, C/C++, MS-SQL, JQuery(JavaScript), API, 데몬 서비스</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">개발본부 차장 팀원</div>
+                        <div class="experience-company">핀업</div>
+                    </div>
+                    <div class="experience-date">2017.06 ~ 2022.07</div>
+                </div>
+                <div class="experience-position">웹개발 · 개발팀 / 차장/팀원</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>투자 콘텐츠 및 교육 플랫폼 웹 서비스 개발</li>
+                        <li>웹/모바일/관리자 페이지 통합 개발: 슈퍼스탁, 슬기로운 투자생활, 핀업 챌린지 등</li>
+                        <li>웹 기반 교육 콘텐츠 시스템, 사용자 리포트 기능, 랭킹 알고리즘 구현</li>
+                        <li>서비스 리뉴얼 및 통합 개발 (PC, 모바일, API 구조 일원화)</li>
+                        <li>Apple SNS 회원가입 연동 기능 포함한 OAuth2 인증 흐름 구현</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">기술스택: ASP.NET, MS-SQL, JQuery(JavaScript), API</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">개발팀 과장 팀장</div>
+                        <div class="experience-company">스트롱홀드</div>
+                    </div>
+                    <div class="experience-date">2014.12 ~ 2015.10</div>
+                </div>
+                <div class="experience-position">웹개발 · 개발팀 / 과장/팀장</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>폴스타 글로벌 사이트 유지보수 및 기능 개선</li>
+                        <li>AQK 사이트 재개발: DB 구조 개선, UI 개편</li>
+                        <li>자사 홈페이지 콘텐츠 관리 기능 개선</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">기술스택: ASP.NET, MS-SQL, JQuery(JavaScript)</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">운영팀 대리(주임연구원) 팀원</div>
+                        <div class="experience-company">페이레터</div>
+                    </div>
+                    <div class="experience-date">2011.07 ~ 2014.09</div>
+                </div>
+                <div class="experience-position">웹개발 · 빌링 운영팀 / 대리/팀원</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>AfreecaTV, Qeon, 한경TV 등 파트너사별 빌링 시스템 운영</li>
+                        <li>클래식 ASP + MS-SQL 기반 결제 API 운영 및 유지보수</li>
+                        <li>파트너별 운영 정책에 따른 유연한 로직 적용 및 서비스 유지</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">기술스택: Classic ASP, ASP.NET, MS-SQL, JQuery(JavaScript)</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">웹개발 사원(연구원)</div>
+                        <div class="experience-company">제이앤씨(J&C)</div>
+                    </div>
+                    <div class="experience-date">2008.01 ~ 2011.06</div>
+                </div>
+                <div class="experience-position">웹개발 · 웹개발팀 / 사원/팀원</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>자사 게임 웹사이트 및 콘텐츠 관리 시스템 기능 구현 및 유지보수</li>
+                        <li>Classic ASP 기반의 게임 웹 콘텐츠 백오피스 설계 및 배포</li>
+                        <li>JQuery 기반 사용자 인터페이스 개발 및 비동기 처리</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">기술스택: Classic ASP, MS-SQL, JQuery(JavaScript)</div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section">
+            <h2 class="section-title">학력</h2>
+            <div class="education-item">
+                <div class="education-info">
+                    <h3>한국방송통신대학교 서울지역대학</h3>
+                    <div class="education-details">컴퓨터과학과 (편입) · 학점: 73/100</div>
+                </div>
+                <div class="education-date">2012.03 ~ 2016.02</div>
+            </div>
+            <div class="education-item">
+                <div class="education-info">
+                    <h3>경남도립남해대학</h3>
+                    <div class="education-details">컴퓨터정보과 · 학점: 3.92/4.5</div>
+                </div>
+                <div class="education-date">2003.02 ~ 2008.02</div>
+            </div>
+            <div class="education-item">
+                <div class="education-info">
+                    <h3>남해정보산업고등학교</h3>
+                    <div class="education-details">이과계열</div>
+                </div>
+                <div class="education-date">2000.03 ~ 2003.02</div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="section">
+            <h2 class="section-title">자격증</h2>
+            <div class="certificate-item">
+                <div class="certificate-name">전산실기교사자격증</div>
+                <div class="certificate-date">2008.02</div>
+            </div>
+            <div class="certificate-item">
+                <div class="certificate-name">정보처리산업기사</div>
+                <div class="certificate-date">2007.12</div>
+            </div>
+            <div class="certificate-item">
+                <div class="certificate-name">자동차운전면허</div>
+                <div class="certificate-date">2007.08</div>
+            </div>
+            <div class="certificate-item">
+                <div class="certificate-name">워드프로세서 2급</div>
+                <div class="certificate-date">2007.07</div>
+            </div>
+            <div class="certificate-item">
+                <div class="certificate-name">컴퓨터활용능력 3급</div>
+                <div class="certificate-date">2001.12</div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <h2 class="section-title">연락처</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>dbclqn@gmail.com</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>010-9344-4047</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>경기 광주시 고산동</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🎂</div>
+                    <div>1984년생 (만 41세)</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Print functionality
+        function printPortfolio() {
+            window.print();
+        }
+
+        // Add print button for web view
+        if (!window.matchMedia('print').matches) {
+            const printButton = document.createElement('button');
+            printButton.innerHTML = '🖨️ PDF로 저장';
+            printButton.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #667eea;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 14px;
+                z-index: 1000;
+            `;
+            printButton.onclick = printPortfolio;
+            document.body.appendChild(printButton);
+        }
+    </script>
+</body>
+</html>
