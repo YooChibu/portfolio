@@ -1,0 +1,11 @@
+# 개인정보 보호를 위한 robots.txt
+User-agent: *
+Allow: /
+Disallow: /Images/
+Disallow: /privacy-policy.html
+
+# 검색엔진 크롤링 제한
+Crawl-delay: 10
+
+# 사이트맵 (개인정보 제외)
+Sitemap: https://yourdomain.com/sitemap.xml
