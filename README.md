@@ -7,8 +7,8 @@
   
   **15년 7개월의 풍부한 개발 경험**을 바탕으로 안정적이고 확장 가능한 웹 서비스를 개발합니다.
   
-  [![Email](https://img.shields.io/badge/Email-dbclqn@gmail.com-blue?style=flat-square&logo=gmail)](mailto:dbclqn@gmail.com)
-  [![Phone](https://img.shields.io/badge/Phone-010--9344--4047-green?style=flat-square&logo=phone)](tel:010-9344-4047)
+  [![Email](https://img.shields.io/badge/📧%20Email-Contact%20Me-blue?style=for-the-badge&logo=gmail)](mailto:dbclqn@gmail.com)
+  [![Phone](https://img.shields.io/badge/📱%20Phone-Contact%20Me-green?style=for-the-badge&logo=phone)](tel:010-9344-4047)
   [![Location](https://img.shields.io/badge/Location-경기%20광주시%20고산동-red?style=flat-square&logo=location)](https://maps.google.com/?q=경기+광주시+고산동)
 </div>
 
@@ -180,10 +180,10 @@
 
 안정적이고 확장 가능한 웹 서비스 개발에 관심이 있으시다면 언제든 연락주세요.
 
-[![Email](https://img.shields.io/badge/📧%20Email-dbclqn@gmail.com-blue?style=for-the-badge&logo=gmail)](mailto:dbclqn@gmail.com)
-[![Phone](https://img.shields.io/badge/📱%20Phone-010--9344--4047-green?style=for-the-badge&logo=phone)](tel:010-9344-4047)
+[![Email](https://img.shields.io/badge/📧%20Email-Contact%20Me-blue?style=for-the-badge&logo=gmail)](mailto:dbclqn@gmail.com)
+[![Phone](https://img.shields.io/badge/📱%20Phone-Contact%20Me-green?style=for-the-badge&logo=phone)](tel:010-9344-4047)
 
-**📍 위치**: 경기 광주시 고산동
+**📍 위치**: 서울, 대한민국 (구체적 주소 대신 일반적인 지역명 사용)
 
 </div>
 
