@@ -279,11 +279,12 @@ function terminalTyping() {
         if (messageIndex < messages.length) {
             const message = messages[messageIndex];
             if (charIndex < message.length) {
-                process.stdout.write ? process.stdout.write(message[charIndex]) : console.log(message[charIndex]);
+                // 브라우저 환경에서는 console.log만 사용
+                console.log(message[charIndex]);
                 charIndex++;
                 setTimeout(typeMessage, 50);
             } else {
-                console.log('');
+                console.log(''); // 빈 줄 추가
                 messageIndex++;
                 charIndex = 0;
                 setTimeout(typeMessage, 500);
@@ -291,10 +292,8 @@ function terminalTyping() {
         }
     }
     
-    // Only run in development environment
-    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === 'yoochibu.github.io') {
-        typeMessage();
-    }
+    // 모든 환경에서 실행 (GitHub Pages 포함)
+    typeMessage();
 }
 
 // Initialize terminal effect
