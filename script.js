@@ -93,16 +93,31 @@ skillBars.forEach(bar => {
     skillObserver.observe(bar);
 });
 
-// Typing effect for hero title
+// Terminal-style typing effect for hero title
 function typeWriter(element, text, speed = 100) {
     let i = 0;
     element.innerHTML = '';
     
     function type() {
         if (i < text.length) {
-            element.innerHTML += text.charAt(i);
+            const char = text.charAt(i);
+            element.innerHTML += char;
             i++;
-            setTimeout(type, speed);
+            
+            // Add cursor effect
+            if (i < text.length) {
+                element.innerHTML += '<span class="cursor">|</span>';
+            }
+            
+            setTimeout(() => {
+                // Remove cursor before adding next character
+                const cursor = element.querySelector('.cursor');
+                if (cursor) cursor.remove();
+                type();
+            }, speed);
+        } else {
+            // Final cursor
+            element.innerHTML += '<span class="cursor">|</span>';
         }
     }
     
@@ -116,6 +131,21 @@ window.addEventListener('load', () => {
         const originalText = heroTitle.textContent;
         typeWriter(heroTitle, originalText, 80);
     }
+    
+    // Add terminal-style cursor animation
+    const style = document.createElement('style');
+    style.textContent = `
+        .cursor {
+            animation: blink 1s infinite;
+            color: #00ff41;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    `;
+    document.head.appendChild(style);
 });
 
 // Back to top button
@@ -226,4 +256,285 @@ document.querySelectorAll('[data-tooltip]').forEach(element => {
     });
 });
 
-console.log('포트폴리오 웹사이트가 성공적으로 로드되었습니다! 🚀');
+// Terminal-style console output
+console.log('%c🚀 Portfolio Website Loaded Successfully!', 'color: #00ff41; font-size: 16px; font-weight: bold;');
+console.log('%c> Initializing developer portfolio...', 'color: #58a6ff; font-family: monospace;');
+console.log('%c> Dark theme activated', 'color: #00ff41; font-family: monospace;');
+console.log('%c> Ready for development!', 'color: #ffff00; font-family: monospace;');
+
+// Terminal-style typing effect for console
+function terminalTyping() {
+    const messages = [
+        '> Welcome to Developer Portfolio',
+        '> Loading experience data...',
+        '> Initializing skills matrix...',
+        '> Ready to showcase projects',
+        '> Portfolio system online ✓'
+    ];
+    
+    let messageIndex = 0;
+    let charIndex = 0;
+    
+    function typeMessage() {
+        if (messageIndex < messages.length) {
+            const message = messages[messageIndex];
+            if (charIndex < message.length) {
+                process.stdout.write ? process.stdout.write(message[charIndex]) : console.log(message[charIndex]);
+                charIndex++;
+                setTimeout(typeMessage, 50);
+            } else {
+                console.log('');
+                messageIndex++;
+                charIndex = 0;
+                setTimeout(typeMessage, 500);
+            }
+        }
+    }
+    
+    // Only run in development environment
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === 'yoochibu.github.io') {
+        typeMessage();
+    }
+}
+
+// Initialize terminal effect
+terminalTyping();
+
+// Terminal-style command interface
+function createTerminalInterface() {
+    const terminal = document.createElement('div');
+    terminal.className = 'terminal-interface';
+    terminal.innerHTML = `
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-btn close"></span>
+                <span class="terminal-btn minimize"></span>
+                <span class="terminal-btn maximize"></span>
+            </div>
+            <div class="terminal-title">developer@portfolio:~$</div>
+        </div>
+        <div class="terminal-body">
+            <div class="terminal-output">
+                <div class="terminal-line">Welcome to Developer Portfolio Terminal</div>
+                <div class="terminal-line">Type 'help' for available commands</div>
+                <div class="terminal-line">Type 'clear' to clear the terminal</div>
+            </div>
+            <div class="terminal-input-line">
+                <span class="terminal-prompt">developer@portfolio:~$</span>
+                <input type="text" class="terminal-input" placeholder="Enter command...">
+            </div>
+        </div>
+    `;
+    
+    // Add terminal styles
+    const terminalStyles = document.createElement('style');
+    terminalStyles.textContent = `
+        .terminal-interface {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 500px;
+            height: 300px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 0 10px 30px var(--shadow-color);
+            z-index: 1001;
+            display: none;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .terminal-header {
+            background: var(--bg-secondary);
+            padding: 10px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .terminal-buttons {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .terminal-btn {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .terminal-btn.close { background: #ff5f56; }
+        .terminal-btn.minimize { background: #ffbd2e; }
+        .terminal-btn.maximize { background: #27ca3f; }
+        
+        .terminal-title {
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+        
+        .terminal-body {
+            height: calc(100% - 50px);
+            padding: 10px;
+            overflow-y: auto;
+        }
+        
+        .terminal-output {
+            margin-bottom: 10px;
+        }
+        
+        .terminal-line {
+            color: var(--text-secondary);
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+        
+        .terminal-input-line {
+            display: flex;
+            align-items: center;
+        }
+        
+        .terminal-prompt {
+            color: var(--terminal-green);
+            margin-right: 5px;
+            font-size: 12px;
+        }
+        
+        .terminal-input {
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            outline: none;
+            flex: 1;
+        }
+        
+        .terminal-toggle {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            background: var(--terminal-green);
+            color: var(--bg-primary);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            z-index: 1002;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .terminal-toggle:hover {
+            background: var(--accent-primary);
+            transform: scale(1.1);
+        }
+    `;
+    document.head.appendChild(terminalStyles);
+    
+    // Add terminal toggle button
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = 'terminal-toggle';
+    toggleBtn.innerHTML = '>_';
+    toggleBtn.title = 'Open Terminal';
+    
+    document.body.appendChild(terminal);
+    document.body.appendChild(toggleBtn);
+    
+    // Terminal functionality
+    const terminalInput = terminal.querySelector('.terminal-input');
+    const terminalOutput = terminal.querySelector('.terminal-output');
+    
+    const commands = {
+        help: () => {
+            addTerminalLine('Available commands:');
+            addTerminalLine('  help - Show this help message');
+            addTerminalLine('  clear - Clear terminal');
+            addTerminalLine('  about - Show about information');
+            addTerminalLine('  skills - Show technical skills');
+            addTerminalLine('  projects - Show projects');
+            addTerminalLine('  contact - Show contact info');
+            addTerminalLine('  exit - Close terminal');
+        },
+        clear: () => {
+            terminalOutput.innerHTML = '';
+        },
+        about: () => {
+            addTerminalLine('Developer Portfolio v1.0');
+            addTerminalLine('15+ years of development experience');
+            addTerminalLine('Specialized in web and backend development');
+            addTerminalLine('Focus on stability and performance');
+        },
+        skills: () => {
+            addTerminalLine('Technical Skills:');
+            addTerminalLine('  Backend: .NET Core, ASP.NET, C#, Java, Spring Boot');
+            addTerminalLine('  Database: MS-SQL, MySQL');
+            addTerminalLine('  Frontend: JavaScript, jQuery, HTML5, CSS3');
+            addTerminalLine('  Tools: Git, GitHub, Jira, REST API');
+        },
+        projects: () => {
+            addTerminalLine('Key Projects:');
+            addTerminalLine('  Payment Service Refactoring (Classic ASP → .NET Core)');
+            addTerminalLine('  Various Payment Services (URL, HectopemBang, Apple Pay)');
+            addTerminalLine('  Investment Platform Development');
+            addTerminalLine('  Tower Defense Game (Personal Project)');
+        },
+        contact: () => {
+            addTerminalLine('Contact Information:');
+            addTerminalLine('  Email: Please check resume for details');
+            addTerminalLine('  Location: Please check resume for details');
+            addTerminalLine('  Available for new opportunities');
+        },
+        exit: () => {
+            terminal.style.display = 'none';
+        }
+    };
+    
+    function addTerminalLine(text) {
+        const line = document.createElement('div');
+        line.className = 'terminal-line';
+        line.textContent = text;
+        terminalOutput.appendChild(line);
+        terminalOutput.scrollTop = terminalOutput.scrollHeight;
+    }
+    
+    function executeCommand(command) {
+        addTerminalLine(`developer@portfolio:~$ ${command}`);
+        
+        if (commands[command]) {
+            commands[command]();
+        } else {
+            addTerminalLine(`Command not found: ${command}`);
+            addTerminalLine('Type "help" for available commands');
+        }
+    }
+    
+    // Event listeners
+    toggleBtn.addEventListener('click', () => {
+        terminal.style.display = terminal.style.display === 'none' ? 'block' : 'none';
+        if (terminal.style.display === 'block') {
+            terminalInput.focus();
+        }
+    });
+    
+    terminalInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            const command = terminalInput.value.trim().toLowerCase();
+            if (command) {
+                executeCommand(command);
+            }
+            terminalInput.value = '';
+        }
+    });
+    
+    // Close terminal when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!terminal.contains(e.target) && !toggleBtn.contains(e.target)) {
+            terminal.style.display = 'none';
+        }
+    });
+}
+
+// Initialize terminal interface
+createTerminalInterface();
