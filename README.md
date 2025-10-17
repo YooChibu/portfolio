@@ -7,7 +7,7 @@
   
   **15년 7개월의 풍부한 개발 경험**을 바탕으로 안정적이고 확장 가능한 웹 서비스를 개발합니다.
   
-  [![Email](https://img.shields.io/badge/📧%20Email-Contact%20Me-blue?style=for-the-badge&logo=gmail)](mailto:contact@developer-portfolio.com)
+  [![Email](https://img.shields.io/badge/📧%20Email-Contact%20Me-blue?style=for-the-badge&logo=gmail)](mailto:dbclqn@gmail.com)
   [![Location](https://img.shields.io/badge/Location-대한민국-red?style=flat-square&logo=location)](https://maps.google.com/?q=대한민국)
 </div>
 
@@ -179,16 +179,9 @@
 
 안정적이고 확장 가능한 웹 서비스 개발에 관심이 있으시다면 언제든 연락주세요.
 
-[![Email](https://img.shields.io/badge/📧%20Email-Contact%20Me-blue?style=for-the-badge&logo=gmail)](mailto:contact@developer-portfolio.com)
+[![Email](https://img.shields.io/badge/📧%20Email-Contact%20Me-blue?style=for-the-badge&logo=gmail)](mailto:dbclqn@gmail.com)
 
 **📍 위치**: 대한민국
 
 </div>
 
----
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=yourusername&style=flat-square&color=blue" alt="Profile Views"/>
-  
-  **⭐ 이 프로필이 도움이 되었다면 스타를 눌러주세요!**
-</div>
