@@ -1,15 +1,14 @@
-# 👋 안녕하세요, 유치부입니다
+# 👋 안녕하세요, 웹 개발자입니다
 
 <div align="center">
-  <img src="Images/ycb2.png" alt="유치부 프로필" width="200" height="200" style="border-radius: 50%; border: 5px solid #667eea;">
+  <img src="Images/ycb2.png" alt="개발자 프로필" width="200" height="200" style="border-radius: 50%; border: 5px solid #667eea;">
   
   ### 🚀 웹/백엔드 개발자
   
   **15년 7개월의 풍부한 개발 경험**을 바탕으로 안정적이고 확장 가능한 웹 서비스를 개발합니다.
   
-  [![Email](https://img.shields.io/badge/📧%20Email-Contact%20Me-blue?style=for-the-badge&logo=gmail)](mailto:dbclqn@gmail.com)
-  [![Phone](https://img.shields.io/badge/📱%20Phone-Contact%20Me-green?style=for-the-badge&logo=phone)](tel:010-9344-4047)
-  [![Location](https://img.shields.io/badge/Location-경기%20광주시%20고산동-red?style=flat-square&logo=location)](https://maps.google.com/?q=경기+광주시+고산동)
+  [![Email](https://img.shields.io/badge/📧%20Email-Contact%20Me-blue?style=for-the-badge&logo=gmail)](mailto:contact@developer-portfolio.com)
+  [![Location](https://img.shields.io/badge/Location-대한민국-red?style=flat-square&logo=location)](https://maps.google.com/?q=대한민국)
 </div>
 
 ---
@@ -180,10 +179,9 @@
 
 안정적이고 확장 가능한 웹 서비스 개발에 관심이 있으시다면 언제든 연락주세요.
 
-[![Email](https://img.shields.io/badge/📧%20Email-Contact%20Me-blue?style=for-the-badge&logo=gmail)](mailto:dbclqn@gmail.com)
-[![Phone](https://img.shields.io/badge/📱%20Phone-Contact%20Me-green?style=for-the-badge&logo=phone)](tel:010-9344-4047)
+[![Email](https://img.shields.io/badge/📧%20Email-Contact%20Me-blue?style=for-the-badge&logo=gmail)](mailto:contact@developer-portfolio.com)
 
-**📍 위치**: 서울, 대한민국 (구체적 주소 대신 일반적인 지역명 사용)
+**📍 위치**: 대한민국
 
 </div>
 
