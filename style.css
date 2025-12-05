@@ -1,1227 +1,1293 @@
 /* Reset and Base Styles - 기본 스타일 초기화 */
 * {
-    margin: 0;  /* 모든 요소의 기본 마진 제거 */
-    padding: 0;  /* 모든 요소의 기본 패딩 제거 */
-    box-sizing: border-box;  /* 박스 모델을 border-box로 설정 */
+  margin: 0; /* 모든 요소의 기본 마진 제거 */
+  padding: 0; /* 모든 요소의 기본 패딩 제거 */
+  box-sizing: border-box; /* 박스 모델을 border-box로 설정 */
 }
 
 html {
-    scroll-behavior: smooth;  /* 부드러운 스크롤 효과 */
+  scroll-behavior: smooth; /* 부드러운 스크롤 효과 */
 }
 
 :root {
-    /* Dark Theme Colors - 다크 테마 색상 변수들 */
-    --bg-primary: #0d1117;  /* 메인 배경색 (GitHub 다크) */
-    --bg-secondary: #161b22;  /* 보조 배경색 */
-    --bg-tertiary: #21262d;  /* 3차 배경색 */
-    --bg-card: #1c2128;  /* 카드 배경색 */
-    --text-primary: #f0f6fc;  /* 주요 텍스트 색상 */
-    --text-secondary: #8b949e;  /* 보조 텍스트 색상 */
-    --text-muted: #6e7681;  /* 흐린 텍스트 색상 */
-    --accent-primary: #58a6ff;  /* 주요 강조색 (파란색) */
-    --accent-secondary: #f85149;  /* 보조 강조색 (빨간색) */
-    --accent-success: #3fb950;  /* 성공 색상 (초록색) */
-    --accent-warning: #d29922;  /* 경고 색상 (노란색) */
-    --border-color: #30363d;  /* 테두리 색상 */
-    --shadow-color: rgba(0, 0, 0, 0.3);  /* 그림자 색상 */
-    --terminal-green: #00ff41;  /* 터미널 녹색 */
-    --terminal-yellow: #ffff00;  /* 터미널 노란색 */
-    --terminal-red: #ff0040;  /* 터미널 빨간색 */
-    --code-bg: #0d1117;  /* 코드 배경색 */
-    --code-text: #c9d1d9;  /* 코드 텍스트 색상 */
+  /* Dark Theme Colors - 다크 테마 색상 변수들 */
+  --bg-primary: #0d1117; /* 메인 배경색 (GitHub 다크) */
+  --bg-secondary: #161b22; /* 보조 배경색 */
+  --bg-tertiary: #21262d; /* 3차 배경색 */
+  --bg-card: #1c2128; /* 카드 배경색 */
+  --text-primary: #f0f6fc; /* 주요 텍스트 색상 */
+  --text-secondary: #8b949e; /* 보조 텍스트 색상 */
+  --text-muted: #6e7681; /* 흐린 텍스트 색상 */
+  --accent-primary: #58a6ff; /* 주요 강조색 (파란색) */
+  --accent-secondary: #f85149; /* 보조 강조색 (빨간색) */
+  --accent-success: #3fb950; /* 성공 색상 (초록색) */
+  --accent-warning: #d29922; /* 경고 색상 (노란색) */
+  --border-color: #30363d; /* 테두리 색상 */
+  --shadow-color: rgba(0, 0, 0, 0.3); /* 그림자 색상 */
+  --terminal-green: #00ff41; /* 터미널 녹색 */
+  --terminal-yellow: #ffff00; /* 터미널 노란색 */
+  --terminal-red: #ff0040; /* 터미널 빨간색 */
+  --code-bg: #0d1117; /* 코드 배경색 */
+  --code-text: #c9d1d9; /* 코드 텍스트 색상 */
 }
 
 body {
-    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;  /* 개발자용 모노스페이스 폰트 */
-    line-height: 1.6;  /* 줄 간격 설정 */
-    color: var(--text-primary);  /* 텍스트 색상 */
-    background-color: var(--bg-primary);  /* 배경색 */
-    /* 그라데이션 배경 - 개발자 도구 느낌의 컬러풀한 효과 */
-    background-image: 
-        radial-gradient(circle at 20% 50%, rgba(88, 166, 255, 0.1) 0%, transparent 50%),  /* 파란색 그라데이션 */
-        radial-gradient(circle at 80% 20%, rgba(248, 81, 73, 0.1) 0%, transparent 50%),  /* 빨간색 그라데이션 */
-        radial-gradient(circle at 40% 80%, rgba(63, 185, 80, 0.1) 0%, transparent 50%);  /* 초록색 그라데이션 */
-    min-height: 100vh;  /* 최소 높이를 뷰포트 높이로 설정 */
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", monospace; /* 개발자용 모노스페이스 폰트 */
+  line-height: 1.6; /* 줄 간격 설정 */
+  color: var(--text-primary); /* 텍스트 색상 */
+  background-color: var(--bg-primary); /* 배경색 */
+  /* 그라데이션 배경 - 개발자 도구 느낌의 컬러풀한 효과 */
+  background-image: radial-gradient(
+      circle at 20% 50%,
+      rgba(88, 166, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    /* 파란색 그라데이션 */
+      radial-gradient(
+        circle at 80% 20%,
+        rgba(248, 81, 73, 0.1) 0%,
+        transparent 50%
+      ),
+    /* 빨간색 그라데이션 */
+      radial-gradient(
+        circle at 40% 80%,
+        rgba(63, 185, 80, 0.1) 0%,
+        transparent 50%
+      ); /* 초록색 그라데이션 */
+  min-height: 100vh; /* 최소 높이를 뷰포트 높이로 설정 */
 }
 
 .container {
-    max-width: 1200px;  /* 최대 너비 제한 */
-    margin: 0 auto;  /* 가로 중앙 정렬 */
-    padding: 0 20px;  /* 좌우 패딩 */
+  max-width: 1200px; /* 최대 너비 제한 */
+  margin: 0 auto; /* 가로 중앙 정렬 */
+  padding: 0 20px; /* 좌우 패딩 */
 }
 
 /* Navigation - 네비게이션 바 스타일 */
 .navbar {
-    position: fixed;  /* 고정 위치 */
-    top: 0;  /* 상단에 고정 */
-    width: 100%;  /* 전체 너비 */
-    background: rgba(13, 17, 23, 0.95);  /* 반투명 배경 */
-    backdrop-filter: blur(10px);  /* 배경 블러 효과 */
-    border-bottom: 1px solid var(--border-color);  /* 하단 테두리 */
-    z-index: 1000;  /* 다른 요소 위에 표시 */
-    padding: 1rem 0;  /* 상하 패딩 */
-    box-shadow: 0 2px 10px var(--shadow-color);  /* 그림자 효과 */
+  position: fixed; /* 고정 위치 */
+  top: 0; /* 상단에 고정 */
+  width: 100%; /* 전체 너비 */
+  background: rgba(13, 17, 23, 0.95); /* 반투명 배경 */
+  backdrop-filter: blur(10px); /* 배경 블러 효과 */
+  border-bottom: 1px solid var(--border-color); /* 하단 테두리 */
+  z-index: 1000; /* 다른 요소 위에 표시 */
+  padding: 1rem 0; /* 상하 패딩 */
+  box-shadow: 0 2px 10px var(--shadow-color); /* 그림자 효과 */
 }
 
 .nav-container {
-    max-width: 1200px;  /* 최대 너비 제한 */
-    margin: 0 auto;  /* 가로 중앙 정렬 */
-    padding: 0 20px;  /* 좌우 패딩 */
-    display: flex;  /* 플렉스박스 레이아웃 */
-    justify-content: space-between;  /* 양 끝 정렬 */
-    align-items: center;  /* 세로 중앙 정렬 */
+  max-width: 1200px; /* 최대 너비 제한 */
+  margin: 0 auto; /* 가로 중앙 정렬 */
+  padding: 0 20px; /* 좌우 패딩 */
+  display: flex; /* 플렉스박스 레이아웃 */
+  justify-content: space-between; /* 양 끝 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
 }
 
 .nav-logo a {
-    font-size: 1.5rem;  /* 폰트 크기 */
-    font-weight: 700;  /* 굵은 글씨 */
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    text-decoration: none;  /* 밑줄 제거 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  font-size: 1.5rem; /* 폰트 크기 */
+  font-weight: 700; /* 굵은 글씨 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  text-decoration: none; /* 밑줄 제거 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 로고 앞에 터미널 프롬프트 '$' 추가 */
 .nav-logo a::before {
-    content: '$ ';  /* 터미널 프롬프트 표시 */
-    color: var(--accent-primary);  /* 파란색으로 표시 */
+  content: "$ "; /* 터미널 프롬프트 표시 */
+  color: var(--accent-primary); /* 파란색으로 표시 */
 }
 
 .nav-menu {
-    display: flex;  /* 플렉스박스 레이아웃 */
-    list-style: none;  /* 리스트 스타일 제거 */
-    /* gap: 2rem; */  /* 메뉴 간격 (현재 비활성화) */
+  display: flex; /* 플렉스박스 레이아웃 */
+  list-style: none; /* 리스트 스타일 제거 */
+  /* gap: 2rem; */ /* 메뉴 간격 (현재 비활성화) */
 }
 
 .nav-link {
-    color: var(--text-secondary);  /* 기본 텍스트 색상 */
-    text-decoration: none;  /* 밑줄 제거 */
-    font-weight: 500;  /* 중간 굵기 */
-    transition: all 0.3s ease;  /* 부드러운 전환 효과 */
-    padding: 0.5rem 1rem;  /* 내부 여백 */
-    border-radius: 4px;  /* 모서리 둥글게 */
-    position: relative;  /* 상대 위치 */
+  color: var(--text-secondary); /* 기본 텍스트 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+  font-weight: 500; /* 중간 굵기 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  padding: 0.5rem 1rem; /* 내부 여백 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  position: relative; /* 상대 위치 */
 }
 
 /* 네비게이션 링크 호버 효과 */
 .nav-link:hover {
-    color: var(--text-primary);  /* 호버 시 밝은 텍스트 */
-    background: var(--bg-tertiary);  /* 호버 시 배경색 변경 */
+  color: var(--text-primary); /* 호버 시 밝은 텍스트 */
+  background: var(--bg-tertiary); /* 호버 시 배경색 변경 */
 }
 
 /* 네비게이션 링크 앞에 주석 표시 '//' 추가 */
 .nav-link::before {
-    content: '// ';  /* 주석 표시 */
-    color: var(--accent-primary);  /* 파란색으로 표시 */
-    opacity: 0;  /* 기본적으로 숨김 */
-    transition: opacity 0.3s ease;  /* 부드러운 페이드 효과 */
+  content: "// "; /* 주석 표시 */
+  color: var(--accent-primary); /* 파란색으로 표시 */
+  opacity: 0; /* 기본적으로 숨김 */
+  transition: opacity 0.3s ease; /* 부드러운 페이드 효과 */
 }
 
 /* 호버 시 주석 표시 나타남 */
 .nav-link:hover::before {
-    opacity: 1;  /* 완전히 보이게 */
+  opacity: 1; /* 완전히 보이게 */
 }
 
 /* 햄버거 메뉴 버튼 (모바일용) */
 .hamburger {
-    display: none;  /* 기본적으로 숨김 */
-    flex-direction: column;  /* 세로 방향 정렬 */
-    cursor: pointer;  /* 클릭 가능한 커서 */
+  display: none; /* 기본적으로 숨김 */
+  flex-direction: column; /* 세로 방향 정렬 */
+  cursor: pointer; /* 클릭 가능한 커서 */
 }
 
 /* 햄버거 메뉴의 각 줄 */
 .bar {
-    width: 25px;  /* 줄 너비 */
-    height: 3px;  /* 줄 높이 */
-    background-color: var(--text-primary);  /* 줄 색상 */
-    margin: 3px 0;  /* 줄 간격 */
-    transition: 0.3s;  /* 전환 효과 */
-    border-radius: 2px;  /* 모서리 둥글게 */
+  width: 25px; /* 줄 너비 */
+  height: 3px; /* 줄 높이 */
+  background-color: var(--text-primary); /* 줄 색상 */
+  margin: 3px 0; /* 줄 간격 */
+  transition: 0.3s; /* 전환 효과 */
+  border-radius: 2px; /* 모서리 둥글게 */
 }
 
 /* Hero Section - 메인 히어로 섹션 */
 .hero {
-    min-height: 100vh;  /* 최소 높이를 뷰포트 높이로 설정 */
-    display: flex;  /* 플렉스박스 레이아웃 */
-    align-items: center;  /* 세로 중앙 정렬 */
-    background: var(--bg-primary);  /* 배경색 */
-    color: var(--text-primary);  /* 텍스트 색상 */
-    padding-top: 80px;  /* 네비게이션 바 높이만큼 상단 패딩 */
-    position: relative;  /* 상대 위치 (배경 이미지용) */
-    overflow: hidden;  /* 넘치는 내용 숨김 */
-    border-bottom: 1px solid var(--border-color);  /* 하단 테두리 */
+  min-height: 100vh; /* 최소 높이를 뷰포트 높이로 설정 */
+  display: flex; /* 플렉스박스 레이아웃 */
+  align-items: center; /* 세로 중앙 정렬 */
+  background: var(--bg-primary); /* 배경색 */
+  color: var(--text-primary); /* 텍스트 색상 */
+  padding-top: 80px; /* 네비게이션 바 높이만큼 상단 패딩 */
+  position: relative; /* 상대 위치 (배경 이미지용) */
+  overflow: hidden; /* 넘치는 내용 숨김 */
+  border-bottom: 1px solid var(--border-color); /* 하단 테두리 */
 }
 
 /* 히어로 섹션 배경 이미지 레이어 */
 .hero::before {
-    content: '';
-    position: absolute;  /* 절대 위치 */
-    top: 0;  /* 상단에 고정 */
-    left: 0;  /* 좌측에 고정 */
-    right: 0;  /* 우측에 고정 */
-    bottom: 0;  /* 하단에 고정 */
-    /* 배경 이미지와 그라데이션 오버레이 */
-    background: 
-        linear-gradient(135deg, rgba(13, 17, 23, 0.8) 0%, rgba(22, 27, 34, 0.5) 50%, rgba(13, 17, 23, 0) 100%),  /* 대각선 그라데이션 */
-        url('Images/bg.png');  /* 배경 이미지 */
-    background-size: cover;  /* 배경 이미지 크기 조정 */
-    background-position: center;  /* 배경 이미지 위치 */
-    background-position: 50% 0%;  /* 배경 이미지 위치 (상단 중앙) */
-    background-repeat: no-repeat;  /* 배경 이미지 반복 안함 */
-    opacity: 0.7;  /* 투명도 설정 */
-    z-index: 0;  /* 맨 뒤 레이어 */
+  content: "";
+  position: absolute; /* 절대 위치 */
+  top: 0; /* 상단에 고정 */
+  left: 0; /* 좌측에 고정 */
+  right: 0; /* 우측에 고정 */
+  bottom: 0; /* 하단에 고정 */
+  /* 배경 이미지와 그라데이션 오버레이 */
+  background: linear-gradient(
+      135deg,
+      rgba(13, 17, 23, 0.8) 0%,
+      rgba(22, 27, 34, 0.5) 50%,
+      rgba(13, 17, 23, 0) 100%
+    ),
+    /* 대각선 그라데이션 */ url("Images/bg.png"); /* 배경 이미지 */
+  background-size: cover; /* 배경 이미지 크기 조정 */
+  background-position: center; /* 배경 이미지 위치 */
+  background-position: 50% 0%; /* 배경 이미지 위치 (상단 중앙) */
+  background-repeat: no-repeat; /* 배경 이미지 반복 안함 */
+  opacity: 0.7; /* 투명도 설정 */
+  z-index: 0; /* 맨 뒤 레이어 */
 }
 
 /* 히어로 섹션 그리드 애니메이션 레이어 */
 .hero::after {
-    content: '';
-    position: absolute;  /* 절대 위치 */
-    top: 0;  /* 상단에 고정 */
-    left: 0;  /* 좌측에 고정 */
-    right: 0;  /* 우측에 고정 */
-    bottom: 0;  /* 하단에 고정 */
-    /* 그리드 패턴과 그라데이션 효과 */
-    background: 
-        linear-gradient(90deg, transparent 0%, rgba(88, 166, 255, 0.1) 50%, transparent 100%),  /* 가로 그라데이션 */
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(88,166,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');  /* SVG 그리드 패턴 */
-    opacity: 0.3;  /* 투명도 설정 */
-    animation: gridMove 20s linear infinite;  /* 그리드 이동 애니메이션 */
-    z-index: 1;  /* 배경 이미지 위 레이어 */
+  content: "";
+  position: absolute; /* 절대 위치 */
+  top: 0; /* 상단에 고정 */
+  left: 0; /* 좌측에 고정 */
+  right: 0; /* 우측에 고정 */
+  bottom: 0; /* 하단에 고정 */
+  /* 그리드 패턴과 그라데이션 효과 */
+  background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(88, 166, 255, 0.1) 50%,
+      transparent 100%
+    ),
+    /* 가로 그라데이션 */
+      url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(88,166,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>'); /* SVG 그리드 패턴 */
+  opacity: 0.3; /* 투명도 설정 */
+  animation: gridMove 20s linear infinite; /* 그리드 이동 애니메이션 */
+  z-index: 1; /* 배경 이미지 위 레이어 */
 }
 
 /* 그리드 이동 애니메이션 키프레임 */
 @keyframes gridMove {
-    0% { transform: translateX(0); }  /* 시작 위치 */
-    100% { transform: translateX(20px); }  /* 20px 오른쪽으로 이동 */
+  0% {
+    transform: translateX(0);
+  } /* 시작 위치 */
+  100% {
+    transform: translateX(20px);
+  } /* 20px 오른쪽으로 이동 */
 }
 
 .hero-container {
-    max-width: 1200px;  /* 최대 너비 제한 */
-    margin: 0 auto;  /* 가로 중앙 정렬 */
-    padding: 0 20px;  /* 좌우 패딩 */
-    display: grid;  /* 그리드 레이아웃 */
-    grid-template-columns: 1fr 1fr;  /* 2열 그리드 (동일한 너비) */
-    gap: 4rem;  /* 그리드 간격 */
-    align-items: center;  /* 세로 중앙 정렬 */
-    position: relative;  /* 상대 위치 */
-    z-index: 2;  /* 배경 레이어들 위에 표시 */
+  max-width: 1200px; /* 최대 너비 제한 */
+  margin: 0 auto; /* 가로 중앙 정렬 */
+  padding: 0 20px; /* 좌우 패딩 */
+  display: grid; /* 그리드 레이아웃 */
+  grid-template-columns: 1fr 1fr; /* 2열 그리드 (동일한 너비) */
+  gap: 4rem; /* 그리드 간격 */
+  align-items: center; /* 세로 중앙 정렬 */
+  position: relative; /* 상대 위치 */
+  z-index: 2; /* 배경 레이어들 위에 표시 */
 }
 
 .hero-title {
-    font-size: 3rem;  /* 큰 폰트 크기 */
-    font-weight: 700;  /* 굵은 글씨 */
-    margin-bottom: 1rem;  /* 하단 마진 */
-    line-height: 1.2;  /* 줄 간격 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  font-size: 3rem; /* 큰 폰트 크기 */
+  font-weight: 700; /* 굵은 글씨 */
+  margin-bottom: 1rem; /* 하단 마진 */
+  line-height: 1.2; /* 줄 간격 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 히어로 제목 앞에 터미널 프롬프트 '>' 추가 */
 .hero-title::before {
-    content: '> ';  /* 터미널 프롬프트 */
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    font-size: 2rem;  /* 프롬프트 크기 */
+  content: "> "; /* 터미널 프롬프트 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  font-size: 2rem; /* 프롬프트 크기 */
 }
 
 /* 강조 텍스트 스타일 */
 .highlight {
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    text-shadow: 0 0 10px rgba(0, 255, 65, 0.3);  /* 네온 글로우 효과 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.3); /* 네온 글로우 효과 */
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;  /* 부제목 폰트 크기 */
-    margin-bottom: 2rem;  /* 하단 마진 */
-    opacity: 0.9;  /* 약간 투명하게 */
-    line-height: 1.6;  /* 줄 간격 */
-    color: var(--text-secondary);  /* 보조 텍스트 색상 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  font-size: 1.2rem; /* 부제목 폰트 크기 */
+  margin-bottom: 2rem; /* 하단 마진 */
+  opacity: 0.9; /* 약간 투명하게 */
+  line-height: 1.6; /* 줄 간격 */
+  color: var(--text-secondary); /* 보조 텍스트 색상 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 부제목 앞에 주석 표시 '//' 추가 */
 .hero-subtitle::before {
-    content: '// ';  /* 주석 표시 */
-    color: var(--text-muted);  /* 흐린 색상 */
+  content: "// "; /* 주석 표시 */
+  color: var(--text-muted); /* 흐린 색상 */
 }
 
 .hero-buttons {
-    display: flex;  /* 플렉스박스 레이아웃 */
-    gap: 1rem;  /* 버튼 간격 */
+  display: flex; /* 플렉스박스 레이아웃 */
+  gap: 1rem; /* 버튼 간격 */
 }
 
 /* 기본 버튼 스타일 */
 .btn {
-    padding: 12px 24px;  /* 내부 여백 */
-    border-radius: 4px;  /* 모서리 둥글게 */
-    text-decoration: none;  /* 밑줄 제거 */
-    font-weight: 600;  /* 중간 굵기 */
-    transition: all 0.3s ease;  /* 부드러운 전환 효과 */
-    display: inline-block;  /* 인라인 블록 요소 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
-    border: 1px solid;  /* 테두리 */
-    position: relative;  /* 상대 위치 (애니메이션용) */
-    overflow: hidden;  /* 넘치는 내용 숨김 */
+  padding: 12px 24px; /* 내부 여백 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  text-decoration: none; /* 밑줄 제거 */
+  font-weight: 600; /* 중간 굵기 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  display: inline-block; /* 인라인 블록 요소 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
+  border: 1px solid; /* 테두리 */
+  position: relative; /* 상대 위치 (애니메이션용) */
+  overflow: hidden; /* 넘치는 내용 숨김 */
 }
 
 /* 버튼 호버 시 빛나는 효과 */
 .btn::before {
-    content: '';
-    position: absolute;  /* 절대 위치 */
-    top: 0;  /* 상단에 고정 */
-    left: -100%;  /* 왼쪽 밖에서 시작 */
-    width: 100%;  /* 전체 너비 */
-    height: 100%;  /* 전체 높이 */
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);  /* 빛나는 그라데이션 */
-    transition: left 0.5s ease;  /* 부드러운 이동 효과 */
+  content: "";
+  position: absolute; /* 절대 위치 */
+  top: 0; /* 상단에 고정 */
+  left: -100%; /* 왼쪽 밖에서 시작 */
+  width: 100%; /* 전체 너비 */
+  height: 100%; /* 전체 높이 */
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  ); /* 빛나는 그라데이션 */
+  transition: left 0.5s ease; /* 부드러운 이동 효과 */
 }
 
 /* 호버 시 빛이 오른쪽으로 이동 */
 .btn:hover::before {
-    left: 100%;  /* 오른쪽 끝으로 이동 */
+  left: 100%; /* 오른쪽 끝으로 이동 */
 }
 
 /* 주요 버튼 스타일 (녹색) */
 .btn-primary {
-    background: var(--terminal-green);  /* 터미널 녹색 배경 */
-    color: var(--bg-primary);  /* 어두운 텍스트 */
-    border-color: var(--terminal-green);  /* 녹색 테두리 */
+  background: var(--terminal-green); /* 터미널 녹색 배경 */
+  color: var(--bg-primary); /* 어두운 텍스트 */
+  border-color: var(--terminal-green); /* 녹색 테두리 */
 }
 
 /* 주요 버튼 호버 효과 */
 .btn-primary:hover {
-    background: var(--bg-primary);  /* 어두운 배경 */
-    color: var(--terminal-green);  /* 녹색 텍스트 */
-    transform: translateY(-2px);  /* 위로 2px 이동 */
-    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);  /* 녹색 글로우 효과 */
+  background: var(--bg-primary); /* 어두운 배경 */
+  color: var(--terminal-green); /* 녹색 텍스트 */
+  transform: translateY(-2px); /* 위로 2px 이동 */
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3); /* 녹색 글로우 효과 */
 }
 
 /* 보조 버튼 스타일 (파란색) */
 .btn-secondary {
-    background: transparent;  /* 투명 배경 */
-    color: var(--accent-primary);  /* 파란색 텍스트 */
-    border-color: var(--accent-primary);  /* 파란색 테두리 */
+  background: transparent; /* 투명 배경 */
+  color: var(--accent-primary); /* 파란색 텍스트 */
+  border-color: var(--accent-primary); /* 파란색 테두리 */
 }
 
 /* 보조 버튼 호버 효과 */
 .btn-secondary:hover {
-    background: var(--accent-primary);  /* 파란색 배경 */
-    color: var(--bg-primary);  /* 어두운 텍스트 */
-    transform: translateY(-2px);
-    box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+  background: var(--accent-primary); /* 파란색 배경 */
+  color: var(--bg-primary); /* 어두운 텍스트 */
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
 }
 
 /* 프로필 카드 스타일 */
 .profile-card {
-    background: var(--bg-card);  /* 카드 배경색 */
-    backdrop-filter: blur(10px);  /* 배경 블러 효과 */
-    border-radius: 8px;  /* 모서리 둥글게 */
-    padding: 2rem;  /* 내부 여백 */
-    text-align: center;  /* 텍스트 중앙 정렬 */
-    border: 1px solid var(--border-color);  /* 테두리 */
-    box-shadow: 0 8px 32px var(--shadow-color);  /* 그림자 효과 */
-    position: relative;  /* 상대 위치 */
-    overflow: hidden;  /* 넘치는 내용 숨김 */
+  background: var(--bg-card); /* 카드 배경색 */
+  backdrop-filter: blur(10px); /* 배경 블러 효과 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  padding: 2rem; /* 내부 여백 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  border: 1px solid var(--border-color); /* 테두리 */
+  box-shadow: 0 8px 32px var(--shadow-color); /* 그림자 효과 */
+  position: relative; /* 상대 위치 */
+  overflow: hidden; /* 넘치는 내용 숨김 */
 }
 
 /* 프로필 카드 상단 컬러 바 */
 .profile-card::before {
-    content: '';
-    position: absolute;  /* 절대 위치 */
-    top: 0;  /* 상단에 고정 */
-    left: 0;  /* 좌측에 고정 */
-    right: 0;  /* 우측에 고정 */
-    height: 3px;  /* 높이 3px */
-    background: linear-gradient(90deg, var(--terminal-green), var(--accent-primary), var(--terminal-red));  /* 컬러풀한 그라데이션 */
+  content: "";
+  position: absolute; /* 절대 위치 */
+  top: 0; /* 상단에 고정 */
+  left: 0; /* 좌측에 고정 */
+  right: 0; /* 우측에 고정 */
+  height: 3px; /* 높이 3px */
+  background: linear-gradient(
+    90deg,
+    var(--terminal-green),
+    var(--accent-primary),
+    var(--terminal-red)
+  ); /* 컬러풀한 그라데이션 */
 }
 
 /* 프로필 이미지 스타일 */
 .profile-image img {
-    width: 250px;  /* 이미지 너비 */
-    height: 350px;  /* 이미지 높이 */
-    border-radius: 8px;  /* 모서리 둥글게 */
-    object-fit: cover;  /* 이미지 비율 유지하며 채우기 */
-    border: 2px solid var(--terminal-green);  /* 녹색 테두리 */
-    margin-bottom: 1rem;  /* 하단 마진 */
-    box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);  /* 녹색 글로우 효과 */
+  width: 250px; /* 이미지 너비 */
+  height: 350px; /* 이미지 높이 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  object-fit: cover; /* 이미지 비율 유지하며 채우기 */
+  border: 2px solid var(--terminal-green); /* 녹색 테두리 */
+  margin-bottom: 1rem; /* 하단 마진 */
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.2); /* 녹색 글로우 효과 */
 }
 
 /* 프로필 정보 제목 */
 .profile-info h3 {
-    font-size: 1.5rem;  /* 폰트 크기 */
-    margin-bottom: 0.5rem;  /* 하단 마진 */
-    color: var(--text-primary);  /* 주요 텍스트 색상 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  font-size: 1.5rem; /* 폰트 크기 */
+  margin-bottom: 0.5rem; /* 하단 마진 */
+  color: var(--text-primary); /* 주요 텍스트 색상 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 프로필 정보 문단 */
 .profile-info p {
-    color: var(--text-secondary);  /* 보조 텍스트 색상 */
-    margin-bottom: 0.25rem;  /* 하단 마진 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--text-secondary); /* 보조 텍스트 색상 */
+  margin-bottom: 0.25rem; /* 하단 마진 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* Section Styles - 섹션 스타일 */
 section {
-    padding: 80px 0;  /* 상하 패딩 */
-    border-bottom: 1px solid var(--border-color);  /* 하단 테두리 */
+  padding: 80px 0; /* 상하 패딩 */
+  border-bottom: 1px solid var(--border-color); /* 하단 테두리 */
 }
 
 /* 섹션 제목 */
 .section-title {
-    text-align: center;  /* 텍스트 중앙 정렬 */
-    font-size: 2.5rem;  /* 큰 폰트 크기 */
-    font-weight: 700;  /* 굵은 글씨 */
-    margin-bottom: 3rem;  /* 하단 마진 */
-    color: var(--text-primary);  /* 주요 텍스트 색상 */
-    position: relative;  /* 상대 위치 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  font-size: 2.5rem; /* 큰 폰트 크기 */
+  font-weight: 700; /* 굵은 글씨 */
+  margin-bottom: 3rem; /* 하단 마진 */
+  color: var(--text-primary); /* 주요 텍스트 색상 */
+  position: relative; /* 상대 위치 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 섹션 제목 앞에 주석 표시 '//' 추가 */
 .section-title::before {
-    content: '// ';  /* 주석 표시 */
-    color: var(--text-muted);  /* 흐린 색상 */
-    font-size: 1.5rem;  /* 폰트 크기 */
+  content: "// "; /* 주석 표시 */
+  color: var(--text-muted); /* 흐린 색상 */
+  font-size: 1.5rem; /* 폰트 크기 */
 }
 
 /* 섹션 제목 하단 그라데이션 바 */
 .section-title::after {
-    content: '';
-    position: absolute;  /* 절대 위치 */
-    bottom: -10px;  /* 하단에서 10px 위 */
-    left: 50%;  /* 가로 중앙 */
-    transform: translateX(-50%);  /* 정확한 중앙 정렬 */
-    width: 60px;  /* 바 너비 */
-    height: 4px;  /* 바 높이 */
-    background: linear-gradient(135deg, var(--terminal-green), var(--accent-primary));  /* 대각선 그라데이션 */
-    border-radius: 2px;  /* 모서리 둥글게 */
+  content: "";
+  position: absolute; /* 절대 위치 */
+  bottom: -10px; /* 하단에서 10px 위 */
+  left: 50%; /* 가로 중앙 */
+  transform: translateX(-50%); /* 정확한 중앙 정렬 */
+  width: 60px; /* 바 너비 */
+  height: 4px; /* 바 높이 */
+  background: linear-gradient(
+    135deg,
+    var(--terminal-green),
+    var(--accent-primary)
+  ); /* 대각선 그라데이션 */
+  border-radius: 2px; /* 모서리 둥글게 */
 }
 
 /* About Section - 어바웃 섹션 */
 .about {
-    background: var(--bg-secondary);  /* 보조 배경색 */
+  background: var(--bg-secondary); /* 보조 배경색 */
 }
 
 /* 어바웃 콘텐츠 그리드 */
 .about-content {
-    display: grid;  /* 그리드 레이아웃 */
-    grid-template-columns: 2fr 1fr;  /* 2:1 비율 그리드 */
-    gap: 4rem;  /* 그리드 간격 */
-    align-items: start;  /* 상단 정렬 */
+  display: grid; /* 그리드 레이아웃 */
+  grid-template-columns: 2fr 1fr; /* 2:1 비율 그리드 */
+  gap: 4rem; /* 그리드 간격 */
+  align-items: start; /* 상단 정렬 */
 }
 
 /* 어바웃 텍스트 제목 */
 .about-text h3 {
-    font-size: 1.5rem;  /* 폰트 크기 */
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    margin-bottom: 1rem;  /* 하단 마진 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  font-size: 1.5rem; /* 폰트 크기 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  margin-bottom: 1rem; /* 하단 마진 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 어바웃 텍스트 제목 앞에 프롬프트 '>' 추가 */
 .about-text h3::before {
-    content: '> ';  /* 터미널 프롬프트 */
-    color: var(--accent-primary);  /* 파란색 */
+  content: "> "; /* 터미널 프롬프트 */
+  color: var(--accent-primary); /* 파란색 */
 }
 
 /* 어바웃 텍스트 문단 */
 .about-text p {
-    margin-bottom: 1rem;  /* 하단 마진 */
-    line-height: 1.8;  /* 줄 간격 */
-    color: var(--text-secondary);  /* 보조 텍스트 색상 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  margin-bottom: 1rem; /* 하단 마진 */
+  line-height: 1.8; /* 줄 간격 */
+  color: var(--text-secondary); /* 보조 텍스트 색상 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 통계 정보 그리드 레이아웃 */
 .about-stats {
-    display: grid;  /* 그리드 레이아웃 */
-    grid-template-columns: 1fr 1fr;  /* 2열 그리드 */
-    gap: 2rem;  /* 그리드 간격 */
+  display: grid; /* 그리드 레이아웃 */
+  grid-template-columns: 1fr 1fr; /* 2열 그리드 */
+  gap: 2rem; /* 그리드 간격 */
 }
 
 /* 통계 아이템 카드 */
 .stat-item {
-    text-align: center;  /* 텍스트 중앙 정렬 */
-    padding: 2rem;  /* 내부 여백 */
-    background: var(--bg-card);  /* 카드 배경색 */
-    border-radius: 8px;  /* 모서리 둥글게 */
-    border: 1px solid var(--border-color);  /* 테두리 */
-    transition: all 0.3s ease;  /* 부드러운 전환 효과 */
-    position: relative;  /* 상대 위치 */
-    overflow: hidden;  /* 넘치는 내용 숨김 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  padding: 2rem; /* 내부 여백 */
+  background: var(--bg-card); /* 카드 배경색 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  border: 1px solid var(--border-color); /* 테두리 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  position: relative; /* 상대 위치 */
+  overflow: hidden; /* 넘치는 내용 숨김 */
 }
 
 /* 통계 아이템 상단 애니메이션 바 */
 .stat-item::before {
-    content: '';
-    position: absolute;  /* 절대 위치 */
-    top: 0;  /* 상단에 고정 */
-    left: 0;  /* 좌측에 고정 */
-    right: 0;  /* 우측에 고정 */
-    height: 2px;  /* 높이 2px */
-    background: var(--terminal-green);  /* 녹색 배경 */
-    transform: scaleX(0);  /* 초기 상태: 가로로 0 */
-    transition: transform 0.3s ease;  /* 부드러운 변환 효과 */
+  content: "";
+  position: absolute; /* 절대 위치 */
+  top: 0; /* 상단에 고정 */
+  left: 0; /* 좌측에 고정 */
+  right: 0; /* 우측에 고정 */
+  height: 2px; /* 높이 2px */
+  background: var(--terminal-green); /* 녹색 배경 */
+  transform: scaleX(0); /* 초기 상태: 가로로 0 */
+  transition: transform 0.3s ease; /* 부드러운 변환 효과 */
 }
 
 /* 통계 아이템 호버 효과 */
 .stat-item:hover {
-    transform: translateY(-5px);  /* 위로 5px 이동 */
-    box-shadow: 0 10px 25px var(--shadow-color);  /* 그림자 효과 */
+  transform: translateY(-5px); /* 위로 5px 이동 */
+  box-shadow: 0 10px 25px var(--shadow-color); /* 그림자 효과 */
 }
 
 /* 호버 시 상단 바가 나타남 */
 .stat-item:hover::before {
-    transform: scaleX(1);  /* 가로로 100% 확장 */
+  transform: scaleX(1); /* 가로로 100% 확장 */
 }
 
 /* 통계 숫자 스타일 */
 .stat-number {
-    font-size: 2rem;  /* 큰 폰트 크기 */
-    font-weight: 700;  /* 굵은 글씨 */
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    margin-bottom: 0.5rem;  /* 하단 마진 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  font-size: 2rem; /* 큰 폰트 크기 */
+  font-weight: 700; /* 굵은 글씨 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  margin-bottom: 0.5rem; /* 하단 마진 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 통계 라벨 스타일 */
 .stat-label {
-    color: var(--text-secondary);  /* 보조 텍스트 색상 */
-    font-weight: 500;  /* 중간 굵기 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--text-secondary); /* 보조 텍스트 색상 */
+  font-weight: 500; /* 중간 굵기 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* Experience Section - 경력 섹션 */
 .experience {
-    background: var(--bg-primary);  /* 메인 배경색 */
+  background: var(--bg-primary); /* 메인 배경색 */
 }
 
 /* 타임라인 컨테이너 */
 .timeline {
-    position: relative;  /* 상대 위치 */
-    max-width: 800px;  /* 최대 너비 제한 */
-    margin: 0 auto;  /* 가로 중앙 정렬 */
+  position: relative; /* 상대 위치 */
+  max-width: 800px; /* 최대 너비 제한 */
+  margin: 0 auto; /* 가로 중앙 정렬 */
 }
 
 /* 타임라인 중앙선 */
 .timeline::before {
-    content: '';
-    position: absolute;  /* 절대 위치 */
-    left: 50%;  /* 가로 중앙 */
-    top: 0;  /* 상단에 고정 */
-    bottom: 0;  /* 하단에 고정 */
-    width: 2px;  /* 선 두께 */
-    background: linear-gradient(180deg, var(--terminal-green), var(--accent-primary), var(--terminal-red));  /* 컬러풀한 그라데이션 */
-    transform: translateX(-50%);  /* 정확한 중앙 정렬 */
-    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);  /* 녹색 글로우 효과 */
+  content: "";
+  position: absolute; /* 절대 위치 */
+  left: 50%; /* 가로 중앙 */
+  top: 0; /* 상단에 고정 */
+  bottom: 0; /* 하단에 고정 */
+  width: 2px; /* 선 두께 */
+  background: linear-gradient(
+    180deg,
+    var(--terminal-green),
+    var(--accent-primary),
+    var(--terminal-red)
+  ); /* 컬러풀한 그라데이션 */
+  transform: translateX(-50%); /* 정확한 중앙 정렬 */
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.3); /* 녹색 글로우 효과 */
 }
 
 /* 타임라인 아이템 */
 .timeline-item {
-    margin-bottom: 3rem;  /* 하단 마진 */
-    position: relative;  /* 상대 위치 */
+  margin-bottom: 3rem; /* 하단 마진 */
+  position: relative; /* 상대 위치 */
 }
 
 /* 홀수 번째 타임라인 아이템 (왼쪽 정렬) */
 .timeline-item:nth-child(odd) .timeline-content {
-    margin-left: -20%;  /* 왼쪽으로 이동 */
-    margin-right: 50%;  /* 오른쪽 여백 */
-    padding-right: 2rem;  /* 오른쪽 패딩 */
+  margin-left: -20%; /* 왼쪽으로 이동 */
+  margin-right: 50%; /* 오른쪽 여백 */
+  padding-right: 2rem; /* 오른쪽 패딩 */
 }
 
 /* 짝수 번째 타임라인 아이템 (오른쪽 정렬) */
 .timeline-item:nth-child(even) .timeline-content {
-    margin-left: 50%;  /* 왼쪽 여백 */
-    margin-right: -20%;  /* 오른쪽으로 이동 */
-    padding-left: 2rem;  /* 왼쪽 패딩 */
+  margin-left: 50%; /* 왼쪽 여백 */
+  margin-right: -20%; /* 오른쪽으로 이동 */
+  padding-left: 2rem; /* 왼쪽 패딩 */
 }
 
 /* 타임라인 콘텐츠 카드 */
 .timeline-content {
-    background: var(--bg-card);  /* 카드 배경색 */
-    padding: 2rem;  /* 내부 여백 */
-    border-radius: 8px;  /* 모서리 둥글게 */
-    box-shadow: 0 5px 15px var(--shadow-color);  /* 그림자 효과 */
-    position: relative;  /* 상대 위치 */
-    transition: all 0.3s ease;  /* 부드러운 전환 효과 */
-    border: 1px solid var(--border-color);  /* 테두리 */
+  background: var(--bg-card); /* 카드 배경색 */
+  padding: 2rem; /* 내부 여백 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  box-shadow: 0 5px 15px var(--shadow-color); /* 그림자 효과 */
+  position: relative; /* 상대 위치 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  border: 1px solid var(--border-color); /* 테두리 */
 }
 
 /* 타임라인 콘텐츠 호버 효과 */
 .timeline-content:hover {
-    transform: translateY(-5px);  /* 위로 5px 이동 */
-    box-shadow: 0 10px 25px var(--shadow-color);  /* 그림자 강화 */
-    border-color: var(--terminal-green);  /* 녹색 테두리 */
+  transform: translateY(-5px); /* 위로 5px 이동 */
+  box-shadow: 0 10px 25px var(--shadow-color); /* 그림자 강화 */
+  border-color: var(--terminal-green); /* 녹색 테두리 */
 }
 
 /* 타임라인 마커 (원형 점) */
 .timeline-content::before {
-    content: '';
-    position: absolute;  /* 절대 위치 */
-    top: 20px;  /* 상단에서 20px */
-    width: 20px;  /* 너비 20px */
-    height: 20px;  /* 높이 20px */
-    background: var(--terminal-green);  /* 터미널 녹색 */
-    border-radius: 50%;  /* 원형 */
-    border: 4px solid var(--bg-primary);  /* 어두운 테두리 */
-    box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);  /* 녹색 글로우 효과 */
+  content: "";
+  position: absolute; /* 절대 위치 */
+  top: 20px; /* 상단에서 20px */
+  width: 20px; /* 너비 20px */
+  height: 20px; /* 높이 20px */
+  background: var(--terminal-green); /* 터미널 녹색 */
+  border-radius: 50%; /* 원형 */
+  border: 4px solid var(--bg-primary); /* 어두운 테두리 */
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.5); /* 녹색 글로우 효과 */
 }
 
 /* 홀수 번째 아이템의 마커 위치 (오른쪽) */
 .timeline-item:nth-child(odd) .timeline-content::before {
-    right: -60px;  /* 오른쪽에서 60px */
+  right: -60px; /* 오른쪽에서 60px */
 }
 
 /* 짝수 번째 아이템의 마커 위치 (왼쪽) */
 .timeline-item:nth-child(even) .timeline-content::before {
-    left: -60px;  /* 왼쪽에서 60px */
+  left: -60px; /* 왼쪽에서 60px */
 }
 
 /* 타임라인 헤더 */
 .timeline-header {
-    display: flex;  /* 플렉스박스 레이아웃 */
-    justify-content: space-between;  /* 양 끝 정렬 */
-    align-items: center;  /* 세로 중앙 정렬 */
-    margin-bottom: 1rem;  /* 하단 마진 */
+  display: flex; /* 플렉스박스 레이아웃 */
+  justify-content: space-between; /* 양 끝 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  margin-bottom: 1rem; /* 하단 마진 */
 }
 
 /* 타임라인 제목 */
 .timeline-header h3 {
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    font-size: 1.3rem;  /* 폰트 크기 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  font-size: 1.3rem; /* 폰트 크기 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 타임라인 제목 앞에 프롬프트 '>' 추가 */
 .timeline-header h3::before {
-    content: '> ';  /* 터미널 프롬프트 */
-    color: var(--accent-primary);  /* 파란색 */
+  content: "> "; /* 터미널 프롬프트 */
+  color: var(--accent-primary); /* 파란색 */
 }
 
 /* 타임라인 기간 */
 .timeline-period {
-    color: var(--text-muted);  /* 흐린 텍스트 색상 */
-    font-size: 0.9rem;  /* 작은 폰트 크기 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--text-muted); /* 흐린 텍스트 색상 */
+  font-size: 0.9rem; /* 작은 폰트 크기 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 타임라인 직책 */
 .timeline-position {
-    color: var(--text-primary);  /* 주요 텍스트 색상 */
-    font-weight: 600;  /* 중간 굵기 */
-    margin-bottom: 1rem;  /* 하단 마진 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--text-primary); /* 주요 텍스트 색상 */
+  font-weight: 600; /* 중간 굵기 */
+  margin-bottom: 1rem; /* 하단 마진 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 타임라인 설명 리스트 */
 .timeline-description ul {
-    list-style: none;  /* 리스트 스타일 제거 */
-    margin-bottom: 1rem;  /* 하단 마진 */
+  list-style: none; /* 리스트 스타일 제거 */
+  margin-bottom: 1rem; /* 하단 마진 */
 }
 
 /* 타임라인 설명 항목 */
 .timeline-description li {
-    padding: 0.5rem 0;  /* 상하 패딩 */
-    border-bottom: 1px solid var(--border-color);  /* 하단 테두리 */
-    position: relative;  /* 상대 위치 */
-    padding-left: 1.5rem;  /* 왼쪽 패딩 */
-    color: var(--text-secondary);  /* 보조 텍스트 색상 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  padding: 0.5rem 0; /* 상하 패딩 */
+  border-bottom: 1px solid var(--border-color); /* 하단 테두리 */
+  position: relative; /* 상대 위치 */
+  padding-left: 1.5rem; /* 왼쪽 패딩 */
+  color: var(--text-secondary); /* 보조 텍스트 색상 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 타임라인 설명 항목 앞에 화살표 추가 */
 .timeline-description li::before {
-    content: '→';  /* 오른쪽 화살표 */
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    position: absolute;  /* 절대 위치 */
-    left: 0;  /* 왼쪽에 고정 */
-    font-weight: bold;
+  content: "→"; /* 오른쪽 화살표 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  position: absolute; /* 절대 위치 */
+  left: 0; /* 왼쪽에 고정 */
+  font-weight: bold;
 }
 
 /* 기술 스택 컨테이너 */
 .tech-stack {
-    display: flex;  /* 플렉스박스 레이아웃 */
-    flex-wrap: wrap;  /* 줄바꿈 허용 */
-    gap: 0.5rem;  /* 태그 간격 */
+  display: flex; /* 플렉스박스 레이아웃 */
+  flex-wrap: wrap; /* 줄바꿈 허용 */
+  gap: 0.5rem; /* 태그 간격 */
 }
 
 /* 기술 태그 */
 .tech-tag {
-    background: var(--bg-tertiary);  /* 3차 배경색 */
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    padding: 0.25rem 0.75rem;  /* 내부 여백 */
-    border-radius: 4px;  /* 모서리 둥글게 */
-    font-size: 0.8rem;  /* 작은 폰트 크기 */
-    font-weight: 500;  /* 중간 굵기 */
-    border: 1px solid var(--border-color);  /* 테두리 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
-    transition: all 0.3s ease;  /* 부드러운 전환 효과 */
+  background: var(--bg-tertiary); /* 3차 배경색 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  padding: 0.25rem 0.75rem; /* 내부 여백 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  font-size: 0.8rem; /* 작은 폰트 크기 */
+  font-weight: 500; /* 중간 굵기 */
+  border: 1px solid var(--border-color); /* 테두리 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
 }
 
 /* 기술 태그 호버 효과 */
 .tech-tag:hover {
-    background: var(--terminal-green);  /* 녹색 배경 */
-    color: var(--bg-primary);  /* 어두운 텍스트 */
-    transform: translateY(-2px);  /* 위로 2px 이동 */
+  background: var(--terminal-green); /* 녹색 배경 */
+  color: var(--bg-primary); /* 어두운 텍스트 */
+  transform: translateY(-2px); /* 위로 2px 이동 */
 }
 
 /* Skills Section - 스킬 섹션 */
 .skills {
-    background: var(--bg-secondary);  /* 보조 배경색 */
+  background: var(--bg-secondary); /* 보조 배경색 */
 }
 
 /* 스킬 콘텐츠 그리드 */
 .skills-content {
-    display: grid;  /* 그리드 레이아웃 */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* 반응형 그리드 */
-    gap: 3rem;  /* 그리드 간격 */
+  display: grid; /* 그리드 레이아웃 */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* 반응형 그리드 */
+  gap: 3rem; /* 그리드 간격 */
 }
 
 /* 스킬 카테고리 제목 */
 .skills-category h3 {
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    margin-bottom: 1.5rem;  /* 하단 마진 */
-    font-size: 1.3rem;  /* 폰트 크기 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  margin-bottom: 1.5rem; /* 하단 마진 */
+  font-size: 1.3rem; /* 폰트 크기 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 스킬 카테고리 제목 앞에 프롬프트 '>' 추가 */
 .skills-category h3::before {
-    content: '> ';  /* 터미널 프롬프트 */
-    color: var(--accent-primary);  /* 파란색 */
+  content: "> "; /* 터미널 프롬프트 */
+  color: var(--accent-primary); /* 파란색 */
 }
 
 /* 스킬 그리드 */
 .skills-grid {
-    display: flex;  /* 플렉스박스 레이아웃 */
-    flex-direction: column;  /* 세로 방향 정렬 */
-    gap: 1rem;  /* 스킬 아이템 간격 */
+  display: flex; /* 플렉스박스 레이아웃 */
+  flex-direction: column; /* 세로 방향 정렬 */
+  gap: 1rem; /* 스킬 아이템 간격 */
 }
 
 /* 스킬 아이템 */
 .skill-item {
-    background: var(--bg-card);  /* 카드 배경색 */
-    padding: 1rem;  /* 내부 여백 */
-    border-radius: 8px;  /* 모서리 둥글게 */
-    transition: all 0.3s ease;  /* 부드러운 전환 효과 */
-    border: 1px solid var(--border-color);  /* 테두리 */
+  background: var(--bg-card); /* 카드 배경색 */
+  padding: 1rem; /* 내부 여백 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  border: 1px solid var(--border-color); /* 테두리 */
 }
 
 /* 스킬 아이템 호버 효과 */
 .skill-item:hover {
-    transform: translateX(5px);  /* 오른쪽으로 5px 이동 */
-    border-color: var(--terminal-green);  /* 녹색 테두리 */
-    box-shadow: 0 5px 15px var(--shadow-color);  /* 그림자 효과 */
+  transform: translateX(5px); /* 오른쪽으로 5px 이동 */
+  border-color: var(--terminal-green); /* 녹색 테두리 */
+  box-shadow: 0 5px 15px var(--shadow-color); /* 그림자 효과 */
 }
 
 /* 스킬 이름 */
 .skill-name {
-    font-weight: 600;  /* 중간 굵기 */
-    margin-bottom: 0.5rem;  /* 하단 마진 */
-    color: var(--text-primary);  /* 주요 텍스트 색상 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  font-weight: 600; /* 중간 굵기 */
+  margin-bottom: 0.5rem; /* 하단 마진 */
+  color: var(--text-primary); /* 주요 텍스트 색상 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 스킬 진행률 바 */
 .skill-bar {
-    height: 8px;  /* 바 높이 */
-    background: var(--bg-tertiary);  /* 3차 배경색 */
-    border-radius: 4px;  /* 모서리 둥글게 */
-    overflow: hidden;  /* 넘치는 내용 숨김 */
-    border: 1px solid var(--border-color);  /* 테두리 */
+  height: 8px; /* 바 높이 */
+  background: var(--bg-tertiary); /* 3차 배경색 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  overflow: hidden; /* 넘치는 내용 숨김 */
+  border: 1px solid var(--border-color); /* 테두리 */
 }
 
 /* 스킬 진행률 */
 .skill-progress {
-    height: 100%;  /* 전체 높이 */
-    background: linear-gradient(90deg, var(--terminal-green), var(--accent-primary));  /* 그라데이션 배경 */
-    border-radius: 4px;  /* 모서리 둥글게 */
-    transition: width 1s ease;  /* 너비 변화 애니메이션 */
-    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);  /* 녹색 글로우 효과 */
+  height: 100%; /* 전체 높이 */
+  background: linear-gradient(
+    90deg,
+    var(--terminal-green),
+    var(--accent-primary)
+  ); /* 그라데이션 배경 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  transition: width 1s ease; /* 너비 변화 애니메이션 */
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.3); /* 녹색 글로우 효과 */
 }
 
 /* Projects Section - 프로젝트 섹션 */
 .projects {
-    background: var(--bg-primary);  /* 메인 배경색 */
+  background: var(--bg-primary); /* 메인 배경색 */
 }
 
 /* 프로젝트 그리드 */
 .projects-grid {
-    display: grid;  /* 그리드 레이아웃 */
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  /* 반응형 그리드 */
-    gap: 2rem;  /* 그리드 간격 */
+  display: grid; /* 그리드 레이아웃 */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(350px, 1fr)
+  ); /* 반응형 그리드 */
+  gap: 2rem; /* 그리드 간격 */
 }
 
 /* 프로젝트 카드 */
 .project-card {
-    background: var(--bg-card);  /* 카드 배경색 */
-    border-radius: 8px;  /* 모서리 둥글게 */
-    padding: 2rem;  /* 내부 여백 */
-    box-shadow: 0 5px 15px var(--shadow-color);  /* 그림자 효과 */
-    transition: all 0.3s ease;  /* 부드러운 전환 효과 */
-    border: 1px solid var(--border-color);  /* 테두리 */
-    position: relative;  /* 상대 위치 */
-    overflow: hidden;  /* 넘치는 내용 숨김 */
+  background: var(--bg-card); /* 카드 배경색 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  padding: 2rem; /* 내부 여백 */
+  box-shadow: 0 5px 15px var(--shadow-color); /* 그림자 효과 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  border: 1px solid var(--border-color); /* 테두리 */
+  position: relative; /* 상대 위치 */
+  overflow: hidden; /* 넘치는 내용 숨김 */
 }
 
 /* 프로젝트 카드 상단 애니메이션 바 */
 .project-card::before {
-    content: '';
-    position: absolute;  /* 절대 위치 */
-    top: 0;  /* 상단에 고정 */
-    left: 0;  /* 좌측에 고정 */
-    right: 0;  /* 우측에 고정 */
-    height: 3px;  /* 높이 3px */
-    background: linear-gradient(90deg, var(--terminal-green), var(--accent-primary));  /* 그라데이션 배경 */
-    transform: scaleX(0);  /* 초기 상태: 가로로 0 */
-    transition: transform 0.3s ease;  /* 부드러운 변환 효과 */
+  content: "";
+  position: absolute; /* 절대 위치 */
+  top: 0; /* 상단에 고정 */
+  left: 0; /* 좌측에 고정 */
+  right: 0; /* 우측에 고정 */
+  height: 3px; /* 높이 3px */
+  background: linear-gradient(
+    90deg,
+    var(--terminal-green),
+    var(--accent-primary)
+  ); /* 그라데이션 배경 */
+  transform: scaleX(0); /* 초기 상태: 가로로 0 */
+  transition: transform 0.3s ease; /* 부드러운 변환 효과 */
 }
 
 /* 프로젝트 카드 호버 효과 */
 .project-card:hover {
-    transform: translateY(-5px);  /* 위로 5px 이동 */
-    box-shadow: 0 10px 25px var(--shadow-color);  /* 그림자 강화 */
-    border-color: var(--terminal-green);  /* 녹색 테두리 */
+  transform: translateY(-5px); /* 위로 5px 이동 */
+  box-shadow: 0 10px 25px var(--shadow-color); /* 그림자 강화 */
+  border-color: var(--terminal-green); /* 녹색 테두리 */
 }
 
 /* 호버 시 상단 바가 나타남 */
 .project-card:hover::before {
-    transform: scaleX(1);  /* 가로로 100% 확장 */
+  transform: scaleX(1); /* 가로로 100% 확장 */
 }
 
 /* 프로젝트 헤더 */
 .project-header {
-    display: flex;  /* 플렉스박스 레이아웃 */
-    justify-content: space-between;  /* 양 끝 정렬 */
-    align-items: center;  /* 세로 중앙 정렬 */
-    margin-bottom: 1rem;  /* 하단 마진 */
+  display: flex; /* 플렉스박스 레이아웃 */
+  justify-content: space-between; /* 양 끝 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  margin-bottom: 1rem; /* 하단 마진 */
 }
 
 /* 프로젝트 제목 */
 .project-header h3 {
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    font-size: 1.2rem;  /* 폰트 크기 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  font-size: 1.2rem; /* 폰트 크기 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 프로젝트 제목 앞에 프롬프트 '>' 추가 */
 .project-header h3::before {
-    content: '> ';  /* 터미널 프롬프트 */
-    color: var(--accent-primary);  /* 파란색 */
+  content: "> "; /* 터미널 프롬프트 */
+  color: var(--accent-primary); /* 파란색 */
 }
 
 /* 프로젝트 기간 */
 .project-period {
-    color: var(--text-muted);  /* 흐린 텍스트 색상 */
-    font-size: 0.9rem;  /* 작은 폰트 크기 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--text-muted); /* 흐린 텍스트 색상 */
+  font-size: 0.9rem; /* 작은 폰트 크기 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 프로젝트 회사 */
 .project-company {
-    color: var(--text-primary);  /* 주요 텍스트 색상 */
-    font-weight: 600;  /* 중간 굵기 */
-    margin-bottom: 1rem;  /* 하단 마진 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--text-primary); /* 주요 텍스트 색상 */
+  font-weight: 600; /* 중간 굵기 */
+  margin-bottom: 1rem; /* 하단 마진 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 프로젝트 설명 문단 */
 .project-description p {
-    color: var(--text-secondary);  /* 보조 텍스트 색상 */
-    margin-bottom: 1rem;  /* 하단 마진 */
-    line-height: 1.6;  /* 줄 간격 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--text-secondary); /* 보조 텍스트 색상 */
+  margin-bottom: 1rem; /* 하단 마진 */
+  line-height: 1.6; /* 줄 간격 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 프로젝트 설명 리스트 */
 .project-description ul {
-    list-style: none;  /* 리스트 스타일 제거 */
-    margin-bottom: 1rem;  /* 하단 마진 */
+  list-style: none; /* 리스트 스타일 제거 */
+  margin-bottom: 1rem; /* 하단 마진 */
 }
 
 /* 프로젝트 설명 항목 */
 .project-description li {
-    padding: 0.25rem 0;  /* 상하 패딩 */
-    position: relative;  /* 상대 위치 */
-    padding-left: 1.5rem;  /* 왼쪽 패딩 */
-    color: var(--text-secondary);  /* 보조 텍스트 색상 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  padding: 0.25rem 0; /* 상하 패딩 */
+  position: relative; /* 상대 위치 */
+  padding-left: 1.5rem; /* 왼쪽 패딩 */
+  color: var(--text-secondary); /* 보조 텍스트 색상 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 프로젝트 설명 항목 앞에 화살표 추가 */
 .project-description li::before {
-    content: '→';  /* 오른쪽 화살표 */
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    position: absolute;  /* 절대 위치 */
-    left: 0;  /* 왼쪽에 고정 */
+  content: "→"; /* 오른쪽 화살표 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  position: absolute; /* 절대 위치 */
+  left: 0; /* 왼쪽에 고정 */
 }
 
 /* 프로젝트 기술 스택 */
 .project-tech {
-    display: flex;  /* 플렉스박스 레이아웃 */
-    flex-wrap: wrap;  /* 줄바꿈 허용 */
-    gap: 0.5rem;  /* 태그 간격 */
+  display: flex; /* 플렉스박스 레이아웃 */
+  flex-wrap: wrap; /* 줄바꿈 허용 */
+  gap: 0.5rem; /* 태그 간격 */
 }
 
 /* 프로젝트 링크 */
 .project-links {
-    margin-top: 1rem;  /* 상단 마진 */
-    display: flex;  /* 플렉스박스 레이아웃 */
-    gap: 1rem;  /* 버튼 간격 */
+  margin-top: 1rem; /* 상단 마진 */
+  display: flex; /* 플렉스박스 레이아웃 */
+  gap: 1rem; /* 버튼 간격 */
 }
 
 /* 프로젝트 링크 버튼 */
 .project-links .btn {
-    padding: 8px 16px;  /* 내부 여백 */
-    font-size: 0.9rem;  /* 작은 폰트 크기 */
+  padding: 8px 16px; /* 내부 여백 */
+  font-size: 0.9rem; /* 작은 폰트 크기 */
 }
 
 /* Contact Section - 연락처 섹션 */
 .contact {
-    background: var(--bg-secondary);  /* 보조 배경색 */
+  background: var(--bg-secondary); /* 보조 배경색 */
 }
 
 /* 연락처 콘텐츠 그리드 */
 .contact-content {
-    display: grid;  /* 그리드 레이아웃 */
-    grid-template-columns: 1fr 2fr;  /* 1:2 비율 그리드 */
-    gap: 4rem;  /* 그리드 간격 */
+  display: grid; /* 그리드 레이아웃 */
+  grid-template-columns: 1fr 2fr; /* 1:2 비율 그리드 */
+  gap: 4rem; /* 그리드 간격 */
 }
 
 /* 연락처 정보 */
 .contact-info {
-    display: flex;  /* 플렉스박스 레이아웃 */
-    flex-direction: column;  /* 세로 방향 정렬 */
-    gap: 2rem;  /* 연락처 아이템 간격 */
+  display: flex; /* 플렉스박스 레이아웃 */
+  flex-direction: column; /* 세로 방향 정렬 */
+  gap: 2rem; /* 연락처 아이템 간격 */
 }
 
 /* 연락처 아이템 */
 .contact-item {
-    display: flex;  /* 플렉스박스 레이아웃 */
-    align-items: center;  /* 세로 중앙 정렬 */
-    gap: 1rem;  /* 아이콘과 텍스트 간격 */
-    padding: 1.5rem;  /* 내부 여백 */
-    background: var(--bg-card);  /* 카드 배경색 */
-    border-radius: 8px;  /* 모서리 둥글게 */
-    transition: all 0.3s ease;  /* 부드러운 전환 효과 */
-    border: 1px solid var(--border-color);  /* 테두리 */
+  display: flex; /* 플렉스박스 레이아웃 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 1rem; /* 아이콘과 텍스트 간격 */
+  padding: 1.5rem; /* 내부 여백 */
+  background: var(--bg-card); /* 카드 배경색 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  border: 1px solid var(--border-color); /* 테두리 */
 }
 
 /* 연락처 아이템 호버 효과 */
 .contact-item:hover {
-    transform: translateX(5px);  /* 오른쪽으로 5px 이동 */
-    border-color: var(--terminal-green);  /* 녹색 테두리 */
-    box-shadow: 0 5px 15px var(--shadow-color);  /* 그림자 효과 */
+  transform: translateX(5px); /* 오른쪽으로 5px 이동 */
+  border-color: var(--terminal-green); /* 녹색 테두리 */
+  box-shadow: 0 5px 15px var(--shadow-color); /* 그림자 효과 */
 }
 
 /* 연락처 아이콘 */
 .contact-item i {
-    font-size: 1.5rem;  /* 아이콘 크기 */
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    width: 40px;  /* 아이콘 너비 */
+  font-size: 1.5rem; /* 아이콘 크기 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  width: 40px; /* 아이콘 너비 */
 }
 
 /* 연락처 제목 */
 .contact-item h4 {
-    color: var(--text-primary);  /* 주요 텍스트 색상 */
-    margin-bottom: 0.25rem;  /* 하단 마진 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--text-primary); /* 주요 텍스트 색상 */
+  margin-bottom: 0.25rem; /* 하단 마진 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 연락처 설명 */
 .contact-item p {
-    color: var(--text-secondary);  /* 보조 텍스트 색상 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--text-secondary); /* 보조 텍스트 색상 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 연락처 메시지 제목 */
 .contact-message h3 {
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    margin-bottom: 1rem;  /* 하단 마진 */
-    font-size: 1.3rem;  /* 폰트 크기 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  margin-bottom: 1rem; /* 하단 마진 */
+  font-size: 1.3rem; /* 폰트 크기 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 연락처 메시지 제목 앞에 프롬프트 '>' 추가 */
 .contact-message h3::before {
-    content: '> ';  /* 터미널 프롬프트 */
-    color: var(--accent-primary);  /* 파란색 */
+  content: "> "; /* 터미널 프롬프트 */
+  color: var(--accent-primary); /* 파란색 */
 }
 
 /* 연락처 메시지 문단 */
 .contact-message p {
-    color: var(--text-secondary);  /* 보조 텍스트 색상 */
-    line-height: 1.8;  /* 줄 간격 */
-    margin-bottom: 1rem;  /* 하단 마진 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  color: var(--text-secondary); /* 보조 텍스트 색상 */
+  line-height: 1.8; /* 줄 간격 */
+  margin-bottom: 1rem; /* 하단 마진 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* Footer - 푸터 */
 .footer {
-    background: var(--bg-primary);  /* 메인 배경색 */
-    color: var(--text-secondary);  /* 보조 텍스트 색상 */
-    text-align: center;  /* 텍스트 중앙 정렬 */
-    padding: 2rem 0;  /* 상하 패딩 */
-    border-top: 1px solid var(--border-color);  /* 상단 테두리 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  background: var(--bg-primary); /* 메인 배경색 */
+  color: var(--text-secondary); /* 보조 텍스트 색상 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  padding: 2rem 0; /* 상하 패딩 */
+  border-top: 1px solid var(--border-color); /* 상단 테두리 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* Responsive Design - 반응형 디자인 */
-@media (max-width: 768px) {  /* 태블릿 및 모바일 */
-    /* 햄버거 메뉴 표시 */
-    .hamburger {
-        display: flex;  /* 햄버거 메뉴 보이기 */
-    }
+@media (max-width: 768px) {
+  /* 태블릿 및 모바일 */
+  /* 햄버거 메뉴 표시 */
+  .hamburger {
+    display: flex; /* 햄버거 메뉴 보이기 */
+  }
 
-    /* 모바일 네비게이션 메뉴 */
-    .nav-menu {
-        position: fixed;  /* 고정 위치 */
-        left: -100%;  /* 화면 밖으로 숨김 */
-        top: 70px;  /* 상단에서 70px */
-        flex-direction: column;  /* 세로 방향 정렬 */
-        background-color: var(--bg-secondary);  /* 보조 배경색 */
-        width: 100%;  /* 전체 너비 */
-        text-align: center;  /* 텍스트 중앙 정렬 */
-        transition: 0.3s;  /* 부드러운 전환 효과 */
-        box-shadow: 0 10px 27px var(--shadow-color);  /* 그림자 효과 */
-        padding: 2rem 0;  /* 상하 패딩 */
-        border-top: 1px solid var(--border-color);  /* 상단 테두리 */
-    }
+  /* 모바일 네비게이션 메뉴 */
+  .nav-menu {
+    position: fixed; /* 고정 위치 */
+    left: -100%; /* 화면 밖으로 숨김 */
+    top: 70px; /* 상단에서 70px */
+    flex-direction: column; /* 세로 방향 정렬 */
+    background-color: var(--bg-secondary); /* 보조 배경색 */
+    width: 100%; /* 전체 너비 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    transition: 0.3s; /* 부드러운 전환 효과 */
+    box-shadow: 0 10px 27px var(--shadow-color); /* 그림자 효과 */
+    padding: 2rem 0; /* 상하 패딩 */
+    border-top: 1px solid var(--border-color); /* 상단 테두리 */
+  }
 
-    /* 활성화된 네비게이션 메뉴 */
-    .nav-menu.active {
-        left: 0;  /* 화면에 표시 */
-    }
+  /* 활성화된 네비게이션 메뉴 */
+  .nav-menu.active {
+    left: 0; /* 화면에 표시 */
+  }
 
-    /* 히어로 컨테이너 모바일 레이아웃 */
-    .hero-container {
-        grid-template-columns: 1fr;  /* 1열 그리드 */
-        text-align: center;  /* 텍스트 중앙 정렬 */
-    }
+  /* 히어로 컨테이너 모바일 레이아웃 */
+  .hero-container {
+    grid-template-columns: 1fr; /* 1열 그리드 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+  }
 
-    /* 히어로 제목 모바일 크기 */
-    .hero-title {
-        font-size: 2rem;  /* 작은 폰트 크기 */
-    }
-    
-    /* 히어로 배경 이미지 모바일 최적화 */
-    .hero::before {
-        background-size: cover;  /* 배경 이미지 크기 조정 */
-        background-position: center top;  /* 상단 중앙 위치 */
-    }
+  /* 히어로 제목 모바일 크기 */
+  .hero-title {
+    font-size: 2rem; /* 작은 폰트 크기 */
+  }
 
-    /* 어바웃 콘텐츠 모바일 레이아웃 */
-    .about-content {
-        grid-template-columns: 1fr;  /* 1열 그리드 */
-    }
+  /* 히어로 배경 이미지 모바일 최적화 */
+  .hero::before {
+    background-size: cover; /* 배경 이미지 크기 조정 */
+    background-position: center top; /* 상단 중앙 위치 */
+  }
 
-    /* 어바웃 통계 모바일 레이아웃 */
-    .about-stats {
-        grid-template-columns: 1fr;  /* 1열 그리드 */
-    }
+  /* 어바웃 콘텐츠 모바일 레이아웃 */
+  .about-content {
+    grid-template-columns: 1fr; /* 1열 그리드 */
+  }
 
-    /* 타임라인 중앙선 모바일 위치 */
-    .timeline::before {
-        left: 20px;  /* 왼쪽에서 20px */
-    }
+  /* 어바웃 통계 모바일 레이아웃 */
+  .about-stats {
+    grid-template-columns: 1fr; /* 1열 그리드 */
+  }
 
-    /* 타임라인 아이템 모바일 레이아웃 */
-    .timeline-item:nth-child(odd) .timeline-content,
-    .timeline-item:nth-child(even) .timeline-content {
-        margin-left: 0;  /* 왼쪽 마진 제거 */
-        margin-right: 0;  /* 오른쪽 마진 제거 */
-        padding-left: 3rem;  /* 왼쪽 패딩 */
-        padding-right: 1rem;  /* 오른쪽 패딩 */
-    }
+  /* 타임라인 중앙선 모바일 위치 */
+  .timeline::before {
+    left: 20px; /* 왼쪽에서 20px */
+  }
 
-    /* 타임라인 마커 모바일 위치 */
-    .timeline-item:nth-child(odd) .timeline-content::before,
-    .timeline-item:nth-child(even) .timeline-content::before {
-        left: -40px;  /* 왼쪽에서 40px */
-    }
+  /* 타임라인 아이템 모바일 레이아웃 */
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 0; /* 왼쪽 마진 제거 */
+    margin-right: 0; /* 오른쪽 마진 제거 */
+    padding-left: 3rem; /* 왼쪽 패딩 */
+    padding-right: 1rem; /* 오른쪽 패딩 */
+  }
 
-    /* 스킬 콘텐츠 모바일 레이아웃 */
-    .skills-content {
-        grid-template-columns: 1fr;  /* 1열 그리드 */
-    }
+  /* 타임라인 마커 모바일 위치 */
+  .timeline-item:nth-child(odd) .timeline-content::before,
+  .timeline-item:nth-child(even) .timeline-content::before {
+    left: -40px; /* 왼쪽에서 40px */
+  }
 
-    /* 프로젝트 그리드 모바일 레이아웃 */
-    .projects-grid {
-        grid-template-columns: 1fr;  /* 1열 그리드 */
-    }
+  /* 스킬 콘텐츠 모바일 레이아웃 */
+  .skills-content {
+    grid-template-columns: 1fr; /* 1열 그리드 */
+  }
 
-    /* 연락처 콘텐츠 모바일 레이아웃 */
-    .contact-content {
-        grid-template-columns: 1fr;  /* 1열 그리드 */
-    }
+  /* 프로젝트 그리드 모바일 레이아웃 */
+  .projects-grid {
+    grid-template-columns: 1fr; /* 1열 그리드 */
+  }
 
-    /* 섹션 제목 모바일 크기 */
-    .section-title {
-        font-size: 2rem;  /* 작은 폰트 크기 */
-    }
+  /* 연락처 콘텐츠 모바일 레이아웃 */
+  .contact-content {
+    grid-template-columns: 1fr; /* 1열 그리드 */
+  }
+
+  /* 섹션 제목 모바일 크기 */
+  .section-title {
+    font-size: 2rem; /* 작은 폰트 크기 */
+  }
 }
 
-@media (max-width: 480px) {  /* 작은 모바일 화면 */
-    /* 히어로 버튼 모바일 레이아웃 */
-    .hero-buttons {
-        flex-direction: column;  /* 세로 방향 정렬 */
-        align-items: center;  /* 중앙 정렬 */
-    }
+@media (max-width: 480px) {
+  /* 작은 모바일 화면 */
+  /* 히어로 버튼 모바일 레이아웃 */
+  .hero-buttons {
+    flex-direction: column; /* 세로 방향 정렬 */
+    align-items: center; /* 중앙 정렬 */
+  }
 
-    /* 버튼 모바일 크기 */
-    .btn {
-        width: 200px;  /* 고정 너비 */
-        text-align: center;  /* 텍스트 중앙 정렬 */
-    }
+  /* 버튼 모바일 크기 */
+  .btn {
+    width: 200px; /* 고정 너비 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+  }
 
-    /* 타임라인 헤더 모바일 레이아웃 */
-    .timeline-header {
-        flex-direction: column;  /* 세로 방향 정렬 */
-        align-items: flex-start;  /* 왼쪽 정렬 */
-        gap: 0.5rem;  /* 요소 간격 */
-    }
+  /* 타임라인 헤더 모바일 레이아웃 */
+  .timeline-header {
+    flex-direction: column; /* 세로 방향 정렬 */
+    align-items: flex-start; /* 왼쪽 정렬 */
+    gap: 0.5rem; /* 요소 간격 */
+  }
 }
 
 /* Animation Classes */
 /* 페이드인 애니메이션 - 초기 상태 */
 .fade-in {
-    opacity: 0;  /* 투명하게 시작 */
-    transform: translateY(30px);  /* 아래쪽에서 30px 위에 위치 */
-    transition: all 0.6s ease;  /* 부드러운 전환 효과 */
+  opacity: 0; /* 투명하게 시작 */
+  transform: translateY(30px); /* 아래쪽에서 30px 위에 위치 */
+  transition: all 0.6s ease; /* 부드러운 전환 효과 */
 }
 
 /* 페이드인 애니메이션 - 보이는 상태 */
 .fade-in.visible {
-    opacity: 1;  /* 완전히 보이게 */
-    transform: translateY(0);  /* 원래 위치로 이동 */
+  opacity: 1; /* 완전히 보이게 */
+  transform: translateY(0); /* 원래 위치로 이동 */
 }
 
 /* 커스텀 스크롤바 스타일 */
 ::-webkit-scrollbar {
-    width: 8px;  /* 스크롤바 너비 */
+  width: 8px; /* 스크롤바 너비 */
 }
 
 /* 스크롤바 트랙 (배경) */
 ::-webkit-scrollbar-track {
-    background: var(--bg-secondary);  /* 보조 배경색 */
+  background: var(--bg-secondary); /* 보조 배경색 */
 }
 
 /* 스크롤바 썸 (드래그 부분) */
 ::-webkit-scrollbar-thumb {
-    background: var(--terminal-green);  /* 터미널 녹색 */
-    border-radius: 4px;  /* 모서리 둥글게 */
+  background: var(--terminal-green); /* 터미널 녹색 */
+  border-radius: 4px; /* 모서리 둥글게 */
 }
 
 /* 스크롤바 썸 호버 효과 */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-primary);  /* 파란색으로 변경 */
+  background: var(--accent-primary); /* 파란색으로 변경 */
 }
 
 /* 코드 스타일 배경 효과 */
 .code-bg {
-    position: relative;  /* 상대 위치 */
-    overflow: hidden;  /* 넘치는 내용 숨김 */
+  position: relative; /* 상대 위치 */
+  overflow: hidden; /* 넘치는 내용 숨김 */
 }
 
 /* 코드 패턴 배경 */
 .code-bg::before {
-    content: '';
-    position: absolute;  /* 절대 위치 */
-    top: 0;  /* 상단에 고정 */
-    left: 0;  /* 좌측에 고정 */
-    right: 0;  /* 우측에 고정 */
-    bottom: 0;  /* 하단에 고정 */
-    /* SVG 코드 패턴 배경 */
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="code" width="20" height="20" patternUnits="userSpaceOnUse"><text x="2" y="15" font-family="monospace" font-size="8" fill="rgba(0,123,255,0.1)">{ }</text></pattern></defs><rect width="100" height="100" fill="url(%23code)"/></svg>');
-    opacity: 0.5;  /* 반투명 */
-    pointer-events: none;  /* 마우스 이벤트 차단 */
+  content: "";
+  position: absolute; /* 절대 위치 */
+  top: 0; /* 상단에 고정 */
+  left: 0; /* 좌측에 고정 */
+  right: 0; /* 우측에 고정 */
+  bottom: 0; /* 하단에 고정 */
+  /* SVG 코드 패턴 배경 */
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="code" width="20" height="20" patternUnits="userSpaceOnUse"><text x="2" y="15" font-family="monospace" font-size="8" fill="rgba(0,123,255,0.1)">{ }</text></pattern></defs><rect width="100" height="100" fill="url(%23code)"/></svg>');
+  opacity: 0.5; /* 반투명 */
+  pointer-events: none; /* 마우스 이벤트 차단 */
 }
 
 /* 활성 네비게이션 링크 상태 */
 .nav-link.active {
-    color: var(--terminal-green) !important;  /* 터미널 녹색 강제 적용 */
-    font-weight: 600;  /* 굵은 글씨 */
-    background: var(--bg-tertiary);  /* 3차 배경색 */
+  color: var(--terminal-green) !important; /* 터미널 녹색 강제 적용 */
+  font-weight: 600; /* 굵은 글씨 */
+  background: var(--bg-tertiary); /* 3차 배경색 */
 }
 
 /* 맨 위로 가기 버튼 */
 .back-to-top {
-    position: fixed;  /* 고정 위치 */
-    bottom: 20px;  /* 하단에서 20px */
-    right: 20px;  /* 우측에서 20px */
-    width: 50px;  /* 너비 50px */
-    height: 50px;  /* 높이 50px */
-    border-radius: 4px;  /* 모서리 둥글게 */
-    background: var(--terminal-green);  /* 터미널 녹색 배경 */
-    color: var(--bg-primary);  /* 어두운 텍스트 */
-    border: 1px solid var(--terminal-green);  /* 녹색 테두리 */
-    cursor: pointer;  /* 클릭 가능한 커서 */
-    opacity: 0;  /* 초기 상태: 투명 */
-    visibility: hidden;  /* 초기 상태: 숨김 */
-    transition: all 0.3s ease;  /* 부드러운 전환 효과 */
-    z-index: 1000;  /* 다른 요소 위에 표시 */
-    font-size: 1.2rem;  /* 폰트 크기 */
-    font-family: 'JetBrains Mono', monospace;  /* 모노스페이스 폰트 */
+  position: fixed; /* 고정 위치 */
+  bottom: 20px; /* 하단에서 20px */
+  right: 20px; /* 우측에서 20px */
+  width: 50px; /* 너비 50px */
+  height: 50px; /* 높이 50px */
+  border-radius: 4px; /* 모서리 둥글게 */
+  background: var(--terminal-green); /* 터미널 녹색 배경 */
+  color: var(--bg-primary); /* 어두운 텍스트 */
+  border: 1px solid var(--terminal-green); /* 녹색 테두리 */
+  cursor: pointer; /* 클릭 가능한 커서 */
+  opacity: 0; /* 초기 상태: 투명 */
+  visibility: hidden; /* 초기 상태: 숨김 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  z-index: 1000; /* 다른 요소 위에 표시 */
+  font-size: 1.2rem; /* 폰트 크기 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
 /* 맨 위로 가기 버튼 호버 효과 */
 .back-to-top:hover {
-    background: var(--bg-primary) !important;  /* 어두운 배경 */
-    color: var(--terminal-green) !important;  /* 녹색 텍스트 */
-    transform: scale(1.1) !important;  /* 10% 확대 */
-    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3) !important;  /* 녹색 글로우 효과 */
+  background: var(--bg-primary) !important; /* 어두운 배경 */
+  color: var(--terminal-green) !important; /* 녹색 텍스트 */
+  transform: scale(1.1) !important; /* 10% 확대 */
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3) !important; /* 녹색 글로우 효과 */
 }
 
 /* Personal Projects Section - 개인 프로젝트 섹션 */
 .personal-projects {
-    background: var(--bg-secondary);  /* 보조 배경색 */
+  background: var(--bg-secondary); /* 보조 배경색 */
+}
+
+/* 개인 프로젝트 그리드 - 세로 배치 */
+.personal-projects .projects-grid {
+  grid-template-columns: 1fr; /* 1열 그리드로 세로 배치 */
 }
 
 /* 개인 프로젝트 카드 */
 .personal-card {
-    background: var(--bg-card);  /* 카드 배경색 */
-    border-radius: 8px;  /* 모서리 둥글게 */
-    padding: 2rem;  /* 내부 여백 */
-    box-shadow: 0 5px 15px var(--shadow-color);  /* 그림자 효과 */
-    transition: all 0.3s ease;  /* 부드러운 전환 효과 */
-    border-left: 4px solid var(--terminal-green);  /* 왼쪽 녹색 테두리 */
-    position: relative;  /* 상대 위치 */
-    border: 1px solid var(--border-color);  /* 테두리 */
+  background: var(--bg-card); /* 카드 배경색 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  padding: 2rem; /* 내부 여백 */
+  box-shadow: 0 5px 15px var(--shadow-color); /* 그림자 효과 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  border-left: 4px solid var(--terminal-green); /* 왼쪽 녹색 테두리 */
+  position: relative; /* 상대 위치 */
+  border: 1px solid var(--border-color); /* 테두리 */
 }
 
 /* 개인 프로젝트 카드 호버 효과 */
 .personal-card:hover {
-    transform: translateY(-5px);  /* 위로 5px 이동 */
-    box-shadow: 0 10px 25px var(--shadow-color);  /* 그림자 강화 */
-    border-color: var(--terminal-green);  /* 녹색 테두리 */
+  transform: translateY(-5px); /* 위로 5px 이동 */
+  box-shadow: 0 10px 25px var(--shadow-color); /* 그림자 강화 */
+  border-color: var(--terminal-green); /* 녹색 테두리 */
 }
 
 /* 개인 프로젝트 카드 아이콘 */
 .personal-card::before {
-    content: '⚡';  /* 번개 아이콘 */
-    position: absolute;  /* 절대 위치 */
-    top: 1rem;  /* 상단에서 1rem */
-    right: 1rem;  /* 우측에서 1rem */
-    font-size: 1.5rem;  /* 아이콘 크기 */
-    opacity: 0.7;  /* 반투명 */
-    color: var(--terminal-green);  /* 터미널 녹색 */
+  content: "⚡"; /* 번개 아이콘 */
+  position: absolute; /* 절대 위치 */
+  top: 1rem; /* 상단에서 1rem */
+  right: 1rem; /* 우측에서 1rem */
+  font-size: 1.5rem; /* 아이콘 크기 */
+  opacity: 0.7; /* 반투명 */
+  color: var(--terminal-green); /* 터미널 녹색 */
 }
 
 /* 개인 프로젝트 제목 */
 .personal-card .project-header h3 {
-    color: var(--text-primary);  /* 주요 텍스트 색상 */
-    margin-bottom: 0.5rem;  /* 하단 마진 */
+  color: var(--text-primary); /* 주요 텍스트 색상 */
+  margin-bottom: 0.5rem; /* 하단 마진 */
 }
 
 /* 개인 프로젝트 회사 */
 .personal-card .project-company {
-    color: var(--terminal-green);  /* 터미널 녹색 */
-    font-weight: 600;  /* 중간 굵기 */
-    font-size: 0.9rem;  /* 작은 폰트 크기 */
-    margin-bottom: 1rem;  /* 하단 마진 */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  font-weight: 600; /* 중간 굵기 */
+  font-size: 0.9rem; /* 작은 폰트 크기 */
+  margin-bottom: 1rem; /* 하단 마진 */
 }
 
 /* 개인 프로젝트 기술 태그 */
 .personal-card .tech-tag {
-    background: var(--bg-tertiary);  /* 3차 배경색 */
-    color: var(--terminal-yellow);  /* 터미널 노란색 */
-    border: 1px solid var(--terminal-yellow);  /* 노란색 테두리 */
+  background: var(--bg-tertiary); /* 3차 배경색 */
+  color: var(--terminal-yellow); /* 터미널 노란색 */
+  border: 1px solid var(--terminal-yellow); /* 노란색 테두리 */
 }
