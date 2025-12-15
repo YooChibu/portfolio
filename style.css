@@ -699,6 +699,8 @@ section {
   border: 1px solid var(--border-color); /* 테두리 */
   font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
   transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  position: relative; /* 상대 위치 */
+  z-index: 11; /* 이미지보다 위에 표시 (project-tech의 z-index: 10보다 높음) */
 }
 
 /* 기술 태그 호버 효과 */
@@ -925,6 +927,8 @@ section {
   display: flex; /* 플렉스박스 레이아웃 */
   flex-wrap: wrap; /* 줄바꿈 허용 */
   gap: 0.5rem; /* 태그 간격 */
+  position: relative; /* 상대 위치 */
+  z-index: 10; /* 이미지보다 위에 표시 (z-index: 1-3보다 높음) */
 }
 
 /* 프로젝트 링크 */
