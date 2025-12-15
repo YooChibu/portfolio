@@ -1236,6 +1236,11 @@ section {
   background: var(--bg-secondary); /* 보조 배경색 */
 }
 
+/* 개인 프로젝트 섹션 제목 - 다른 섹션과 동일한 색상 */
+.personal-projects .section-title {
+  color: var(--text-primary); /* 주요 텍스트 색상 (다른 섹션과 동일) */
+}
+
 /* 개인 프로젝트 그리드 - 세로 배치 */
 .personal-projects .projects-grid {
   grid-template-columns: 1fr; /* 1열 그리드로 세로 배치 */
@@ -1271,15 +1276,15 @@ section {
   color: var(--terminal-green); /* 터미널 녹색 */
 }
 
-/* 개인 프로젝트 제목 */
+/* 개인 프로젝트 제목 - Key Projects와 동일하게 녹색 */
 .personal-card .project-header h3 {
-  color: var(--text-primary); /* 주요 텍스트 색상 */
+  color: var(--terminal-green); /* 터미널 녹색 (Key Projects와 동일) */
   margin-bottom: 0.5rem; /* 하단 마진 */
 }
 
-/* 개인 프로젝트 회사 */
+/* 개인 프로젝트 회사 - Key Projects와 동일하게 일반 텍스트 색상 */
 .personal-card .project-company {
-  color: var(--terminal-green); /* 터미널 녹색 */
+  color: var(--text-primary); /* 주요 텍스트 색상 (Key Projects와 동일) */
   font-weight: 600; /* 중간 굵기 */
   font-size: 0.9rem; /* 작은 폰트 크기 */
   margin-bottom: 1rem; /* 하단 마진 */
