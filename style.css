@@ -1404,3 +1404,93 @@ section {
   color: var(--terminal-yellow); /* 터미널 노란색 */
   border: 1px solid var(--terminal-yellow); /* 노란색 테두리 */
 }
+
+/* 이미지 클릭 가능 표시 */
+.personal-card .project-image img {
+  cursor: pointer; /* 클릭 가능한 커서 */
+}
+
+/* 이미지 모달 */
+.image-modal {
+  display: none; /* 기본적으로 숨김 */
+  position: fixed; /* 고정 위치 */
+  z-index: 10000; /* 최상위 레이어 */
+  left: 0; /* 왼쪽에 고정 */
+  top: 0; /* 상단에 고정 */
+  width: 100%; /* 전체 너비 */
+  height: 100%; /* 전체 높이 */
+  background-color: rgba(0, 0, 0, 0.9); /* 반투명 검은 배경 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  animation: fadeIn 0.3s ease; /* 페이드인 애니메이션 */
+}
+
+/* 모달 페이드인 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* 투명하게 시작 */
+  }
+  to {
+    opacity: 1; /* 완전히 보이게 */
+  }
+}
+
+/* 모달 닫기 버튼 */
+.modal-close {
+  position: absolute; /* 절대 위치 */
+  top: 20px; /* 상단에서 20px */
+  right: 40px; /* 오른쪽에서 40px */
+  color: var(--terminal-green); /* 터미널 녹색 */
+  font-size: 3rem; /* 큰 폰트 크기 */
+  font-weight: bold; /* 굵은 글씨 */
+  cursor: pointer; /* 클릭 가능한 커서 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  z-index: 10001; /* 모달 이미지 위에 표시 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
+}
+
+/* 모달 닫기 버튼 호버 효과 */
+.modal-close:hover {
+  color: var(--accent-primary); /* 파란색으로 변경 */
+  transform: scale(1.2); /* 20% 확대 */
+  text-shadow: 0 0 10px rgba(88, 166, 255, 0.5); /* 파란색 글로우 효과 */
+}
+
+/* 모달 이미지 */
+.modal-content {
+  max-width: 90%; /* 최대 너비 90% */
+  max-height: 90vh; /* 최대 높이 90vh */
+  object-fit: contain; /* 비율 유지하며 맞춤 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  border: 2px solid var(--terminal-green); /* 녹색 테두리 */
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.5); /* 녹색 글로우 효과 */
+  animation: zoomIn 0.3s ease; /* 줌인 애니메이션 */
+}
+
+/* 모달 이미지 줌인 애니메이션 */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8); /* 작게 시작 */
+    opacity: 0; /* 투명하게 시작 */
+  }
+  to {
+    transform: scale(1); /* 원래 크기 */
+    opacity: 1; /* 완전히 보이게 */
+  }
+}
+
+/* 모달 캡션 */
+.modal-caption {
+  position: absolute; /* 절대 위치 */
+  bottom: 30px; /* 하단에서 30px */
+  left: 50%; /* 가로 중앙 */
+  transform: translateX(-50%); /* 정확한 중앙 정렬 */
+  color: var(--text-primary); /* 주요 텍스트 색상 */
+  font-size: 1.2rem; /* 폰트 크기 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  background: rgba(13, 17, 23, 0.8); /* 반투명 배경 */
+  padding: 0.5rem 1.5rem; /* 내부 여백 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  border: 1px solid var(--terminal-green); /* 녹색 테두리 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
+}
