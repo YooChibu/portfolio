@@ -76,6 +76,13 @@ async function convertHtmlToPdf() {
         body {
           min-width: 1800px !important;
           font-size: 16px !important;
+          padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
+        }
+        
+        html {
+          padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
         }
         
         .container {
@@ -119,6 +126,132 @@ async function convertHtmlToPdf() {
         
         .hero-image {
           flex: 0 0 auto !important;
+        }
+        
+        /* hero 섹션을 relative로 설정하여 about 섹션 배치 기준점으로 사용 */
+        #home.hero {
+          position: relative !important;
+          min-height: 100vh !important;
+          height: 100vh !important;
+          max-height: 100vh !important;
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+          display: flex !important;
+          flex-direction: column !important;
+          justify-content: center !important;
+          align-items: stretch !important;
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+          overflow: hidden !important;
+        }
+        
+        /* hero-container는 기존 넓이 유지 */
+        .hero-container {
+          max-width: 1200px !important;
+          position: relative !important;
+          z-index: 2 !important;
+          margin: 0 auto !important;
+          padding: 0 30px !important;
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+          flex-shrink: 0 !important;
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+        }
+        
+        /* About 섹션을 hero 섹션 안으로 이동 */
+        #about {
+          position: relative !important;
+          background: transparent !important;
+          background-color: transparent !important;
+          padding-top: 2rem !important;
+          padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
+          margin-top: 0 !important;
+          border-bottom: none !important;
+          page-break-before: auto !important;
+          break-before: auto !important;
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+          z-index: 3 !important;
+          width: 100% !important;
+          min-height: auto !important;
+          max-height: none !important;
+          flex-shrink: 0 !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        
+        /* About 섹션 배경 완전히 투명 */
+        .about {
+          background: transparent !important;
+          background-color: transparent !important;
+        }
+        
+        /* About 섹션의 모든 배경 요소 투명 */
+        #about {
+          background: transparent !important;
+          background-color: transparent !important;
+          background-image: none !important;
+        }
+        
+        /* About 콘텐츠 배경도 투명 */
+        .about-content {
+          background: transparent !important;
+          background-color: transparent !important;
+        }
+        
+        /* About 텍스트 영역 배경 투명 */
+        .about-text {
+          background: transparent !important;
+          background-color: transparent !important;
+        }
+        
+        /* About 통계 카드 배경은 유지하되 약간 투명하게 */
+        .about-stats .stat-item {
+          background: rgba(28, 33, 40, 0.5) !important;
+        }
+        
+        /* About 섹션 container는 다른 섹션처럼 적용 (hero-container 넓이와 독립) */
+        #about .container {
+          max-width: 1800px !important;
+          width: 100% !important;
+          margin: 0 auto !important;
+          padding: 0 30px !important;
+          position: relative !important;
+        }
+        
+        /* About Me 제목 위에 구분선 추가 - container에 추가 */
+        #about .container::before {
+          content: "" !important;
+          display: block !important;
+          position: absolute !important;
+          top: 0 !important;
+          left: 30px !important;
+          right: 30px !important;
+          width: calc(100% - 60px) !important;
+          height: 2px !important;
+          background: var(--border-color) !important;
+          z-index: 1 !important;
+        }
+        
+        /* About Me 제목 스타일 조정 */
+        #about .section-title {
+          position: relative !important;
+          margin-top: 2.5rem !important;
+          padding-top: 0.5rem !important;
+        }
+        
+        /* About Me 제목의 기존 ::before 주석 표시는 유지 */
+        #about .section-title::before {
+          content: "// " !important;
+          color: var(--text-muted) !important;
+          font-size: 1.5rem !important;
+        }
+        
+        /* About Me 제목의 ::after 그라데이션 바는 유지 */
+        #about .section-title::after {
+          display: block !important;
         }
         
         /* 프로젝트 그리드 데스크탑 스타일 - 가로 페이지에서 3열 활용 */
@@ -209,28 +342,56 @@ async function convertHtmlToPdf() {
           padding-left: 3rem !important;
         }
         
-        /* 섹션별 페이지 구분 */
-        section {
+        /* hero와 about 섹션은 한 페이지에 함께 표시 */
+        #home.hero {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+          min-height: 100vh !important;
+          height: 100vh !important;
+          max-height: 100vh !important;
+          page-break-before: auto !important;
+          break-before: auto !important;
+          page-break-after: auto !important;
+          break-after: auto !important;
+        }
+        
+        /* about 섹션은 hero와 함께 유지 */
+        #about {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+          page-break-before: auto !important;
+          break-before: auto !important;
+          page-break-after: auto !important;
+          break-after: auto !important;
+        }
+        
+        /* hero-container와 about-container는 함께 유지 */
+        .hero-container,
+        #about .container {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+        }
+        
+        /* hero 섹션 다음 섹션이 새 페이지에서 시작하도록 */
+        #experience {
+          page-break-before: always !important;
+          break-before: page !important;
+        }
+        
+        /* 섹션별 페이지 구분 - hero와 about 제외 */
+        section:not(#home):not(#about) {
           page-break-inside: avoid !important;
           break-inside: avoid !important;
           min-height: 100vh !important; /* 페이지 높이에 맞추기 (A4 가로의 높이) - 배경색이 페이지 전체를 채우도록 */
         }
         
-        /* 각 섹션이 새로운 페이지에서 시작하도록 설정 */
-        #about,
-        #experience,
+        /* 각 섹션이 새로운 페이지에서 시작하도록 설정 - hero와 about 제외 */
         #projects,
         #personal-projects,
         #skills,
         #contact {
           page-break-before: always !important;
           break-before: page !important;
-        }
-        
-        /* 첫 번째 섹션(hero)은 페이지 구분 없음 */
-        #home {
-          page-break-before: auto !important;
-          break-before: auto !important;
         }
         
         /* 섹션 제목이 있는 페이지의 상단 여백 줄이기 */
@@ -240,9 +401,52 @@ async function convertHtmlToPdf() {
           margin-bottom: 2rem !important;
         }
         
-        /* 섹션 자체의 상단 패딩 줄이기 */
-        section {
+        /* 섹션 자체의 상단 패딩 줄이기 - hero와 about는 제외 */
+        section:not(#home):not(#about) {
           padding-top: 1rem !important;
+        }
+        
+        /* hero 섹션 패딩 조정 - PDF에서는 상하 여백 동일하게 */
+        #home.hero {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
+          margin-top: 0 !important;
+        }
+        
+        /* hero 섹션 다음 섹션들이 hero 섹션 아래에 보이지 않도록 */
+        #experience {
+          position: relative !important;
+          z-index: 0 !important;
+        }
+        
+        /* hero 섹션의 배경이 최소 100vh를 채우도록 */
+        #home.hero::before,
+        #home.hero::after {
+          min-height: 100vh !important;
+          height: 100% !important;
+          position: absolute !important;
+          top: 0 !important;
+          left: 0 !important;
+          right: 0 !important;
+          bottom: 0 !important;
+        }
+        
+        /* body와 html의 배경색을 hero 섹션과 동일하게 */
+        body {
+          background-color: var(--bg-primary) !important;
+        }
+        
+        /* about 섹션 하단 여백 제거 */
+        #about .container {
+          margin-bottom: 0 !important;
+          padding-bottom: 0 !important;
+        }
+        
+        /* about-content 하단 여백 제거 */
+        .about-content {
+          margin-bottom: 0 !important;
+          padding-bottom: 0 !important;
         }
         
         /* 프로젝트 카드와 개인 프로젝트 카드가 페이지에서 분리되지 않도록 */
@@ -305,6 +509,36 @@ async function convertHtmlToPdf() {
 
     // 모든 fade-in 애니메이션이 완료되도록 추가 대기
     await page.waitForTimeout(3000);
+
+    // about 섹션을 hero 섹션 내부로 이동 (CSS 적용 후)
+    await page.waitForTimeout(500);
+    await page.evaluate(() => {
+      const heroSection = document.querySelector("#home.hero");
+      const aboutSection = document.querySelector("#about");
+
+      if (heroSection && aboutSection) {
+        // about 섹션의 부모가 hero 섹션이 아닌 경우에만 이동
+        if (aboutSection.parentElement !== heroSection) {
+          // about 섹션을 hero 섹션 내부로 이동 (hero-container 다음에 배치)
+          const heroContainer = heroSection.querySelector(".hero-container");
+          if (heroContainer) {
+            // hero-container 다음에 about 섹션 삽입
+            heroContainer.parentNode.insertBefore(
+              aboutSection,
+              heroContainer.nextSibling
+            );
+          } else {
+            heroSection.appendChild(aboutSection);
+          }
+        }
+
+        // about 섹션 스타일 강제 적용
+        aboutSection.style.background = "transparent";
+        aboutSection.style.backgroundColor = "transparent";
+        aboutSection.style.position = "relative";
+        aboutSection.style.width = "100%";
+      }
+    });
 
     // 모든 visible 클래스가 적용되었는지 확인
     await page.evaluate(() => {
@@ -391,6 +625,32 @@ async function convertHtmlToPdf() {
         body {
           padding-top: 0 !important;
           padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
+        }
+        
+        /* hero와 about 섹션 하단 여백 완전 제거 */
+        #home.hero {
+          margin-bottom: 0 !important;
+          padding-bottom: 0 !important;
+        }
+        
+        #about {
+          margin-bottom: 0 !important;
+          padding-bottom: 0 !important;
+        }
+        
+        /* about 섹션의 마지막 요소들 하단 여백 제거 */
+        #about .about-content {
+          margin-bottom: 0 !important;
+          padding-bottom: 0 !important;
+        }
+        
+        #about .about-stats {
+          margin-bottom: 0 !important;
+        }
+        
+        #about .stat-item:last-child {
+          margin-bottom: 0 !important;
         }
       `,
     });
