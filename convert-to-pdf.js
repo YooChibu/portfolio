@@ -213,6 +213,7 @@ async function convertHtmlToPdf() {
         section {
           page-break-inside: avoid !important;
           break-inside: avoid !important;
+          min-height: 100vh !important; /* 페이지 높이에 맞추기 (A4 가로의 높이) - 배경색이 페이지 전체를 채우도록 */
         }
         
         /* 각 섹션이 새로운 페이지에서 시작하도록 설정 */
