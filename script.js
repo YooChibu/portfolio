@@ -108,33 +108,61 @@ skillBars.forEach((bar) => {
   skillObserver.observe(bar);
 });
 
-// 히어로 제목을 위한 터미널 스타일 타이핑 효과
-// 텍스트를 한 글자씩 타이핑하는 애니메이션 함수
-function typeWriter(element, text, speed = 100) {
-  let i = 0; // 현재 타이핑할 문자 인덱스
-  element.innerHTML = ""; // 요소 내용 초기화
+// 히어로 제목을 위한 터미널 스타일 타이핑 효과 (두 줄 지원)
+function typeWriterHeroTitle(element, options) {
+  const { line1, line2Highlight, line2Suffix, speed = 100 } = options;
 
-  function type() {
-    if (i < text.length) {
-      const char = text.charAt(i); // 현재 문자 가져오기
-      element.innerHTML += char; // 문자를 요소에 추가
-      i++; // 다음 문자로 이동
+  const lines = [line1, line2Highlight + line2Suffix];
+  const typed = ["", ""]; // 각 줄에 타이핑된 내용
+  let lineIndex = 0; // 현재 타이핑 중인 줄 인덱스
+  let charIndex = 0; // 현재 줄에서 타이핑 중인 문자 인덱스
 
-      // 커서 효과 추가 (마지막 문자가 아닐 때만)
-      if (i < text.length) {
-        element.innerHTML += '<span class="cursor">|</span>';
+  // 현재 상태를 기준으로 DOM을 다시 그림
+  function render(isFinal = false) {
+    element.innerHTML = "";
+
+    lines.forEach((_, idx) => {
+      const span = document.createElement("span");
+      span.className = "hero-title-line";
+
+      if (isFinal && idx === 1) {
+        // 최종 상태에서는 두 번째 줄에 하이라이트 적용 (커서 제거)
+        span.innerHTML = `<span class="highlight">${line2Highlight}</span>${line2Suffix}`;
+      } else {
+        span.textContent = typed[idx];
+
+        // 현재 타이핑 중인 줄에는 커서 추가
+        if (idx === lineIndex) {
+          const cursorSpan = document.createElement("span");
+          cursorSpan.className = "cursor";
+          cursorSpan.textContent = "|";
+          span.appendChild(cursorSpan);
+        }
       }
 
-      // 지정된 속도만큼 대기 후 다음 문자 타이핑
-      setTimeout(() => {
-        // 다음 문자 추가 전 커서 제거
-        const cursor = element.querySelector(".cursor");
-        if (cursor) cursor.remove();
-        type(); // 재귀 호출로 다음 문자 타이핑
-      }, speed);
+      element.appendChild(span);
+    });
+  }
+
+  function type() {
+    // 모든 줄 타이핑이 끝났으면 최종 상태로 렌더링
+    if (lineIndex >= lines.length) {
+      render(true);
+      return;
+    }
+
+    const currentLine = lines[lineIndex];
+
+    if (charIndex < currentLine.length) {
+      typed[lineIndex] += currentLine.charAt(charIndex);
+      charIndex++;
+      render();
+      setTimeout(type, speed);
     } else {
-      // 모든 문자 타이핑 완료 - 최종 커서 추가
-      element.innerHTML += '<span class="cursor">|</span>';
+      // 현재 줄이 끝나면 다음 줄로 이동
+      lineIndex++;
+      charIndex = 0;
+      setTimeout(type, speed);
     }
   }
 
@@ -144,9 +172,18 @@ function typeWriter(element, text, speed = 100) {
 // 페이지 로드 시 타이핑 효과 초기화
 window.addEventListener("load", () => {
   const heroTitle = document.querySelector(".hero-title"); // 히어로 제목 요소 선택
-  if (heroTitle) {
-    const originalText = heroTitle.textContent; // 원본 텍스트 저장
-    typeWriter(heroTitle, originalText, 80); // 80ms 속도로 타이핑 애니메이션 시작
+  // data-typewriter="true" 인 경우에만 타이핑 효과 적용
+  if (heroTitle && heroTitle.dataset.typewriter === "true") {
+    const line1 = heroTitle.dataset.line1 || "안녕하세요,";
+    const line2Highlight = heroTitle.dataset.line2Highlight || "웹 개발자";
+    const line2Suffix = heroTitle.dataset.line2Suffix || "입니다";
+
+    typeWriterHeroTitle(heroTitle, {
+      line1,
+      line2Highlight,
+      line2Suffix,
+      speed: 80,
+    });
   }
 
   // 터미널 스타일 커서 애니메이션 추가

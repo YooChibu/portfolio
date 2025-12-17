@@ -240,8 +240,13 @@ body {
   font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
 }
 
-/* 히어로 제목 앞에 터미널 프롬프트 '>' 추가 */
-.hero-title::before {
+/* 히어로 제목 각 줄을 블록으로 표시해서 확실하게 줄바꿈 */
+.hero-title-line {
+  display: block;
+}
+
+/* 첫 번째 줄 앞에 터미널 프롬프트 '>' 추가 */
+.hero-title-line:first-child::before {
   content: "> "; /* 터미널 프롬프트 */
   color: var(--terminal-green); /* 터미널 녹색 */
   font-size: 2rem; /* 프롬프트 크기 */
