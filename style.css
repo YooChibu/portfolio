@@ -922,6 +922,59 @@ section {
   left: 0; /* 왼쪽에 고정 */
 }
 
+/* 프로젝트 상세 정보 섹션 */
+.project-details {
+  margin-top: 1.5rem; /* 상단 마진 */
+  padding-top: 1.5rem; /* 상단 패딩 */
+  border-top: 1px solid var(--border-color); /* 상단 테두리 */
+}
+
+/* 프로젝트 상세 정보 제목 */
+.project-details h4 {
+  color: var(--accent-primary); /* 주요 강조색 */
+  font-size: 1rem; /* 폰트 크기 */
+  font-weight: 600; /* 중간 굵기 */
+  margin-top: 1.5rem; /* 상단 마진 */
+  margin-bottom: 0.75rem; /* 하단 마진 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
+}
+
+/* 첫 번째 h4는 상단 마진 없음 */
+.project-details h4:first-of-type {
+  margin-top: 0; /* 상단 마진 제거 */
+}
+
+/* 프로젝트 상세 정보 리스트 */
+.project-details ul {
+  list-style: none; /* 리스트 스타일 제거 */
+  margin-bottom: 1rem; /* 하단 마진 */
+}
+
+/* 프로젝트 상세 정보 항목 */
+.project-details li {
+  padding: 0.4rem 0; /* 상하 패딩 */
+  position: relative; /* 상대 위치 */
+  padding-left: 1.5rem; /* 왼쪽 패딩 */
+  color: var(--text-secondary); /* 보조 텍스트 색상 */
+  font-family: "JetBrains Mono", monospace; /* 모노스페이스 폰트 */
+  line-height: 1.6; /* 줄 간격 */
+}
+
+/* 프로젝트 상세 정보 항목 앞에 화살표 추가 */
+.project-details li::before {
+  content: "▸"; /* 작은 삼각형 */
+  color: var(--accent-primary); /* 주요 강조색 */
+  position: absolute; /* 절대 위치 */
+  left: 0; /* 왼쪽에 고정 */
+  font-size: 0.8rem; /* 작은 크기 */
+}
+
+/* 프로젝트 상세 정보 내부 strong 태그 스타일 */
+.project-details li strong {
+  color: var(--text-primary); /* 주요 텍스트 색상 */
+  font-weight: 600; /* 중간 굵기 */
+}
+
 /* 프로젝트 기술 스택 */
 .project-tech {
   display: flex; /* 플렉스박스 레이아웃 */
@@ -1119,8 +1172,8 @@ section {
     grid-template-columns: 1fr; /* 1열 그리드 */
     }
 
-  /* 개인 프로젝트 콘텐츠 래퍼 모바일 레이아웃 */
-  .personal-card .project-content-wrapper {
+  /* 개인 프로젝트 상세 정보 래퍼 모바일 레이아웃 */
+  .personal-card .project-details-wrapper {
     flex-direction: column; /* 세로 방향 정렬 */
   }
 
@@ -1324,17 +1377,40 @@ section {
   margin-bottom: 1rem; /* 하단 마진 */
 }
 
-/* 개인 프로젝트 콘텐츠 래퍼 - 왼쪽 설명, 오른쪽 이미지 */
+/* 개인 프로젝트 콘텐츠 래퍼 - 세로 방향 (설명 위, 상세 정보 아래) */
 .personal-card .project-content-wrapper {
   display: flex; /* 플렉스박스 레이아웃 */
-  gap: 2rem; /* 요소 간 간격 */
-  align-items: flex-start; /* 상단 정렬 */
+  flex-direction: column; /* 세로 방향 정렬 */
+  gap: 1.5rem; /* 요소 간 간격 */
   margin-bottom: 1.5rem; /* 하단 마진 */
 }
 
 /* 개인 프로젝트 설명 영역 */
 .personal-card .project-content-wrapper .project-description {
+  width: 100%; /* 전체 너비 */
+}
+
+/* 개인 프로젝트 설명 문단 - 하단 마진 제거 */
+.personal-card .project-content-wrapper .project-description p {
+  margin-bottom: 0; /* 하단 마진 제거 (경계선과의 간격 조정) */
+}
+
+/* 개인 프로젝트 상세 정보 래퍼 - 가로 방향 (담당 업무 왼쪽, 이미지 오른쪽) */
+.personal-card .project-details-wrapper {
+  display: flex; /* 플렉스박스 레이아웃 */
+  gap: 2rem; /* 요소 간 간격 */
+  align-items: flex-start; /* 상단 정렬 */
+  padding-top: 1.5rem; /* 상단 패딩 */
+  border-top: 1px solid var(--border-color); /* 상단 테두리 (경계선) */
+  margin-top: 0.5rem; /* 상단 마진 */
+}
+
+/* 개인 프로젝트 상세 정보 영역 */
+.personal-card .project-details-wrapper .project-details {
   flex: 1; /* 남은 공간 차지 */
+  margin-top: 0; /* 상단 마진 제거 (wrapper에 이미 있음) */
+  padding-top: 0; /* 상단 패딩 제거 (wrapper에 이미 있음) */
+  border-top: none; /* 상단 테두리 제거 (wrapper에 이미 있음) */
 }
 
 /* 개인 프로젝트 이미지 컨테이너 - 오른쪽에 배치 */
