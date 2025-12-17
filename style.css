@@ -800,18 +800,8 @@ section {
 /* 프로젝트 그리드 */
 .projects-grid {
   display: grid; /* 그리드 레이아웃 */
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(350px, 1fr)
-  ); /* 반응형 그리드 */
+  grid-template-columns: 1fr; /* 1열 그리드로 세로 배치 */
   gap: 2rem; /* 그리드 간격 */
-}
-
-/* 데스크탑 큰 화면에서 2칸으로 고정 */
-@media (min-width: 769px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2열 그리드로 고정 */
-  }
 }
 
 /* 프로젝트 카드 */

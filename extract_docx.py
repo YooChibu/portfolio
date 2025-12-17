@@ -26,3 +26,4 @@ if __name__ == "__main__":
     result = extract_docx_text('File/유치부_이력서.docx')
     print(result)
 
+
