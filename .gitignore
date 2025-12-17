@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Personal information file (should not be committed to GitHub)
+index_ycb.html
+portfolio_ycb.pdf
+portfolio_ycb.pptx
+Images/ycb_r.jpg

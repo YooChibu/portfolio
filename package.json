@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-converter",
+  "version": "1.0.0",
+  "description": "HTML to PDF/PPTX converter for portfolio",
+  "main": "convert-to-pdf.js",
+  "scripts": {
+    "convert-pdf": "node convert-to-pdf.js",
+    "convert-pptx": "node convert-to-pptx.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "^4.0.1",
+    "puppeteer": "^21.11.0"
+  }
+}

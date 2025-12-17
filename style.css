@@ -335,7 +335,7 @@ body {
 .btn-secondary:hover {
   background: var(--accent-primary); /* 파란색 배경 */
   color: var(--bg-primary); /* 어두운 텍스트 */
-  transform: translateY(-2px);
+    transform: translateY(-2px);
   box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
 }
 
@@ -678,7 +678,7 @@ section {
   color: var(--terminal-green); /* 터미널 녹색 */
   position: absolute; /* 절대 위치 */
   left: 0; /* 왼쪽에 고정 */
-  font-weight: bold;
+    font-weight: bold;
 }
 
 /* 기술 스택 컨테이너 */
@@ -1038,12 +1038,12 @@ section {
 @media (max-width: 768px) {
   /* 태블릿 및 모바일 */
   /* 햄버거 메뉴 표시 */
-  .hamburger {
+    .hamburger {
     display: flex; /* 햄버거 메뉴 보이기 */
-  }
+    }
 
   /* 모바일 네비게이션 메뉴 */
-  .nav-menu {
+    .nav-menu {
     position: fixed; /* 고정 위치 */
     left: -100%; /* 화면 밖으로 숨김 */
     top: 70px; /* 상단에서 70px */
@@ -1055,21 +1055,21 @@ section {
     box-shadow: 0 10px 27px var(--shadow-color); /* 그림자 효과 */
     padding: 2rem 0; /* 상하 패딩 */
     border-top: 1px solid var(--border-color); /* 상단 테두리 */
-  }
+    }
 
   /* 활성화된 네비게이션 메뉴 */
-  .nav-menu.active {
+    .nav-menu.active {
     left: 0; /* 화면에 표시 */
-  }
+    }
 
   /* 히어로 컨테이너 모바일 레이아웃 */
-  .hero-container {
+    .hero-container {
     grid-template-columns: 1fr; /* 1열 그리드 */
     text-align: center; /* 텍스트 중앙 정렬 */
-  }
+    }
 
   /* 히어로 제목 모바일 크기 */
-  .hero-title {
+    .hero-title {
     font-size: 2rem; /* 작은 폰트 크기 */
   }
 
@@ -1077,47 +1077,47 @@ section {
   .hero::before {
     background-size: cover; /* 배경 이미지 크기 조정 */
     background-position: center top; /* 상단 중앙 위치 */
-  }
+    }
 
   /* 어바웃 콘텐츠 모바일 레이아웃 */
-  .about-content {
+    .about-content {
     grid-template-columns: 1fr; /* 1열 그리드 */
-  }
+    }
 
   /* 어바웃 통계 모바일 레이아웃 */
-  .about-stats {
+    .about-stats {
     grid-template-columns: 1fr; /* 1열 그리드 */
-  }
+    }
 
   /* 타임라인 중앙선 모바일 위치 */
-  .timeline::before {
+    .timeline::before {
     left: 20px; /* 왼쪽에서 20px */
-  }
+    }
 
   /* 타임라인 아이템 모바일 레이아웃 */
-  .timeline-item:nth-child(odd) .timeline-content,
-  .timeline-item:nth-child(even) .timeline-content {
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
     margin-left: 0; /* 왼쪽 마진 제거 */
     margin-right: 0; /* 오른쪽 마진 제거 */
     padding-left: 3rem; /* 왼쪽 패딩 */
     padding-right: 1rem; /* 오른쪽 패딩 */
-  }
+    }
 
   /* 타임라인 마커 모바일 위치 */
-  .timeline-item:nth-child(odd) .timeline-content::before,
-  .timeline-item:nth-child(even) .timeline-content::before {
+    .timeline-item:nth-child(odd) .timeline-content::before,
+    .timeline-item:nth-child(even) .timeline-content::before {
     left: -40px; /* 왼쪽에서 40px */
-  }
+    }
 
   /* 스킬 콘텐츠 모바일 레이아웃 */
-  .skills-content {
+    .skills-content {
     grid-template-columns: 1fr; /* 1열 그리드 */
-  }
+    }
 
   /* 프로젝트 그리드 모바일 레이아웃 */
-  .projects-grid {
+    .projects-grid {
     grid-template-columns: 1fr; /* 1열 그리드 */
-  }
+    }
 
   /* 개인 프로젝트 콘텐츠 래퍼 모바일 레이아웃 */
   .personal-card .project-content-wrapper {
@@ -1143,36 +1143,36 @@ section {
   }
 
   /* 연락처 콘텐츠 모바일 레이아웃 */
-  .contact-content {
+    .contact-content {
     grid-template-columns: 1fr; /* 1열 그리드 */
-  }
+    }
 
   /* 섹션 제목 모바일 크기 */
-  .section-title {
+    .section-title {
     font-size: 2rem; /* 작은 폰트 크기 */
-  }
+    }
 }
 
 @media (max-width: 480px) {
   /* 작은 모바일 화면 */
   /* 히어로 버튼 모바일 레이아웃 */
-  .hero-buttons {
+    .hero-buttons {
     flex-direction: column; /* 세로 방향 정렬 */
     align-items: center; /* 중앙 정렬 */
-  }
+    }
 
   /* 버튼 모바일 크기 */
-  .btn {
+    .btn {
     width: 200px; /* 고정 너비 */
     text-align: center; /* 텍스트 중앙 정렬 */
-  }
+    }
 
   /* 타임라인 헤더 모바일 레이아웃 */
-  .timeline-header {
+    .timeline-header {
     flex-direction: column; /* 세로 방향 정렬 */
     align-items: flex-start; /* 왼쪽 정렬 */
     gap: 0.5rem; /* 요소 간격 */
-  }
+    }
 }
 
 /* Animation Classes */
@@ -1225,7 +1225,7 @@ section {
   right: 0; /* 우측에 고정 */
   bottom: 0; /* 하단에 고정 */
   /* SVG 코드 패턴 배경 */
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="code" width="20" height="20" patternUnits="userSpaceOnUse"><text x="2" y="15" font-family="monospace" font-size="8" fill="rgba(0,123,255,0.1)">{ }</text></pattern></defs><rect width="100" height="100" fill="url(%23code)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="code" width="20" height="20" patternUnits="userSpaceOnUse"><text x="2" y="15" font-family="monospace" font-size="8" fill="rgba(0,123,255,0.1)">{ }</text></pattern></defs><rect width="100" height="100" fill="url(%23code)"/></svg>');
   opacity: 0.5; /* 반투명 */
   pointer-events: none; /* 마우스 이벤트 차단 */
 }
