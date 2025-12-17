@@ -232,11 +232,46 @@ async function convertHtmlToPdf() {
           break-before: auto !important;
         }
         
+        /* 섹션 제목이 있는 페이지의 상단 여백 줄이기 */
+        .section-title {
+          margin-top: 0 !important;
+          padding-top: 1rem !important;
+          margin-bottom: 2rem !important;
+        }
+        
+        /* 섹션 자체의 상단 패딩 줄이기 */
+        section {
+          padding-top: 1rem !important;
+        }
+        
         /* 프로젝트 카드와 개인 프로젝트 카드가 페이지에서 분리되지 않도록 */
         .project-card,
         .personal-card {
           page-break-inside: avoid !important;
           break-inside: avoid !important;
+        }
+        
+        /* 페이지 브레이크 후 상단 여백 추가 - 모든 프로젝트 카드와 타임라인 아이템에 기본 여백 */
+        .project-card,
+        .personal-card,
+        .timeline-item {
+          page-break-before: auto !important;
+          margin-top: 2.5rem !important;
+        }
+        
+        /* 섹션 제목 다음 요소는 여백 제거 */
+        .section-title ~ .projects-grid .project-card:first-child,
+        .section-title ~ .projects-grid .personal-card:first-child,
+        .section-title ~ .timeline .timeline-item:first-child,
+        .section-title ~ .skills-content .skills-category:first-child {
+          margin-top: 0 !important;
+        }
+        
+        /* 섹션 제목 바로 다음 요소는 여백 없음 */
+        .section-title + * .project-card:first-child,
+        .section-title + * .personal-card:first-child,
+        .section-title + * .timeline-item:first-child {
+          margin-top: 0 !important;
         }
       `,
     });
@@ -275,6 +310,58 @@ async function convertHtmlToPdf() {
       // 모든 fade-in 요소에 visible 클래스 강제 추가
       document.querySelectorAll(".fade-in").forEach((el) => {
         el.classList.add("visible");
+      });
+
+      // 모든 프로젝트 카드와 타임라인 아이템에 기본 상단 여백 추가
+      document
+        .querySelectorAll(".project-card, .personal-card, .timeline-item")
+        .forEach((element) => {
+          element.style.marginTop = "2.5rem";
+        });
+
+      // 섹션 제목이 있는 경우, 섹션 제목 다음 첫 번째 요소의 여백 제거
+      document.querySelectorAll(".section-title").forEach((sectionTitle) => {
+        const section = sectionTitle.closest("section");
+        if (section) {
+          // 섹션 제목 다음 첫 번째 프로젝트 카드나 타임라인 아이템 찾기
+          const nextCard = section.querySelector(
+            ".section-title ~ .projects-grid .project-card:first-child, " +
+              ".section-title ~ .projects-grid .personal-card:first-child, " +
+              ".section-title ~ .timeline .timeline-item:first-child"
+          );
+
+          if (nextCard) {
+            nextCard.style.marginTop = "0";
+          } else {
+            // 직접 형제 요소 확인
+            const container = section.querySelector(".container");
+            if (container) {
+              const projectsGrid = container.querySelector(".projects-grid");
+              const timeline = container.querySelector(".timeline");
+
+              if (
+                projectsGrid &&
+                sectionTitle.nextElementSibling === projectsGrid
+              ) {
+                const firstCard = projectsGrid.querySelector(
+                  ".project-card:first-child, .personal-card:first-child"
+                );
+                if (firstCard) {
+                  firstCard.style.marginTop = "0";
+                }
+              }
+
+              if (timeline && sectionTitle.nextElementSibling === timeline) {
+                const firstItem = timeline.querySelector(
+                  ".timeline-item:first-child"
+                );
+                if (firstItem) {
+                  firstItem.style.marginTop = "0";
+                }
+              }
+            }
+          }
+        }
       });
     });
 
