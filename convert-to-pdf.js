@@ -74,12 +74,12 @@ async function convertHtmlToPdf() {
         }
         
         body {
-          min-width: 1600px !important;
+          min-width: 1800px !important;
           font-size: 16px !important;
         }
         
         .container {
-          max-width: 1600px !important;
+          max-width: 1800px !important;
           width: 100% !important;
           margin: 0 auto !important;
           padding: 0 30px !important;
@@ -208,6 +208,36 @@ async function convertHtmlToPdf() {
         .timeline-item {
           padding-left: 3rem !important;
         }
+        
+        /* 섹션별 페이지 구분 */
+        section {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+        }
+        
+        /* 각 섹션이 새로운 페이지에서 시작하도록 설정 */
+        #about,
+        #experience,
+        #projects,
+        #personal-projects,
+        #skills,
+        #contact {
+          page-break-before: always !important;
+          break-before: page !important;
+        }
+        
+        /* 첫 번째 섹션(hero)은 페이지 구분 없음 */
+        #home {
+          page-break-before: auto !important;
+          break-before: auto !important;
+        }
+        
+        /* 프로젝트 카드와 개인 프로젝트 카드가 페이지에서 분리되지 않도록 */
+        .project-card,
+        .personal-card {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+        }
       `,
     });
 
@@ -285,7 +315,7 @@ async function convertHtmlToPdf() {
       printBackground: true,
       displayHeaderFooter: false, // 헤더와 푸터 표시 안 함
       preferCSSPageSize: false, // CSS 페이지 크기 무시
-      scale: 0.6, // 전체 비율 50%로 조정
+      scale: 0.56, // 전체 비율 50%로 조정
       margin: {
         top: "0mm",
         right: "0mm",
