@@ -673,6 +673,10 @@ async function convertHtmlToPdf() {
           page-break-before: always !important;
           break-before: page !important;
         }
+
+        #personal-projects {
+          padding-bottom: 9.8rem !important;
+        }
         
         /* contact 섹션은 skills와 같은 페이지에 표시 */
         #contact {
