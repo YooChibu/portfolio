@@ -211,6 +211,11 @@ async function convertHtmlToPdf() {
         .about-content {
           background: transparent !important;
           background-color: transparent !important;
+          grid-template-columns: 7fr 1fr !important;
+        }
+
+        .about-content p{
+          font-size: 1.1rem !important;
         }
         
         /* About 텍스트 영역 배경 투명 */
@@ -222,6 +227,13 @@ async function convertHtmlToPdf() {
         /* About 통계 카드 배경은 유지하되 약간 투명하게 */
         .about-stats .stat-item {
           background: rgba(28, 33, 40, 0.5) !important;
+        }
+        
+        /* About 통계 박스를 세로로 배치 */
+        .about-stats {
+          display: grid !important;
+          grid-template-columns: 1fr !important;
+          gap: 1.5rem !important;
         }
         
         /* About 섹션 container는 다른 섹션처럼 적용 (hero-container 넓이와 독립) */
