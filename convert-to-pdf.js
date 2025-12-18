@@ -126,6 +126,18 @@ async function convertHtmlToPdf() {
         
         .hero-image {
           flex: 0 0 auto !important;
+          transform: scale(0.67) !important;
+          transform-origin: center center !important;
+        }
+        
+        /* hero-image 내부 텍스트는 원래 크기로 유지 */
+        .hero-image .profile-card,
+        .hero-image .profile-info,
+        .hero-image .profile-info h3,
+        .hero-image .profile-info p,
+        .hero-image .profile-image-note {
+          transform: scale(1.1) !important;
+          transform-origin: center center !important;
         }
         
         /* hero 섹션을 relative로 설정하여 about 섹션 배치 기준점으로 사용 */
@@ -235,11 +247,11 @@ async function convertHtmlToPdf() {
           z-index: 1 !important;
         }
         
-        /* About Me 제목 스타일 조정 */
+        /* About Me 제목 스타일 조정 - 경계선과 간격 늘리기 */
         #about .section-title {
           position: relative !important;
-          margin-top: 2.5rem !important;
-          padding-top: 0.5rem !important;
+          margin-top: 0rem !important;
+          padding-top: 2.5rem !important;
         }
         
         /* About Me 제목의 기존 ::before 주석 표시는 유지 */
