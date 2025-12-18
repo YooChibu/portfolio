@@ -500,12 +500,36 @@ async function convertHtmlToPdf() {
           overflow-y: auto !important;
         }
         
+        /* 3번째 아이템 콘텐츠는 아래로 위치 조정 */
+        .timeline-item:nth-child(3) .timeline-content {
+          margin-top: calc(50% + 17%) !important;
+          margin-bottom: 0 !important;
+        }
+        
+        /* 5번째 아이템 콘텐츠는 아래로 위치 조정 */
+        .timeline-item:nth-child(5) .timeline-content {
+          margin-top: calc(50% + 20%) !important;
+          margin-bottom: 0 !important;
+        }
+        
         /* 짝수 번째 아이템 콘텐츠는 라인 아래쪽에 배치 - 상단을 라인에 맞춤 */
         .timeline-item:nth-child(even) .timeline-content {
           margin-bottom: calc(50% - 20px) !important;
           margin-top: 0 !important;
           max-height: calc(50% - 20px) !important;
           overflow-y: auto !important;
+        }
+        
+        /* 2번째 아이템 콘텐츠는 위로 위치 조정 */
+        .timeline-item:nth-child(2) .timeline-content {
+          margin-bottom: calc(50% + 20%) !important;
+          margin-top: 0 !important;
+        }
+        
+        /* 4번째 아이템 콘텐츠는 위로 위치 조정 */
+        .timeline-item:nth-child(4) .timeline-content {
+          margin-bottom: calc(50% + 40%) !important;
+          margin-top: 0 !important;
         }
         
         /* Experience 섹션 높이 조정 */
