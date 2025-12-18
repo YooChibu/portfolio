@@ -333,14 +333,208 @@ async function convertHtmlToPdf() {
           gap: 2rem !important;
         }
         
-        /* 타임라인 데스크탑 스타일 */
+        /* 타임라인 가로 레이아웃으로 변경 (PDF용) */
         .timeline {
-          padding-left: 2rem !important;
+          position: relative !important;
+          max-width: 100% !important;
+          padding: 0 0.2rem !important;
+          margin: 0 auto !important;
+          display: flex !important;
+          flex-direction: row !important;
+          justify-content: space-between !important;
+          align-items: stretch !important;
+          gap: 0.05rem !important;
+          flex: 1 !important;
+          min-height: 0 !important;
+          height: 100% !important;
         }
         
-        .timeline-item {
-          padding-left: 3rem !important;
+        /* 타임라인 중앙선을 가로로 변경 */
+        .timeline::before {
+          content: "" !important;
+          position: absolute !important;
+          top: 50% !important;
+          left: 0.2rem !important;
+          right: 0.2rem !important;
+          bottom: auto !important;
+          width: calc(100% - 0.4rem) !important;
+          height: 2px !important;
+          background: linear-gradient(
+            90deg,
+            var(--terminal-green),
+            var(--accent-primary),
+            var(--terminal-red)
+          ) !important;
+          transform: translateY(-50%) !important;
+          box-shadow: 0 0 10px rgba(0, 255, 65, 0.3) !important;
+          z-index: 1 !important;
         }
+        
+        /* 타임라인 아이템 가로 배치 */
+        .timeline-item {
+          position: relative !important;
+          flex: 1 !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          display: flex !important;
+          flex-direction: column !important;
+          min-width: 0 !important;
+          height: 100% !important;
+        }
+        
+        /* 홀수 번째 타임라인 아이템 (위쪽) */
+        .timeline-item:nth-child(odd) {
+          justify-content: flex-start !important;
+          align-items: center !important;
+          padding-top: 0 !important;
+        }
+        
+        /* 짝수 번째 타임라인 아이템 (아래쪽) */
+        .timeline-item:nth-child(even) {
+          justify-content: flex-end !important;
+          align-items: center !important;
+          padding-bottom: 0 !important;
+        }
+        
+        /* 타임라인 콘텐츠 스타일 조정 - 넓이 확장, 점 간격 줄임에 맞춰 조정 */
+        .timeline-item:nth-child(odd) .timeline-content,
+        .timeline-item:nth-child(even) .timeline-content {
+          margin-left: -25% !important;
+          margin-right: -25% !important;
+          position: relative !important;
+          font-size: 1rem !important;
+        }
+        
+        /* 첫 번째 아이템은 왼쪽이 잘리지 않도록 */
+        .timeline-item:first-child .timeline-content {
+          margin-left: -25% !important;
+          margin-right: -25% !important;
+        }
+        
+        /* 마지막 아이템은 오른쪽이 잘리지 않도록 */
+        .timeline-item:last-child .timeline-content {
+          margin-right: 0 !important;
+          margin-left: -25% !important;
+        }
+        
+        /* 세 번째 아이템(제이앤씨) 오른쪽 잘림 방지 */
+        .timeline-item:nth-child(3) .timeline-content {
+          margin-right: -5% !important;
+        }
+        
+        /* 타임라인 콘텐츠 내부 요소 크기 조정 */
+        .timeline-content h3 {
+          font-size: 1rem !important;
+        }
+        
+        .timeline-content ul {
+          font-size: 1rem !important;
+        }
+        
+        .timeline-content li {
+          padding: 0.3rem 0 !important;
+          padding-left: 1.5rem !important;
+          line-height: 1.4 !important;
+          position: relative !important;
+        }
+        
+        /* 타임라인 설명 항목 앞의 화살표가 텍스트와 겹치지 않도록 */
+        .timeline-description li::before {
+          position: absolute !important;
+          left: 0 !important;
+          color: var(--terminal-green) !important;
+        }
+        
+        /* 타임라인 아이템에 마커 추가 - 라인 정확한 위치에 배치 */
+        /* 마커는 JavaScript로 동적으로 배치됨 */
+        .timeline-item::before {
+          display: none !important;
+        }
+        
+        /* 타임라인 마커를 위한 스타일 - JavaScript로 동적 생성 */
+        .timeline-marker {
+          position: absolute !important;
+          width: 20px !important;
+          height: 20px !important;
+          background: var(--terminal-green) !important;
+          border-radius: 50% !important;
+          border: 4px solid var(--bg-primary) !important;
+          box-shadow: 0 0 10px rgba(0, 255, 65, 0.5) !important;
+          transform: translateX(-50%) translateY(-50%) !important;
+          z-index: 2 !important;
+          top: 50% !important;
+        }
+        
+        /* 타임라인 라인과 마커가 정확히 일치하도록 - 둘 다 같은 기준점 사용 */
+        .timeline::before {
+          top: 50% !important;
+          transform: translateY(-50%) !important;
+          box-sizing: border-box !important;
+        }
+        
+        /* 타임라인 아이템 높이 확인 - 라인과 마커가 같은 높이에 오도록 */
+        .timeline-item {
+          height: 100% !important;
+          position: relative !important;
+          box-sizing: border-box !important;
+        }
+        
+        /* 타임라인 컨테이너 높이 확인 */
+        .timeline {
+          box-sizing: border-box !important;
+        }
+        
+        /* 기존 타임라인 콘텐츠 마커 제거 */
+        .timeline-content::before {
+          display: none !important;
+        }
+        
+        /* 홀수 번째 아이템 콘텐츠는 라인 위쪽에 배치 - 하단을 라인에 맞춤 */
+        .timeline-item:nth-child(odd) .timeline-content {
+          margin-top: calc(50% - 20px) !important;
+          margin-bottom: 0 !important;
+          max-height: calc(50% - 20px) !important;
+          overflow-y: auto !important;
+        }
+        
+        /* 짝수 번째 아이템 콘텐츠는 라인 아래쪽에 배치 - 상단을 라인에 맞춤 */
+        .timeline-item:nth-child(even) .timeline-content {
+          margin-bottom: calc(50% - 20px) !important;
+          margin-top: 0 !important;
+          max-height: calc(50% - 20px) !important;
+          overflow-y: auto !important;
+        }
+        
+        /* Experience 섹션 높이 조정 */
+        #experience {
+          min-height: 100vh !important;
+          height: 100vh !important;
+          max-height: 100vh !important;
+          padding-top: 1rem !important;
+          padding-bottom: 1rem !important;
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+          page-break-after: always !important;
+          break-after: page !important;
+          overflow: hidden !important;
+        }
+        
+        /* Experience 섹션 container 높이 조정 */
+        #experience .container {
+          height: calc(100vh - 2rem) !important;
+          max-height: calc(100vh - 2rem) !important;
+          display: flex !important;
+          flex-direction: column !important;
+          overflow: hidden !important;
+        }
+        
+        /* Experience 섹션 제목 */
+        #experience .section-title {
+          margin-bottom: 1rem !important;
+          flex-shrink: 0 !important;
+        }
+        
+        /* 타임라인 높이 조정 - container 높이에 맞춤 (이미 위에서 설정됨) */
         
         /* hero와 about 섹션은 한 페이지에 함께 표시 */
         #home.hero {
@@ -374,6 +568,14 @@ async function convertHtmlToPdf() {
         
         /* hero 섹션 다음 섹션이 새 페이지에서 시작하도록 */
         #experience {
+          page-break-before: always !important;
+          break-before: page !important;
+          page-break-after: always !important;
+          break-after: page !important;
+        }
+        
+        /* Projects 섹션이 새 페이지에서 시작하도록 */
+        #projects {
           page-break-before: always !important;
           break-before: page !important;
         }
@@ -598,6 +800,49 @@ async function convertHtmlToPdf() {
           }
         }
       });
+
+      // 타임라인 마커를 정확한 위치에 배치 - 점 간격 줄이기
+      // 각 아이템 콘텐츠가 마커 가운데 오도록 조정
+      const timeline = document.querySelector(".timeline");
+      if (timeline) {
+        const timelineItems = timeline.querySelectorAll(".timeline-item");
+        const timelineRect = timeline.getBoundingClientRect();
+        const timelineWidth = timelineRect.width;
+        const itemCount = timelineItems.length;
+
+        // 타임라인 양쪽 끝 여백 (패딩 고려)
+        const padding = 0.2 * 16; // 0.2rem을 px로 변환 (대략)
+        const availableWidth = timelineWidth - padding * 2;
+
+        // 점 간격을 줄이기 위해 양쪽 끝에서 일정 거리만 떨어뜨리고 균등 분배
+        const startOffset = padding + availableWidth * 0.13; // 양쪽 끝에서 13% 떨어진 위치
+        const endOffset = padding + availableWidth * 0.87; // 양쪽 끝에서 87% 떨어진 위치
+        const spacing = (endOffset - startOffset) / (itemCount - 1);
+
+        timelineItems.forEach((item, index) => {
+          // 각 마커의 x 좌표 계산 (간격을 줄인 위치)
+          const centerX = startOffset + spacing * index;
+
+          // 마커 생성
+          const marker = document.createElement("div");
+          marker.className = "timeline-marker";
+          marker.style.left = centerX + "px";
+          timeline.appendChild(marker);
+
+          // 각 아이템의 콘텐츠를 마커 가운데 오도록 조정
+          const content = item.querySelector(".timeline-content");
+          if (content) {
+            const itemRect = item.getBoundingClientRect();
+            const itemCenterX =
+              itemRect.left - timelineRect.left + itemRect.width / 2;
+            const offsetX = centerX - itemCenterX;
+
+            // 콘텐츠를 마커 위치에 맞춰 이동
+            content.style.transform = `translateX(${offsetX}px)`;
+            content.style.position = "relative";
+          }
+        });
+      }
     });
 
     // 최종 대기 (모든 애니메이션 완료)
