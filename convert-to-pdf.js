@@ -303,7 +303,7 @@ async function convertHtmlToPdf() {
         .project-card:nth-child(3):not(.personal-card),
         .project-card:nth-child(4):not(.personal-card) {
           margin: 2.4rem 0 0 0 !important;          
-          padding-bottom: 0 !important;
+          padding-bottom: 2rem !important;
         }
         
         .personal-projects .projects-grid {
@@ -650,6 +650,7 @@ async function convertHtmlToPdf() {
         #projects {
           page-break-before: always !important;
           break-before: page !important;
+          padding-bottom: 3rem !important;
         }
         
         /* 섹션별 페이지 구분 - hero, about, skills, contact 제외 */
