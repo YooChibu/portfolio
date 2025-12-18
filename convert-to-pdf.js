@@ -652,20 +652,50 @@ async function convertHtmlToPdf() {
           break-before: page !important;
         }
         
-        /* 섹션별 페이지 구분 - hero와 about 제외 */
-        section:not(#home):not(#about) {
+        /* 섹션별 페이지 구분 - hero, about, skills, contact 제외 */
+        section:not(#home):not(#about):not(#skills):not(#contact) {
           page-break-inside: avoid !important;
           break-inside: avoid !important;
           min-height: 100vh !important; /* 페이지 높이에 맞추기 (A4 가로의 높이) - 배경색이 페이지 전체를 채우도록 */
         }
         
+        /* skills와 contact는 함께 한 페이지에 배치되므로 높이 제한 없음 */
+        #skills,
+        #contact {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+        }
+        
         /* 각 섹션이 새로운 페이지에서 시작하도록 설정 - hero와 about 제외 */
         #projects,
         #personal-projects,
-        #skills,
-        #contact {
+        #skills {
           page-break-before: always !important;
           break-before: page !important;
+        }
+        
+        /* contact 섹션은 skills와 같은 페이지에 표시 */
+        #contact {
+          page-break-before: auto !important;
+          break-before: auto !important;
+          min-height: auto !important;
+          height: auto !important;
+          max-height: none !important;
+          padding-bottom: 5.9rem !important;
+        }
+        
+        /* skills 섹션 높이 조정 - contact와 함께 한 페이지에 맞도록 */
+        #skills {
+          min-height: auto !important;
+          height: auto !important;
+          max-height: none !important;
+          padding-bottom: 6rem !important;
+        }
+        
+        /* skills와 contact를 함께 한 페이지에 배치 */
+        #skills + #contact {
+          margin-top: 0 !important;
+          padding-top: 1rem !important;
         }
         
         /* 섹션 제목이 있는 페이지의 상단 여백 줄이기 */
@@ -738,6 +768,15 @@ async function convertHtmlToPdf() {
           margin-top: 2.5rem !important;
         }
         
+        /* 페이지 브레이크 후 시작하는 프로젝트 카드에 상단 여백 추가 */
+        @media print {
+          .project-card,
+          .personal-card {
+            page-break-before: auto !important;
+            margin-top: 2.5rem !important;
+          }
+        }
+        
         /* 섹션 제목 다음 요소는 여백 제거 */
         .section-title ~ .projects-grid .project-card:first-child,
         .section-title ~ .projects-grid .personal-card:first-child,
@@ -751,6 +790,17 @@ async function convertHtmlToPdf() {
         .section-title + * .personal-card:first-child,
         .section-title + * .timeline-item:first-child {
           margin-top: 0 !important;
+        }
+        
+        /* Projects 섹션의 두 번째 페이지 시작 부분에 여백 추가 */
+        #projects .projects-grid {
+          padding-top: 0 !important;
+        }
+        
+        /* 페이지 브레이크 후 시작하는 프로젝트 카드에 상단 여백 강제 추가 */
+        .project-card:not(:first-child),
+        .personal-card:not(:first-child) {
+          margin-top: 2.5rem !important;
         }
       `,
     });
@@ -821,57 +871,67 @@ async function convertHtmlToPdf() {
         el.classList.add("visible");
       });
 
-      // 모든 프로젝트 카드와 타임라인 아이템에 기본 상단 여백 추가
-      document
-        .querySelectorAll(".project-card, .personal-card, .timeline-item")
-        .forEach((element) => {
-          element.style.marginTop = "2.5rem";
-        });
-
-      // 섹션 제목이 있는 경우, 섹션 제목 다음 첫 번째 요소의 여백 제거
-      document.querySelectorAll(".section-title").forEach((sectionTitle) => {
-        const section = sectionTitle.closest("section");
-        if (section) {
-          // 섹션 제목 다음 첫 번째 프로젝트 카드나 타임라인 아이템 찾기
-          const nextCard = section.querySelector(
-            ".section-title ~ .projects-grid .project-card:first-child, " +
-              ".section-title ~ .projects-grid .personal-card:first-child, " +
-              ".section-title ~ .timeline .timeline-item:first-child"
+      // Key Projects 섹션의 프로젝트 카드 처리
+      const keyProjectsSection = document.querySelector("#projects");
+      if (keyProjectsSection) {
+        const projectsGrid = keyProjectsSection.querySelector(".projects-grid");
+        if (projectsGrid) {
+          const projectCards = Array.from(
+            projectsGrid.querySelectorAll(".project-card:not(.personal-card)")
           );
 
-          if (nextCard) {
-            nextCard.style.marginTop = "0";
-          } else {
-            // 직접 형제 요소 확인
-            const container = section.querySelector(".container");
-            if (container) {
-              const projectsGrid = container.querySelector(".projects-grid");
-              const timeline = container.querySelector(".timeline");
+          // 첫 번째 카드는 섹션 제목 다음이므로 여백 없음
+          if (projectCards.length > 0) {
+            projectCards[0].style.marginTop = "0";
+            projectCards[0].style.paddingTop = "2rem";
+          }
 
-              if (
-                projectsGrid &&
-                sectionTitle.nextElementSibling === projectsGrid
-              ) {
-                const firstCard = projectsGrid.querySelector(
-                  ".project-card:first-child, .personal-card:first-child"
-                );
-                if (firstCard) {
-                  firstCard.style.marginTop = "0";
-                }
-              }
-
-              if (timeline && sectionTitle.nextElementSibling === timeline) {
-                const firstItem = timeline.querySelector(
-                  ".timeline-item:first-child"
-                );
-                if (firstItem) {
-                  firstItem.style.marginTop = "0";
-                }
-              }
-            }
+          // 두 번째 카드부터는 상단 여백 추가 (페이지 브레이크 후 시작할 수 있음)
+          for (let i = 1; i < projectCards.length; i++) {
+            projectCards[i].style.marginTop = "2.5rem";
+            projectCards[i].style.paddingTop = "2rem";
           }
         }
-      });
+      }
+
+      // Personal Projects 섹션의 프로젝트 카드 처리
+      const personalProjectsSection =
+        document.querySelector("#personal-projects");
+      if (personalProjectsSection) {
+        const projectsGrid =
+          personalProjectsSection.querySelector(".projects-grid");
+        if (projectsGrid) {
+          const personalCards = Array.from(
+            projectsGrid.querySelectorAll(".personal-card")
+          );
+
+          // 첫 번째 카드는 섹션 제목 다음이므로 여백 없음
+          if (personalCards.length > 0) {
+            personalCards[0].style.marginTop = "0";
+            personalCards[0].style.paddingTop = "2rem";
+          }
+
+          // 두 번째 카드부터는 상단 여백 추가
+          for (let i = 1; i < personalCards.length; i++) {
+            personalCards[i].style.marginTop = "2.5rem";
+            personalCards[i].style.paddingTop = "2rem";
+          }
+        }
+      }
+
+      // 타임라인 아이템 처리
+      const experienceTimeline = document.querySelector(".timeline");
+      if (experienceTimeline) {
+        const timelineItems = Array.from(
+          experienceTimeline.querySelectorAll(".timeline-item")
+        );
+        if (timelineItems.length > 0) {
+          timelineItems[0].style.marginTop = "0";
+          for (let i = 1; i < timelineItems.length; i++) {
+            timelineItems[i].style.marginTop = "2.5rem";
+          }
+        }
+      }
 
       // 타임라인 마커를 정확한 위치에 배치 - 점 간격 줄이기
       // 각 아이템 콘텐츠가 마커 가운데 오도록 조정
