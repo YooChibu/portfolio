@@ -417,9 +417,12 @@ async function convertHtmlToPdf() {
           margin-left: -25% !important;
         }
         
-        /* 세 번째 아이템(제이앤씨) 오른쪽 잘림 방지 */
-        .timeline-item:nth-child(3) .timeline-content {
-          margin-right: -5% !important;
+        /* 가운데 아이템들(2, 3, 4번째)은 동일한 넓이와 마진 적용 */
+        .timeline-item:nth-child(2) .timeline-content,
+        .timeline-item:nth-child(3) .timeline-content,
+        .timeline-item:nth-child(4) .timeline-content {
+          margin-left: -25% !important;
+          margin-right: -25% !important;
         }
         
         /* 타임라인 콘텐츠 내부 요소 크기 조정 */
