@@ -283,6 +283,27 @@ async function convertHtmlToPdf() {
           display: grid !important;
           grid-template-columns: repeat(2, 1fr) !important;
           gap: 1.5rem !important;
+          align-items: start !important;
+          align-content: start !important;
+        }
+        
+        /* 프로젝트 카드 상단 정렬 강제 - 모든 마진/패딩 완전 통일 */
+        .project-card:not(.personal-card) {
+          align-self: start !important;
+          margin: 0 !important;
+          padding: 2rem !important;
+          padding-top: 2rem !important;
+          vertical-align: top !important;
+          display: flex !important;
+          flex-direction: column !important;
+          position: relative !important;
+        }
+
+        /* 프로젝트 카드 상단 정렬 강제 - 모든 마진/패딩 완전 통일 */
+        .project-card:nth-child(3):not(.personal-card),
+        .project-card:nth-child(4):not(.personal-card) {
+          margin: 2.4rem 0 0 0 !important;          
+          padding-bottom: 0 !important;
         }
         
         .personal-projects .projects-grid {
