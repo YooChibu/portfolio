@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>티웨이브 시니어 백엔드 개발자 지원 - 유치부 이력서</title>
+  <style>
+    @page { size: A4; margin: 20mm; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+      font-size: 11px;
+      line-height: 1.5;
+      color: #222;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px;
+      background: #fff;
+    }
+    h1 {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0 0 6px 0;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #333;
+    }
+    .support-title {
+      font-size: 12px;
+      text-align: center;
+      color: #444;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f8f8f8;
+      font-weight: bold;
+      width: 100px;
+    }
+    .section-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 20px 0 10px 0;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #333;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 24px;
+    }
+    .info-row { display: flex; gap: 8px; margin-bottom: 4px; }
+    .info-label { font-weight: bold; min-width: 70px; }
+    .company-block {
+      margin-bottom: 16px;
+      padding: 12px;
+      border: 1px solid #ddd;
+      background: #fafafa;
+    }
+    .company-header {
+      font-weight: bold;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    .company-meta { color: #555; font-size: 10px; margin-bottom: 8px; }
+    .company-content { font-size: 11px; }
+    .company-content ul { margin: 4px 0; padding-left: 20px; }
+    .company-content li { margin-bottom: 2px; }
+    .tech-stack { font-size: 10px; color: #666; margin-top: 8px; }
+    .intro-section { margin-bottom: 16px; }
+    .intro-title { font-weight: bold; margin-bottom: 6px; }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .skill-tag {
+      background: #e8e8e8;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 10px;
+    }
+    .signature { text-align: right; margin-top: 24px; font-size: 12px; }
+    @media print {
+      body { padding: 0; }
+      .company-block { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>이력서</h1>
+  <p class="support-title">티웨이브 시니어 백엔드 개발자 지원 | 15년 결제·정산·레거시 현대화 경험으로 아임인 리빌드에 기여하고 싶습니다.</p>
+
+  <!-- 기본 정보 -->
+  <table>
+    <tr>
+      <th>이름</th>
+      <td>유치부</td>
+      <th>성별</th>
+      <td>남</td>
+    </tr>
+    <tr>
+      <th>생년</th>
+      <td>1984년 (만 41세)</td>
+      <th>휴대폰</th>
+      <td>010-9344-4047</td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>dbclqn@gmail.com</td>
+      <th>병역사항</th>
+      <td>2003.10 ~ 2005.10 육군 병장 제대 [군필]</td>
+    </tr>
+    <tr>
+      <th>주소</th>
+      <td colspan="3">경기 광주시 고산동</td>
+    </tr>
+  </table>
+
+  <!-- 학력 -->
+  <div class="section-title">학력</div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:140px">기간</th>
+        <th>학교명</th>
+        <th>전공/학위</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2012.03 ~ 2016.02 (졸업)</td>
+        <td>한국방송통신대학교 서울지역대학</td>
+        <td>컴퓨터과학과 (편입) / 학점: 73/100</td>
+      </tr>
+      <tr>
+        <td>2003.02 ~ 2008.02 (졸업)</td>
+        <td>경남도립남해대학</td>
+        <td>컴퓨터정보과 / 학점: 3.92/4.5</td>
+      </tr>
+      <tr>
+        <td>2003 (졸업)</td>
+        <td>남해정보산업고등학교</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 자격증 -->
+  <div class="section-title">자격증</div>
+  <table>
+    <thead>
+      <tr>
+        <th>자격증명</th>
+        <th>발행기관</th>
+        <th>취득일</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>정보처리산업기사</td>
+        <td>한국산업인력공단</td>
+        <td>2007.12</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 포트폴리오 -->
+  <div class="section-title">포트폴리오</div>
+  <table>
+    <tr>
+      <th>링크</th>
+      <td><a href="https://yoochibu.github.io/portfolio" target="_blank">https://yoochibu.github.io/portfolio</a></td>
+    </tr>
+  </table>
+
+  <!-- 스킬 (티웨이브 키워드 강조) -->
+  <div class="section-title">기술 스택</div>
+  <div class="skill-tags">
+    <span class="skill-tag">Java</span>
+    <span class="skill-tag">Spring Boot</span>
+    <span class="skill-tag">.NET Core (C#)</span>
+    <span class="skill-tag">ASP.NET</span>
+    <span class="skill-tag">MS-SQL</span>
+    <span class="skill-tag">REST API</span>
+    <span class="skill-tag">JWT</span>
+    <span class="skill-tag">Entity Framework Core</span>
+    <span class="skill-tag">트랜잭션 설계</span>
+    <span class="skill-tag">데이터 정합성</span>
+    <span class="skill-tag">레거시 마이그레이션</span>
+    <span class="skill-tag">DB 설계·튜닝</span>
+    <span class="skill-tag">결제·정산 시스템</span>
+    <span class="skill-tag">Git</span>
+    <span class="skill-tag">핀테크</span>
+  </div>
+
+  <!-- 경력 -->
+  <div class="section-title">경력 (총 15년 7개월)</div>
+
+  <div class="company-block">
+    <div class="company-header">페이레터</div>
+    <div class="company-meta">2022.08 ~ 2025.04 (2년 9개월) | 페이먼츠플랫폼팀 / 팀원</div>
+    <div class="company-content">
+      <p><strong>[티웨이브 관련 강조]</strong> 핀테크 Core(결제·출금·정산)·레거시 현대화·DB 설계·24/7 운영 경험</p>
+      <p>페이먼츠플랫폼팀에서 결제 서비스 웹 개발 및 운영을 담당했습니다.</p>
+      <ul>
+        <li><strong>결제 서비스 리뉴얼 및 리팩토링 (Classic ASP → .NET Core)</strong> — 20년 이상 운영된 시스템을 .NET Core로 전면 마이그레이션 주도. 프로젝트 기획·분석·아키텍처 설계·직접 구현. 비동기 처리·Connection Pooling·EF Core·JWT 인증 도입으로 안정성·유지보수성 대폭 개선.</li>
+        <li><strong>결제·정산·AML</strong> — URL 결제, 헥토펌뱅, 애플페이 개발. 자금세탁방지(AML) 가맹점 정보 갱신 자동화·위험군 식별 로직 구현.</li>
+        <li><strong>DB 설계 및 성능</strong> — 정산·통계 DB 분리 설계로 대용량 처리 성능 향상. MS-SQL 프로시저·트랜잭션·쿼리·인덱스 튜닝.</li>
+        <li><strong>24/7 결제 시스템</strong> — 모니터링 및 장애 대응, 트랜잭션·데이터 정합성 확보.</li>
+      </ul>
+      <p class="tech-stack">개발 언어: .NET Core(C#), Classic ASP, C/C++, MS-SQL, REST API, Entity Framework Core, JWT, jQuery(JavaScript)</p>
+    </div>
+  </div>
+
+  <div class="company-block">
+    <div class="company-header">핀업</div>
+    <div class="company-meta">2017.06 ~ 2022.07 (5년 2개월) | 개발본부 / 차장</div>
+    <div class="company-content">
+      <p><strong>[티웨이브 관련 강조]</strong> 핀테크 스타트업 초창기 멤버, 서비스 런칭·성장(15명→50명, 50억→200억)</p>
+      <p>투자 콘텐츠 전문 플랫폼 서비스 개발·운영. 초창기 멤버(15명)로 입사하여 서비스 런칭 및 안정화에 기여.</p>
+      <ul>
+        <li>슈퍼 스탁 K2~K7 서비스 개발 (PC·모바일·관리자 통합)</li>
+        <li>슬기로운 투자생활, 투자 아카데미·멘토링 서비스 개발</li>
+        <li>인증 흐름 구현 (Apple/Google/페이스북/네이버 SNS 연동)</li>
+        <li>서비스 리뉴얼 및 통합 개발 (PC·모바일·API 구조 일원화)</li>
+        <li>5년 이상 장기 운영·성능 최적화·안정성 확보</li>
+      </ul>
+      <p class="tech-stack">개발 언어: ASP.NET(C#), MS-SQL, REST API, jQuery(JavaScript)</p>
+    </div>
+  </div>
+
+  <div class="company-block">
+    <div class="company-header">스트롱홀드</div>
+    <div class="company-meta">2014.12 ~ 2015.10 (11개월) | 개발팀 / 과장·팀장</div>
+    <div class="company-content">
+      <p><strong>[티웨이브 관련 강조]</strong> 팀 리딩·프로젝트 관리·기술 의사결정</p>
+      <ul>
+        <li>글로벌 웹사이트 개발·유지보수, AQK 사이트 재개발 (DB 구조 개선)</li>
+        <li>소규모 팀 리딩, 프로젝트 일정·품질 관리, 개발 프로세스 개선</li>
+      </ul>
+      <p class="tech-stack">개발 언어: ASP.NET(C#), MS-SQL, jQuery(JavaScript)</p>
+    </div>
+  </div>
+
+  <div class="company-block">
+    <div class="company-header">페이레터</div>
+    <div class="company-meta">2011.07 ~ 2014.09 (3년 3개월) | 운영팀 / 대리</div>
+    <div class="company-content">
+      <p>빌링 운영팀 대리로 결제 시스템 운영·관리. AfreecaTV, Qeon, 한경TV 등 파트너사별 빌링 로직 설계, 24/7 모니터링·장애 대응, 데이터 무결성·일관성 확보.</p>
+      <p class="tech-stack">개발 언어: Classic ASP, ASP.NET, MS-SQL, jQuery(JavaScript)</p>
+    </div>
+  </div>
+
+  <div class="company-block">
+    <div class="company-header">제이앤씨(J&C)</div>
+    <div class="company-meta">2008.01 ~ 2011.06 (3년 6개월) | 웹개발팀 / 사원</div>
+    <div class="company-content">
+      <p>게임 포털·자사 홈페이지 개발. Classic ASP 기반 백오피스 설계·배포.</p>
+      <p class="tech-stack">개발 언어: Classic ASP, MS-SQL, JavaScript</p>
+    </div>
+  </div>
+
+  <!-- 경력기술서 (티웨이브 맞춤 요약) -->
+  <div class="section-title">경력기술서 (티웨이브 시니어 백엔드 포지션 관련)</div>
+
+  <div class="company-block">
+    <div class="company-header">1. 핀테크 Core·레거시 현대화: Classic ASP → .NET Core 마이그레이션</div>
+    <div class="company-content">
+      <p>20년 이상 운영된 Classic ASP 결제 시스템을 .NET Core로 전면 리팩토링. <strong>직접 설계·직접 구현</strong> 주도.</p>
+      <p><strong>담당:</strong> 마이그레이션 계획 수립, 기존 코드 전수 분석, .NET Core 아키텍처 설계, 결제 웹·API 리팩토링, JWT·EF Core·Connection Pooling 도입. 트랜잭션 일관성·데이터 정합성 확보.</p>
+      <p><strong>성과:</strong> 모니터링 감소, 유지보수성·안정성 대폭 개선.</p>
+    </div>
+  </div>
+
+  <div class="company-block">
+    <div class="company-header">2. 결제·출금·정산·AML 시스템 개발</div>
+    <div class="company-content">
+      <p>URL 결제, 헥토펌뱅, 애플페이 개발. AML 가맹점 정보 갱신 자동화·위험군 식별 로직. 정산·통계 DB 분리 설계로 대용량 처리 성능 향상. 프로시저·트랜잭션·데이터 모델링 다수 수행.</p>
+    </div>
+  </div>
+
+  <div class="company-block">
+    <div class="company-header">3. 핀테크 스타트업 성장 경험 (핀업)</div>
+    <div class="company-content">
+      <p>초창기 멤버로서 서비스 런칭·안정화. PC·모바일·API 통합 아키텍처 일원화. 5년 장기 운영·성능 최적화. 조직 15명→50명, 연매출 50억→200억 성장에 기여.</p>
+    </div>
+  </div>
+
+  <!-- 자기소개서 (티웨이브 맞춤) -->
+  <div class="section-title">자기소개서 (티웨이브·아임인 지원)</div>
+
+  <div class="intro-section">
+    <div class="intro-title">1. 티웨이브에 지원하는 이유 — 회사와 제 경험의 접점</div>
+    <p>티웨이브는 전통적인 ‘계모임’을 디지털화하여, 지인 간 신뢰에 기반한 새로운 형태의 P2P 금융을 만드는 회사로 이해했습니다. 아임인은 사람들이 함께 돈을 모으고 매달 정한 순서대로 목돈을 마련하는 서비스이고, 스테이지(계)는 앞순번의 목돈 대출부터 후순번의 재테크까지 각자의 니즈를 맞추는 구조입니다. 0.3%라는 시중 은행(0.5%)보다 낮은 연체율과, 커뮤니티·트립·커머스·B2B로의 확장은 이미 검증된 비즈니스 모델과 기술의 안정성을 보여준다고 봅니다. 매출 44억→80억→약 150억으로의 성장, 3년 연속 흑자, 누적 투자유치 129억은 그 결과라고 생각합니다.</p>
+    <p>저는 페이레터에서 <strong>결제·출금·정산·자금세탁방지(AML)</strong> 시스템을 설계·개발·운영했고, 핀업에서는 핀테크 스타트업의 초창기 멤버로 조직 15명→50명, 연매출 50억→200억 성장 과정에 참여했습니다. “한 번의 오류도 허용하기 어려운” 금융 도메인에서 <strong>트랜잭션 일관성과 데이터 정합성</strong>을 최우선으로 개발해왔고, 스타트업 성장기에 서비스를 안정적으로 지탱하는 일을 경험했습니다. 티웨이브의 성장 궤적과 제가 쌓아온 경험이 잘 맞는다고 판단해 지원했습니다.</p>
+    <p><strong>회사의 성장과 제 성장이 함께해온 경험이 있습니다.</strong> 핀업에서 초창기 15명일 때 입사해, 서비스 런칭과 안정화를 거쳐 50명 이상·연매출 200억원 규모로 성장하는 과정을 같이했습니다. 그때 배운 것은 “빠른 성장 속에서도 안정성을 지키는 것”의 균형이었고, 기술 부채가 쌓일 때 리뉴얼과 아키텍처 일원화로 함께 맞서본 경험이 있습니다. 티웨이브도 33명 규모에서 매출 150억을 넘어가며, 아임인트립·아임인 파트너스·커머스·B2B로 영역을 넓혀가고 있습니다. 저는 이다음 단계—MSA 전환, 분산 처리, 대규모 트래픽—에서 <strong>티웨이브의 성장과 함께, 제가 새로운 도전(Java/Kotlin, Kafka, Redis, DDD 등)을 배우며 성장</strong>하는 기회를 갖고 싶습니다. 함께 잘 커가는 조직에서 기여하고 성장하는 것을 중요하게 생각합니다.</p>
+  </div>
+
+  <div class="intro-section">
+    <div class="intro-title">2. Legacy → Modern 리빌드, 직접 설계·직접 구현 경험</div>
+    <p>채용공고에서 “Legacy to Modern 리빌드 주도”, “기존 모놀리식 비즈니스 로직을 DDD 기반 MSA 구조로 마이그레이션”하시는 분을 찾고 계시는 것으로 이해했습니다. 저는 20년 이상 운영된 Classic ASP 기반 결제 시스템을 <strong>.NET Core로 전면 마이그레이션</strong>한 프로젝트를 기획·분석·아키텍처 설계·구현·배포까지 <strong>직접 주도</strong>했습니다. 단순 코드 변환이 아니라 기존 비즈니스 로직 전수 분석, 새 아키텍처 설계, 비동기 처리·Connection Pooling·JWT·EF Core 도입을 직접 구현했고, 그 결과 모니터링 부담 감소와 시스템 안정성·유지보수성 개선을 이루었습니다. “설계자나 리뷰어가 아닌, 직접 설계하고 직접 코드까지 만드는” 역할을 해왔으며, 아임인 리빌드와 Legacy → Modern 전환에 이 경험을 기여하고 싶습니다.</p>
+  </div>
+
+  <div class="intro-section">
+    <div class="intro-title">3. 핀테크 도메인 — 정산·결제·원장 시스템 경험</div>
+    <p>채용공고의 “핀테크/금융 도메인의 원장(Ledger), 정산, 결제 시스템을 깊이 있게 다뤄본 경험”을 우대하신다고 했습니다. 저는 페이레터에서 <strong>결제·출금·정산</strong> 전반과 AML 시스템(가맹점 정보 갱신 자동화, 위험군 식별 로직)을 설계·구현했고, 정산·통계용 DB를 분리 설계해 대용량 데이터 처리 성능을 높였습니다. MS-SQL 프로시저·트랜잭션·데이터 모델링 다수를 수행했고, 24/7 결제 시스템 모니터링과 장애 대응을 경험했습니다. 스테이지의 순번별 입출금·정산·원금 보장 로직이 요구하는 <strong>트랜잭션 처리와 데이터 정합성</strong>에, 제가 쌓은 결제·정산 도메인 경험을 적용할 수 있다고 생각합니다.</p>
+  </div>
+
+  <div class="intro-section">
+    <div class="intro-title">4. 고가용성·성능 최적화·기술 학습 의지</div>
+    <p>“초당 수만 건의 트래픽이 몰려도 흔들리지 않도록 Kafka, Redis 등을 활용한 분산 처리”를 구현하시는 일에 관심이 있습니다. 저는 정산·통계 DB 분리 설계, 쿼리·인덱스 튜닝, 프로시저 최적화로 대용량 처리 성능을 개선한 경험이 있습니다. 현재 실무는 C#/.NET Core/MS-SQL 기반이지만, <strong>Java, Spring Boot</strong>도 보유하고 있으며 Kotlin은 아직 경험이 없습니다. 채용공고에서 “언어의 문법보다 아키텍처를 보는 눈과 문제 해결 능력이 중요하다”고 하신 점에 공감합니다. 기존의 트랜잭션 설계·API 설계·DB 설계·성능 튜닝 경험을 바탕으로 Java/Kotlin Spring Boot 기반 개발에 빠르게 적응하고, <strong>Kafka, Redis, JPA/Hibernate</strong> 등 필요 스택도 업무에 맞춰 학습·도입할 준비가 되어 있습니다.</p>
+  </div>
+
+  <div class="intro-section">
+    <div class="intro-title">5. 테스트·코드 품질·주니어와의 협업</div>
+    <p>“JUnit, Kotest 등을 활용한 테스트 작성 생활화”, “주니어 개발자들에게 Clean Code와 TDD 문화를 전파”하시는 역량을 기대하신다고 이해했습니다. 저는 스트롱홀드에서 팀장·과장으로 소규모 팀을 이끌며 프로젝트 일정·품질 관리, 개발 프로세스 개선을 경험했습니다. 실제 TDD 정착 경험은 제한적이지만, 예외 처리·에러 핸들링·로깅·모니터링 등 운영 관점의 코드 품질을 중시해왔고, 주니어에게 아키텍처와 설계 관점의 인사이트를 나누는 데 관심이 있습니다. “나이/연차 상관없이 실력적으로 뛰어나신 분”, “IC Track 경험이 있는 시니어”를 선호하신다는 점과도 맞닿아 있다고 생각합니다.</p>
+  </div>
+
+  <div class="intro-section">
+    <div class="intro-title">6. 마무리</div>
+    <p>15년간 결제·정산·레거시 현대화를 <strong>직접 설계하고 직접 구현</strong>해온 백엔드 개발자로서, 티웨이브의 “미래 10년을 책임질 차세대 소셜 핀테크”에 참여하고 싶습니다. 아임인 리빌드와 스테이지·결제·출금·정산 등 핵심 도메인의 안정성·확장성에 기여할 수 있도록 지원합니다. 서울 강남구 대치동 근무지도 희망 근무 지역과 일치합니다. 감사합니다.</p>
+  </div>
+
+  <div class="signature">작성자 : 유치부</div>
+
+</body>
+</html>

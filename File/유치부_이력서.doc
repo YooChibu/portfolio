@@ -1,0 +1,787 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ko" style="margin: 0;padding: 0;border: 0;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MS워드 보기</title>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        em,
+        img,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td {
+            font-family: 'Malgun Gothic';
+        }
+    </style>
+</head>
+<body style="margin: 0;padding: 0;border: 0;">
+    <!--table 1-->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td bgcolor="#ffffff" style="text-align:center;" align="center">
+                <!--[if (gte mso 9)|(IE)]>
+                <style type="text/css">
+                    .hidden {display:none;}
+                </style>
+                <table border="0" cellpadding="0" cellspacing="0"><tr><td width="602">
+                <![endif]-->
+                <!--table 2-->
+                <table border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;width:600px; max-width:600px;margin:0 auto;box-sizing:border-box" width="100%" bgcolor="#ffffff">
+                    <tr>
+                        <td style="text-align:center">
+                            <table class="table table-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%; text-align:left;">
+                                <tr style="margin: 0;padding: 0;border: 0;">
+                                    <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;"></td>
+                                    <td class="print" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;width: 133px;height: 44px;"><button type="button" style="border: 0 none;background-color: #39f;cursor: pointer;-webkit-tap-highlight-color: rgba(255, 255, 255, 0);display: block;width: 133px;height: 44px;color: #fff;">인쇄하기</button></td>
+                                </tr>
+                            </table>
+                            <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%; text-align:left;margin-bottom: 0;table-layout: fixed;">
+                                <tr style="margin: 0;padding: 0;border: 0;">
+                                    <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                <tr style="margin: 0;padding: 0;border: 0;">
+                                    <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table class="table-subject" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                <tr style="margin: 0;padding: 0;border: 0;">
+                                    <td style="margin: 0;padding: 15px 0;border: 0;color: #000;font-size: 30px;letter-spacing: -2px;line-height: 1.4;text-align: center;word-break: break-all;">웹/백엔드 개발자 입사 지원 합니다.</td>
+                                </tr>
+                            </table>
+
+                            <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                <tr style="margin: 0;padding: 0;border: 0;">
+                                    <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                                                            <table class="table table-profile-primary" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; ">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="col1 photo" rowspan="4" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 16%;text-align: center;">
+                                            <img src="https://file2.jobkorea.co.kr/Net/UserPhoto/PhotoView?FN=2024\2\18\JK_GG_viZwxg24021821260463.jpg" alt="" width="140" height="182" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;box-sizing:border-box;font-family:'Malgun Gothic';color:#000;font-size:12px;border-width:0;border-style:none;vertical-align:top;width:140px;height:182px;" />
+                                            
+                                        </td>
+                                        <td class="name" colspan="4" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;">
+                                            <span class="name" style="margin: 0;padding: 0;border: 0;font-size: 12px;color: #000;">유치부</span>
+                                            <span class="sex" style="margin: 0;padding: 0;border: 0;margin-left: 3px;font-size: 12px;color: #888;">남</span>
+                                            <span class="year" style="margin: 0;padding: 0;border: 0;margin-left: 3px;font-size: 12px;color: #888;">1984년 </span>
+                                            <span class="age" style="margin: 0;padding: 0;border: 0;margin-left: 3px;font-size: 12px;color: #888;">(만 41세)</span>
+                                        </td>
+                                    </tr>
+                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="col2" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 15%;font-weight: bold;">휴대폰</td>
+                                                <td class="col3" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 27%;">010-9344-4047</td>
+                                                                                            <td class="col4" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 15%;font-weight: bold;">Email</td>
+                                                <td class="col5" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 27%;">dbclqn@gmail.com</td>
+                                        </tr>
+                                                                                                                <tr style="margin: 0;padding: 0;border: 0;">
+                                            <td class="col2" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 15%;font-weight: bold;">주소</td>
+                                            <td class="col3" colspan="3" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 27%;">경기 광주시  고산동</td>
+                                        </tr>
+                                </table>
+                                <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                            <table class="table table-profile-summary" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; table-layout: fixed;">
+                                <tr style="margin: 0;padding: 0;border: 0;">
+                                    <!-- 학력 -->
+                                    <td class="td1" width="25%" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 25%;height: 50px;text-align: center;vertical-align: top;">
+                                        <table class="table-blank" width="100%" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; margin-bottom: 0; table-layout: fixed; text-align: center; ">
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                            </tr>
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">
+                                                    <div class="content-header" style="margin: 0;padding: 0;border: 0;margin-bottom: 7px;color: #888;">학력</div>
+                                                    <div class="content-body" style="margin: 0;padding: 0;border: 0;">
+                                                        <div class="description ellipsis" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;word-break: break-all;">한국방송통신대학교 서울지역대학</div>
+                                                        <div class="options" style="margin: 0;padding: 0;border: 0;">
+                                                            <div class="option" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;color: #39f;">대학교(4년)</div>
+                                                            <div class="option" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;color: #39f;">졸업</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <!-- 경력 -->
+                                    <td class="td2" width="25%" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 25%;height: 50px;text-align: center;vertical-align: top;">
+                                        <table class="table-blank" width="100%" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; margin-bottom: 0; table-layout: fixed; text-align: center; ">
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                            </tr>
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">
+                                                    <div class="content-header" style="margin: 0;padding: 0;border: 0;margin-bottom: 7px;color: #888;">경력</div>
+
+                                                            <div class="content-body" style="margin: 0;padding: 0;border: 0;">
+                                                                <div class="description ellipsis" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;word-break: break-all;">페이레터</div>
+                                                                <div class="options" style="margin: 0;padding: 0;border: 0;">
+                                                                    <div class="option" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;color: #39f;">퇴사</div>
+                                                                    <div class="option" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;color: #39f;">총 15년 7개월</div>
+                                                                </div>
+                                                            </div>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <!-- 인턴·대외활동 / 해외경험 -->
+                                    <td class="td3" width="25%" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 25%;height: 50px;text-align: center;vertical-align: top;">
+                                        <table class="table-blank" width="100%" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; margin-bottom: 0; table-layout: fixed; text-align: center;">
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                            </tr>
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">
+                                                    <div class="content-header" style="margin: 0;padding: 0;border: 0;margin-bottom: 7px;color: #888;">인턴·대외활동 / 해외경험</div>
+                                                    <div class="content-body" style="margin: 0;padding: 0;border: 0;">
+                                                        <div class="description ellipsis" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;word-break: break-all;"></div>
+                                                        <div class="description" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;word-break: break-all;">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <!-- 자격증 / 어학 -->
+                                    <td class="td4" width="25%" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 25%;height: 50px;text-align: center;vertical-align: top;">
+                                        <table class="table-blank" width="100%" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; margin-bottom: 0; table-layout: fixed; text-align: center;">
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                            </tr>
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">
+                                                    <div class="content-header" style="margin: 0;padding: 0;border: 0;margin-bottom: 7px;color: #888;">자격증 / 어학</div>
+                                                    <div class="content-body" style="margin: 0;padding: 0;border: 0;">
+                                                        <div class="description ellipsis" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;word-break: break-all;">정보처리산업기사</div>
+                                                        <div class="description ellipsis" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;word-break: break-all;">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--스킬 & 핵심역량-->
+                            
+                            <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                <tbody>
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--스킬 & 핵심역량-->
+                                <!--스킬-->
+                                <table class="table table-skill" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; border-spacing: 0px;">
+                                    <tbody>
+                                        <tr style="margin: 0;padding: 0;border: 0">
+                                            <td class="content" style="margin: 0; padding: 15px 30px; border: 1px solid #edeef0;box-sizing: border-box;">
+                                                    <table style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                        <tbody>
+                                                            <tr style="margin: 0; padding: 0; border: 0;">
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                                                                    .Net, ASP, Ajax, ASP.NET, C#, MSSQL, API, SQL, ASP.NET MVC, GitHub, Git, Microsoft SQL Server, HTML5, JWT, Javascript, Jquery, RestAPI, React, Spring Boot, JAVA
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">학력</th>
+                                    </tr>
+                                </table>
+                                <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-education" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                            <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                                                <p style="margin: 0;padding: 0;border: 0;">2012. 03 ~ 2016. 02</p>
+                                                <div class="state" style="margin: 0;padding: 0;border: 0;color: #3399ff;">졸업</div>
+                                            </td>
+                                            <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                                                <table class="table-education-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                                                            <span class="name" style="margin: 0;padding: 0;border: 0;font-weight: bold;">한국방송통신대학교 서울지역대학</span>
+                                                            <span class="line" style="margin: 0;padding: 0;border: 0;margin-left: 11px;color: #666;">컴퓨터과학과 (편입) </span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table class="table-education-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 5px;"></td>
+                                                    </tr>
+                                                </table>
+                                                    <table class="table-education-body" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                                                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td class="blank" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 5px;"></td>
+                                                            </tr>
+                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td class="label" style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;width: 73px;text-align: left;vertical-align: top;">학점</td>
+                                                                <td class="value" style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;text-align: left;">73 / 100</td>
+                                                            </tr>
+                                                                                                            </table>
+                                            </td>
+                                        </tr>
+                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                            <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                                                <p style="margin: 0;padding: 0;border: 0;">2003. 02 ~ 2008. 02</p>
+                                                <div class="state" style="margin: 0;padding: 0;border: 0;color: #3399ff;">졸업</div>
+                                            </td>
+                                            <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                                                <table class="table-education-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                                                            <span class="name" style="margin: 0;padding: 0;border: 0;font-weight: bold;">경남도립남해대학</span>
+                                                            <span class="line" style="margin: 0;padding: 0;border: 0;margin-left: 11px;color: #666;">컴퓨터정보  </span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table class="table-education-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 5px;"></td>
+                                                    </tr>
+                                                </table>
+                                                    <table class="table-education-body" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                                                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td class="blank" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 5px;"></td>
+                                                            </tr>
+                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td class="label" style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;width: 73px;text-align: left;vertical-align: top;">학점</td>
+                                                                <td class="value" style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;text-align: left;">3.92 / 4.5</td>
+                                                            </tr>
+                                                                                                            </table>
+                                            </td>
+                                        </tr>
+                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                            <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                                                <p style="margin: 0;padding: 0;border: 0;">2003</p>
+                                                <div class="state" style="margin: 0;padding: 0;border: 0;color: #3399ff;">졸업</div>
+                                            </td>
+                                            <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                                                <table class="table-education-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                                                            <span class="name" style="margin: 0;padding: 0;border: 0;font-weight: bold;">남해정보산업고등학교</span>
+                                                            <span class="line" style="margin: 0;padding: 0;border: 0;margin-left: 11px;color: #666;">  </span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table class="table-education-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 5px;"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                </table>
+
+                                <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed; ">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <table class="table-header table-header-career" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">경력</th>
+                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;vertical-align: bottom;text-align: left;">
+                                            <span class="total" style="margin: 0;padding: 0;border: 0;margin-left: 6px;"> 총 15년 7개월</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed; ">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-career" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                                                    <p style="margin: 0;padding: 0;border: 0;">2022. 08 ~ 2025. 04</p>
+                                                    <div class="term" style="margin: 0;padding: 0;border: 0;color: #3399ff;">2년 9개월</div>
+                                                </td>
+                                                <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                                                    <table class="table-career-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                            <td class="name" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;width: 1px;white-space: nowrap;font-weight: bold;text-align: left;">페이레터</td>
+                                                            <td class="is-private" style="margin: 0;padding: 0;border: 0;color: #222;font-size: 12px;width: 1px;padding-left: 2px;white-space: nowrap;text-align: left;"></td>
+                                                            <td class="position" style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;padding-left: 11px;text-align: left;">페이먼츠플랫폼팀  팀원</td>
+                                                        </tr>
+                                                    </table>
+                                                        <table class="table-career-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                        <table class="table-career-description" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                                                                    페이먼츠플랫폼팀에서 결제 서비스 웹 개발 및 운영을 담당했습니다. 주요 업무는 다음과 같습니다.<br/><br/>1. 결제 서비스 리뉴얼 및 리팩토링 (Classic ASP → .NET Core)<br/>- 기존 20년 이상 운영된 Classic ASP 기반 결제 시스템을 .NET Core로 전면 마이그레이션<br/>- 프로젝트 마이그레이션 계획 수립 및 진행, 기존 Classic ASP 코드 분석 및 .NET Core 아키텍처 설계<br/>- 비동기 처리와 Connection Pooling을 통한 DB 연결 효율성 향상<br/>- Entity Framework Core를 활용한 데이터베이스 접근 계층 모듈화<br/>- JWT 토큰 기반 인증 시스템 구축 및 Parameterized Query 적용으로 보안 강화<br/>- 결과: 잠재적 오류 해결로 모니터링 감소, 시스템 안정성 및 유지보수성 대폭 개선<br/><br/>2. 다양한 결제 서비스 개발<br/>- URL 결제 서비스 개발 (결제 서비스 웹, API, 관리자)<br/>- 아프리카TV 전용 헥토펌뱅 결제 시스템 개발<br/>- 애플페이 결제 시스템 개발 및 연동<br/><br/>3. 자금세탁방지(AML) 시스템 구축<br/>- 가맹점 정보 갱신 자동화 시스템 개발<br/>- 위험군 식별 로직 구현 및 규정 준수 시스템 구축<br/><br/>4. 데이터베이스 설계 및 최적화<br/>- 정산 및 통계 DB 분리 설계를 통한 대용량 데이터 처리 성능 향상<br/>- MS-SQL 기반 프로시저, 트랜잭션 관리 및 데이터 모델링 다수 수행<br/>- 쿼리 성능 최적화 및 인덱스 튜닝<br/><br/>5. 대규모 트래픽 환경에서의 서비스 운영<br/>- 24/7 결제 시스템 모니터링 및 장애 대응<br/>- 실시간 트래픽 모니터링 및 시스템 안정성 확보<br/><br/>개발 언어: .NET Core(C#), Classic ASP, C/C++, MS-SQL, jQuery(JavaScript), REST API, Entity Framework Core, JWT
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    <table class="table-career-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                            <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                    <table class="table-career-info" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                                                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <th style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;width: 73px;text-align: left;font-weight: normal;">주요직무</th>
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;text-align: left;">웹개발자</td>
+                                                            </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                                                    <p style="margin: 0;padding: 0;border: 0;">2017. 06 ~ 2022. 07</p>
+                                                    <div class="term" style="margin: 0;padding: 0;border: 0;color: #3399ff;">5년 2개월</div>
+                                                </td>
+                                                <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                                                    <table class="table-career-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                            <td class="name" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;width: 1px;white-space: nowrap;font-weight: bold;text-align: left;">핀업</td>
+                                                            <td class="is-private" style="margin: 0;padding: 0;border: 0;color: #222;font-size: 12px;width: 1px;padding-left: 2px;white-space: nowrap;text-align: left;"></td>
+                                                            <td class="position" style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;padding-left: 11px;text-align: left;">개발본부 차장 팀원</td>
+                                                        </tr>
+                                                    </table>
+                                                        <table class="table-career-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                        <table class="table-career-description" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                                                                    개발본부 투자 콘텐츠 전문 플랫폼의 서비스를 개발하고 운영했습니다. 초창기 멤버(15명)로 입사하여 서비스 런칭 및 안정화에 기여했으며, 조직 규모 50명 이상으로 확장 및 연매출 50억원에서 200억원(4배 증가) 성장에 기여했습니다.<br/><br/>1. 핀업 스탁 서비스 개발<br/>- 슈퍼 스탁 K2~K7 서비스 개발 (PC 웹, 모바일 웹, 관리자 통합)<br/>- 웹/모바일/관리자 페이지 통합 개발로 서비스 일원화<br/>- 서비스 리뉴얼 및 통합 개발 (PC, 모바일, API 구조 일원화)<br/><br/>2. 투자 콘텐츠 및 교육 플랫폼 개발<br/>- 슬기로운 투자생활 솔루션 개발<br/>- 투자 아카데미 및 멘토링 서비스 개발<br/>- 웹 기반 교육 콘텐츠 시스템, 사용자 리포트 기능, 랭킹 알고리즘 구현<br/><br/>3. 사용자 인증 및 권한 관리<br/>- 인증 흐름 구현 (Apple/Google/페이스북/네이버 SNS 회원가입 연동 포함)<br/>- 사용자 인증 및 권한 관리 시스템 개발<br/><br/>4. 장기 운영 서비스의 성능 최적화<br/>- 5년 이상 장기 운영을 통한 안정적인 서비스 제공<br/>- 성능 최적화 및 기능 고도화 주도<br/>- 관리자 페이지 UX 개선 및 멘토링 기능 운영 효율화<br/><br/>개발 언어: ASP.NET(C#), MS-SQL, jQuery(JavaScript), REST API
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    <table class="table-career-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                            <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                    <table class="table-career-info" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                                                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <th style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;width: 73px;text-align: left;font-weight: normal;">주요직무</th>
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;text-align: left;">웹개발자</td>
+                                                            </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                                                    <p style="margin: 0;padding: 0;border: 0;">2014. 12 ~ 2015. 10</p>
+                                                    <div class="term" style="margin: 0;padding: 0;border: 0;color: #3399ff;">11개월</div>
+                                                </td>
+                                                <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                                                    <table class="table-career-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                            <td class="name" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;width: 1px;white-space: nowrap;font-weight: bold;text-align: left;">스트롱홀드</td>
+                                                            <td class="is-private" style="margin: 0;padding: 0;border: 0;color: #222;font-size: 12px;width: 1px;padding-left: 2px;white-space: nowrap;text-align: left;"></td>
+                                                            <td class="position" style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;padding-left: 11px;text-align: left;">개발팀 과장 팀장</td>
+                                                        </tr>
+                                                    </table>
+                                                        <table class="table-career-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                        <table class="table-career-description" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                                                                    개발팀 과장/팀장으로 글로벌 및 자사 웹사이트 유지보수 및 재개발을 담당했습니다.<br/><br/>1. 글로벌 웹사이트 개발 및 유지보수<br/>- 폴스타 글로벌 사이트 개발 및 유지보수<br/>- 글로벌 사이트 기능 개선 및 현지화 작업<br/><br/>2. 웹사이트 재개발<br/>- AQK 사이트 재개발: DB 구조 개선, UI 개편<br/>- 자사 홈페이지 콘텐츠 관리 기능 개선<br/><br/>3. 팀 리딩 및 프로젝트 관리<br/>- 소규모 팀 리딩과 프로젝트 일정·품질 관리<br/>- 개발 프로세스 개선 및 효율성 향상<br/><br/>개발 언어: ASP.NET(C#), MS-SQL, jQuery(JavaScript)
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    <table class="table-career-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                            <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                    <table class="table-career-info" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                                                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <th style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;width: 73px;text-align: left;font-weight: normal;">주요직무</th>
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;text-align: left;">웹개발자</td>
+                                                            </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                                                    <p style="margin: 0;padding: 0;border: 0;">2011. 07 ~ 2014. 09</p>
+                                                    <div class="term" style="margin: 0;padding: 0;border: 0;color: #3399ff;">3년 3개월</div>
+                                                </td>
+                                                <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                                                    <table class="table-career-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                            <td class="name" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;width: 1px;white-space: nowrap;font-weight: bold;text-align: left;">페이레터</td>
+                                                            <td class="is-private" style="margin: 0;padding: 0;border: 0;color: #222;font-size: 12px;width: 1px;padding-left: 2px;white-space: nowrap;text-align: left;"></td>
+                                                            <td class="position" style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;padding-left: 11px;text-align: left;">운영팀 대리(주임연구원) 팀원</td>
+                                                        </tr>
+                                                    </table>
+                                                        <table class="table-career-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                        <table class="table-career-description" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                                                                    빌링 운영팀 대리로 다양한 게임과 콘텐츠 업체의 결제 시스템을 운영하고 관리했습니다.<br/><br/>1. 파트너사별 빌링 시스템 운영<br/>- AfreecaTV, Qeon, 한경TV 등 파트너사별 빌링 로직 설계 및 커스터마이징<br/>- 각 파트너사의 다양한 운영 정책에 맞는 유연한 빌링 로직 설계 및 구현<br/><br/>2. 게임 빌링 시스템 운영<br/>- 카발온라인, 징기스칸 등 게임 빌링 시스템 운영<br/>- 게임 업계 결제 시스템 운영 경험<br/><br/>3. 결제 시스템 운영 및 관리<br/>- Classic ASP + MS-SQL 기반 결제 API 운영 및 유지보수<br/>- 24/7 결제 시스템 모니터링 및 장애 대응<br/>- 파트너별 운영 정책에 따른 유연한 로직 적용 및 서비스 유지<br/><br/>4. 시스템 안정성 확보<br/>- 결제 시스템 안정성 확보 및 장애 대응<br/>- 데이터 무결성 보장 및 일관성 확보<br/><br/>개발 언어: Classic ASP, ASP.NET, MS-SQL, jQuery(JavaScript)
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    <table class="table-career-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                            <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                    <table class="table-career-info" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                                                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <th style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;width: 73px;text-align: left;font-weight: normal;">주요직무</th>
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;text-align: left;">웹개발자</td>
+                                                            </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                                                    <p style="margin: 0;padding: 0;border: 0;">2008. 01 ~ 2011. 06</p>
+                                                    <div class="term" style="margin: 0;padding: 0;border: 0;color: #3399ff;">3년 6개월</div>
+                                                </td>
+                                                <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                                                    <table class="table-career-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                            <td class="name" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;width: 1px;white-space: nowrap;font-weight: bold;text-align: left;">제이앤씨(J&amp;C)</td>
+                                                            <td class="is-private" style="margin: 0;padding: 0;border: 0;color: #222;font-size: 12px;width: 1px;padding-left: 2px;white-space: nowrap;text-align: left;"></td>
+                                                            <td class="position" style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;padding-left: 11px;text-align: left;">웹개발 사원(연구원) </td>
+                                                        </tr>
+                                                    </table>
+                                                        <table class="table-career-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                        <table class="table-career-description" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                                                                    웹개발 사원으로 게임 포털 및 자사 홈페이지 개발을 담당했습니다.<br/><br/>1. 게임 포털 개발<br/>- 자사 게임 홈페이지 개발 및 유지보수<br/>- 게임 웹사이트 및 콘텐츠 관리 시스템 기능 구현<br/><br/>2. 자사 홈페이지 개발<br/>- 제이앤씨 홈페이지 유지보수 및 재개발<br/>- 콘텐츠 관리 시스템 개발<br/><br/>3. 초기 웹 서비스 개발 경험<br/>- Classic ASP 기반의 게임 웹 콘텐츠 백오피스 설계 및 배포<br/>- 초기 웹 서비스 개발 경험을 통해 기본기 및 실무 감각 확보<br/><br/>개발 언어: Classic ASP, MS-SQL, JavaScript
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    <table class="table-career-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                            <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                    <table class="table-career-info" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; table-layout: fixed;">
+                                                                                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                                <th style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;width: 73px;text-align: left;font-weight: normal;">주요직무</th>
+                                                                <td style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;text-align: left;">웹개발자,웹개발</td>
+                                                            </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                                                            <tr style="margin: 0;padding: 0;border: 0;">
+                                            <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                                                <div class="header" style="margin: 0;padding: 0;border: 0;">경력기술서</div>
+                                            </td>
+                                            <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                                                    <div class="description" style="margin: 0;padding: 0;border: 0;">
+                                                        [1. Classic ASP → .NET Core 마이그레이션 프로젝트]<br/>기존 20년 이상 운영된 Classic ASP 기반 결제 시스템을 .NET Core로 전면 리팩토링하여 성능과 유지보수성을 대폭 개선한 프로젝트입니다.<br/><br/>담당 업무:<br/>- 프로젝트 마이그레이션 계획 수립 및 진행<br/>- 기존 Classic ASP 코드 전수 분석 및 비즈니스 로직 파악<br/>- .NET Core 아키텍처 설계 및 마이그레이션 계획 수립<br/>- 결제 서비스 웹 및 API 리팩토링<br/>- 가맹점 관리자 시스템 개선<br/>- 내부 관리자 시스템 현대화<br/><br/>기술적 문제 해결:<br/>1. 잠재적 오류 해결: Classic ASP의 잠재적 오류(ASP_0147,0148)를 .NET Core의 비동기 처리와 Connection Pooling으로 해결<br/>2. DB 연결 최적화: Entity Framework Core와 Connection Pooling 구현으로 DB 연결 효율성 향상<br/>3. 보안 강화: JWT 토큰 기반 인증 시스템 구축 및 Parameterized Query 적용<br/><br/>주요 성과:<br/>- 잠재적 오류 해결로 인한 모니터링 감소<br/>- 데이터베이스 연결 코드 모듈화하여 유지보수성 향상<br/>- Parameter 조작 위험성 해결로 보안 강화<br/>- 시스템 안정성 대폭 개선<br/><br/>개발 언어: .NET Core(C#), Classic ASP, MS-SQL, Entity Framework Core, JWT, REST API, jQuery(JavaScript)<br/><br/>--------------------------------------------------------------------<br/>[2.다양한 결제 서비스 개발 (URL 결제, 헥토펌뱅, 애플페이) ]<br/>URL 결제, 헥토펌뱅 결제, 애플페이 등 다양한 결제 방식을 지원하는 서비스를 개발했습니다.<br/><br/>담당 업무:<br/>- URL 결제 서비스 개발 (결제 서비스 웹, API, 관리자)<br/>- 헥토펌뱅 결제 시스템 개발 (아프리카TV 전용)<br/>- 애플페이 결제 시스템 개발 및 연동<br/>- 자금세탁방지(AML) 시스템 구축: 가맹점 정보 갱신 자동화 및 위험군 식별 로직 구현<br/>- 정산 및 통계 DB 구조 개선을 위한 DB 분리 설계 및 성능 최적화<br/>- MS-SQL 기반의 프로시저, 트랜잭션 관리 및 데이터 모델링<br/><br/>기술적 도전과 해결:<br/>- 다양한 결제 방식 통합: URL 결제, 헥토펌뱅, 애플페이 등 각기 다른 결제 프로토콜을 통합하여 일관된 API 인터페이스 제공<br/>- AML 시스템 구현: 자금세탁 방지 규정 준수를 위한 가맹점 정보 자동 갱신 시스템 및 위험군 식별 알고리즘 개발<br/>- DB 성능 최적화: 정산 및 통계 DB 분리 설계로 대용량 데이터 처리 성능 향상 및 운영 안정성 확보<br/>- 결제 보안 강화: 다양한 결제 방식별 보안 요구사항을 충족하는 통합 보안 시스템 구축<br/><br/>주요 성과:<br/>- 다양한 결제 방식 지원으로 서비스 확장성 향상<br/>- AML 시스템 구축으로 규정 준수 및 리스크 관리 강화<br/>- DB 분리 및 최적화로 대용량 데이터 처리 성능 개선<br/>- 안정적인 결제 서비스 운영으로 신뢰도 확보<br/><br/>개발 언어: .NET Core(C#), C/C++, MS-SQL, REST API, jQuery(JavaScript)<br/><br/>--------------------------------------------------------------------<br/>[3. 핀업 스탁 서비스 개발]<br/>투자 콘텐츠 전문 플랫폼의 핵심 서비스를 개발하고 운영하며, 초창기 멤버로서 회사의 성장 과정에 직접 참여했습니다. 초기 서비스 런칭 및 안정화를 위해 집중적인 개발에 헌신했습니다.<br/><br/>담당 업무:<br/>- 슈퍼 스탁 K2~K7 서비스 개발 (웹/모바일/관리자 통합)<br/>- 슬기로운 투자생활 솔루션 개발<br/>- 투자 아카데미 및 멘토링 서비스 개발<br/>- 웹 기반 교육 콘텐츠 시스템, 사용자 리포트 기능, 랭킹 알고리즘 구현<br/>- 관리자 페이지 UX 개선 및 멘토링 기능 운영 효율화<br/>- 서비스 리뉴얼 및 통합 개발 (PC, 모바일, API 구조 일원화)<br/>- 인증 흐름 구현 (Apple/Google/페이스북/네이버 SNS 회원가입 연동 포함)<br/><br/>기술적 도전과 해결:<br/>- 초기 서비스 안정화: 초창기 서비스 런칭 및 안정화를 위해 집중적인 개발에 헌신하며, 빠른 기능 개발과 버그 수정을 통해 서비스 품질 확보<br/>- 통합 플랫폼 아키텍처: PC, 모바일, API 구조를 일원화하여 개발 및 유지보수 효율성 향상<br/>- 인증 구현: SNS 연동을 포함한 다양한 소셜 로그인 방식 지원으로 사용자 편의성 향상<br/>- 랭킹 알고리즘 최적화: 대량의 사용자 데이터를 효율적으로 처리하는 랭킹 시스템 구현<br/>- 교육 콘텐츠 시스템: 다양한 형태의 교육 자료를 체계적으로 관리하고 제공하는 시스템 구축<br/>- 장기 운영 안정성: 5년 이상 운영하며 지속적인 성능 개선 및 안정성 확보<br/><br/>주요 성과:<br/>- 비즈니스 성장 기여: 초창기 멤버(15명)로 입사하여 핵심 서비스 개발에 참여, 퇴사 시점까지 조직 규모 50명 이상으로 확장 및 연매출 50억원에서 200억원(4배 증가) 성장에 기여<br/>- 초기 서비스 런칭 및 안정화: 초창기 서비스 런칭을 위해 집중적인 개발에 헌신하며, 빠른 기능 개발과 안정화를 통해 서비스의 초기 성장 기반을 마련<br/>- 통합 플랫폼 개발로 서비스 일원화 및 운영 효율성 향상<br/>- 다양한 서비스(슈퍼스탁, 슬기로운 투자생활, 챌린지) 통합 개발<br/>- 인증 구현으로 사용자 편의성 및 보안 강화<br/>- 5년 이상 장기 운영을 통한 안정적인 서비스 제공<br/>- 사용자 리포트 및 랭킹 기능으로 사용자 참여도 향상<br/><br/>개발 언어: ASP.NET(C#), MS-SQL, REST API, jQuery(JavaScript)
+
+                                                    </div>
+                                            </td>
+                                        </tr>
+                                </table>
+
+
+                                                            <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">자격증</th>
+                                    </tr>
+                                </table>
+                                <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-certificate" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                            <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;">2007. 12</td>
+                                            <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                                                <table class="table-certificate-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                                                            <span class="name" style="margin: 0;padding: 0;border: 0;font-weight: bold;">정보처리산업기사</span>
+                                                            <span class="agency" style="margin: 0;padding: 0;border: 0;margin-left: 11px;color: #666;">한국산업인력공단</span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                                                    </table>
+                                                                                                                                                <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">자기소개서</th>
+                                    </tr>
+                                </table>
+                                <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed; ">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-introduction" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                            <td class="td" style="margin: 0;padding: 15px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                                                <table class="table-introduction-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;font-weight: bold;">경력 관련 소개</td>
+                                                    </tr>
+                                                </table>
+                                                <table class="table-introduction-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;"></td>
+                                                    </tr>
+                                                </table>
+                                                <table class="table-introduction-body" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+1. 15년의 개발 여정을 통해 배운 것<br/>지난 15년간 다양한 산업군에서 개발자로 근무하며, 결제 시스템, 교육 플랫폼, 투자 콘텐츠 서비스 등 여러 형태의 웹 서비스를 개발하고 운영해왔습니다. 이 긴 시간 동안 가장 깊이 체감한 것은 서비스의 안정성과 유지보수성의 중요성입니다.<br/><br/>2. 레거시 시스템과의 만남에서 배운 교훈<br/>최근 페이레터에서 20년 이상 운영된 Classic ASP 기반 결제 시스템을 .NET Core로 마이그레이션하는 프로젝트를 진행하면서, 단순히 새로운 기술로 옮기는 것이 아니라  시스템의 본질을 이해하고 개선하는 것의 중요성을 배웠습니다.<br/>기존 시스템을 분석하면서 느낀 점은, 오래된 기술이라 해서 무시할 것이 아니라는 것이었습니다. 오히려 오랜 시간 동안 검증된 비즈니스 로직과 운영 노하우가 담겨 있었고, 이를 현대적인 기술로 재구성하면서도 그 핵심 가치를 보존해야 한다는 것을 깨달았습니다. 이 경험을 통해 기술의 새로움보다는 문제 해결의 근본 원리를 파악하는 것이 더 중요하다는 개발 철학을 가지게 되었습니다.<br/><br/>3. 스타트업에서의 성장 경험<br/>핀업에서 초창기 멤버로 입사하여 조직이 15명에서 50명 이상으로, 연매출이 50억원에서 200억원으로 성장하는 과정에 직접 참여했습니다. 이 경험을 통해 배운 것은 빠른 성장 속에서도 안정성을 유지하는 것의 균형입니다.<br/>초기에는 빠른 기능 개발이 최우선이었지만, 시간이 지나면서 기술 부채가 누적되고 성능 이슈가 발생하기 시작했습니다. 그때 깨달은 것은, 초기부터 확장 가능한 아키텍처를 고려하고, 코드의 품질을 유지하는 것이 장기적으로는 더 빠른 개발을 가능하게 한다는 것이었습니다. 이후 서비스 리뉴얼을 통해 PC, 모바일, API 구조를 일원화하면서, 단기적인 속도보다 장기적인 관점의 중요성을 몸소 체험했습니다.<br/><br/>4. 다양한 환경에서의 적응력<br/>게임 포털, 글로벌 웹사이트, 결제 시스템, 투자 플랫폼 등 다양한 도메인을 경험하면서, 각 도메인마다 다른 요구사항과 제약사항이 있다는 것을 배웠습니다.<br/>결제 시스템에서는 보안과 안정성이 최우선이었고, 투자 플랫폼에서는 사용자 경험과 실시간 데이터 처리가 중요했습니다. 이러한 다양한 경험을 통해 상황에 맞는 최적의 해결책을 찾는 능력을 기를 수 있었고, 단일 기술이나 방법론에 얽매이지 않고 문제의 본질에 집중하는 사고방식을 갖게 되었습니다.<br/><br/>5. 개발자로서의 철학<br/>이러한 경험들을 통해 형성된 제 개발 철학은 다음과 같습니다.<br/>- 안정성 우선: 기능이 빠르게 나오는 것보다, 안정적으로 동작하는 것이 더 중요합니다.<br/>- 전체 맥락 이해: 코드 한 줄을 작성할 때도 전체 시스템의 흐름과 영향을 고려합니다.<br/>- 근본 원리 탐구: 문제의 표면이 아닌 근본 원인을 파악하고 해결합니다.<br/>- 지속 가능한 개발: 나중에 유지보수하는 사람(혹은 미래의 자신)을 고려한 코드를 작성합니다.<br/><br/>15년의 경험이 단순히 시간의 누적이 아니라, 이러한 철학과 가치관을 형성하는 과정이었다고 생각합니다.                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                            <td class="td" style="margin: 0;padding: 15px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                                                <table class="table-introduction-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;font-weight: bold;">성격의 특성</td>
+                                                    </tr>
+                                                </table>
+                                                <table class="table-introduction-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;"></td>
+                                                    </tr>
+                                                </table>
+                                                <table class="table-introduction-body" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+1. 신뢰를 바탕으로 한 성실함<br/>저는 `신뢰는 성실함에서 비롯된다`는 신조를 가지고, 오랜 개발 커리어 동안 맡은 일은 끝까지 책임지고 완수해왔습니다. 실제로 대형 결제 시스템 운영 중 개선이 필요한 부분을 직접 제안하고 개선을 추진했으며, 업무 시간 외에 발생한 장애나 긴급 상황에서도 자발적으로 나서 빠르게 안정화를 이끌기 위해 최선을 다해왔습니다.<br/>2. 문제 해결에 대한 집중력과 끈기<br/>제 장점은 복잡한 시스템 구조 속에서도 문제의 본질을 파악하고, 해결책을 찾아내기 위해 끝까지 집중하는 점입니다. 단순한 기능 구현보다는 전체 흐름과 맥락을 고려한 설계를 중요하게 생각합니다.<br/>예를 들어, Classic ASP에서 .NET Core로 마이그레이션하는 과정에서 단순히 코드를 변환하는 것이 아니라, 기존 시스템의 잠재적 오류(ASP_0147, 0148)를 분석하고, 비동기 처리와 Connection Pooling을 통해 근본적인 해결책을 찾아냈습니다. 또한 Entity Framework Core를 활용하여 데이터베이스 접근 계층을 모듈화하고, JWT 토큰 기반 인증 시스템을 구축하여 보안을 강화하는 등, 단기적인 해결책이 아닌 장기적인 관점에서의 개선을 추구합니다.<br/><br/>3. 신중함과 완성도에 대한 집착<br/>반면, 신중한 성향으로 인해 업무 시간이 다소 늘어나는 경우도 있지만, 이는 서비스의 안정성과 완성도를 높이기 위한 고민의 결과이며, 항상 실질적인 개선으로 이어질 수 있도록 노력해왔습니다.<br/>결제 시스템과 같이 실시간으로 대량의 트래픽을 처리해야 하는 서비스를 운영하면서, 작은 실수도 큰 문제로 이어질 수 있다는 것을 체감했습니다. 따라서 코드를 작성할 때 단순히 동작하는 것에 그치지 않고, 예외 상황 처리, 에러 핸들링, 로깅, 모니터링 등 운영 관점에서의 고려사항까지 함께 생각하며 개발합니다.<br/><br/>4. 지속적인 학습과 성장<br/>새로운 기술을 배우는 것에 대한 두려움보다는 호기심과 도전 정신을 가지고 있습니다.<br/><br/>5. 협업과 소통<br/>프로젝트에서도 원활한 협업을 통해 프로젝트를 성공적으로 완수한 경험이 있습니다. 기술적인 문제뿐만 아니라 팀원들과의 소통과 협업을 통해 더 나은 결과물을 만들어내는 것의 중요성을 잘 알고 있습니다.<br/><br/>개발 경험을 통해 다양한 산업군을 경험했으며, 특히 서비스의 안정성과 유지보수성을 최우선으로 고려하는 개발 철학을 가지고 있습니다. 복잡한 시스템 구조 속에서도 문제의 본질을 파악하고 해결책을 찾아내는 집중력과 끈기, 그리고 신뢰를 바탕으로 한 성실함을 바탕으로 함께 일하고 싶은 개발자로 성장해왔습니다. 앞으로도 팀원들이 신뢰하고 함께 성장할 수 있는 개발자가 되고 싶습니다.                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                </table>
+
+                                <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">포트폴리오</th>
+                                    </tr>
+                                </table>
+                                <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-portfolio" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                                <td style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;"><a href="https://www.jobkorea.co.kr/Text_User/File_Attach/File_Download.asp?idx=12272563"><img src="https://i.jobkorea.kr/content/images/text_user/resume/view/icon/icon-file-pdf.png" alt="" style="margin: 0;padding: 0;border: 0 none;vertical-align: top;margin-right: 5px;" /> portfolio_ycb.pdf</a></td>
+                                                <td style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;"><a href="https://yoochibu.github.io/portfolio" target="_blank"><img src="https://i.jobkorea.kr/content/images/text_user/resume/view/icon/icon-file-url.png" alt="" style="margin: 0;padding: 0;border: 0 none;vertical-align: top;margin-right: 5px;" /> https://yoochibu.github.io/portfolio</a></td>
+
+                                    </tr>
+
+                                </table>
+                                                            <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">취업우대사항</th>
+                                    </tr>
+                                </table>
+                                <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;; margin-bottom: 0; table-layout: fixed;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <table class="table table-jobpreference" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <th class="col1" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;vertical-align: middle;background-color: #fcfcfc;">보훈대상 여부</th>
+                                        <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">-</td>
+                                        <th class="col2" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;vertical-align: middle;background-color: #fcfcfc;">취업보호대상 여부</th>
+                                        <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">-</td>
+                                        <th class="col3" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;vertical-align: middle;background-color: #fcfcfc;">고용지원금대상 여부</th>
+                                        <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">-</td>
+                                    </tr>
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <th class="th" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;vertical-align: middle;background-color: #fcfcfc;">병역사항</th>
+                                        <td colspan="3" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">
+[군필] 2003. 10 ~ 2005. 10 육군 병장 제대                                        </td>
+                                        <th class="th" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;vertical-align: middle;background-color: #fcfcfc;">장애여부</th>
+                                        <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">
+                                            -
+                                        </td>
+                                    </tr>
+                                </table>
+                            <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;; margin-bottom: 0; table-layout: fixed; ">
+                                <tr style="margin: 0;padding: 0;border: 0;">
+                                    <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table class="table table-header" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                <tr style="margin: 0;padding: 0;border: 0;">
+                                    <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">희망근무조건</th>
+                                </tr>
+                            </table>
+                            <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                <tr style="margin: 0;padding: 0;border: 0;">
+                                    <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table class="table table-hopework" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <th class="th" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;background-color: #fcfcfc;">고용형태</th>
+                                        <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">정규직</td>
+                                    </tr>
+                                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <th class="th" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;background-color: #fcfcfc;">희망근무지</th>
+                                        <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">경기 성남시 분당구, 서울 강남구</td>
+                                    </tr>
+                                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <th class="th" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;background-color: #fcfcfc;">희망연봉</th>
+                                        <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">면접 후 결정</td>
+                                    </tr>
+                                                                    <tr style="margin: 0;padding: 0;border: 0;">
+                                        <th class="th" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;background-color: #fcfcfc;">지원분야</th>
+                                        <td class="td content" style="margin: 0;padding: 5px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">
+                                            <table class="table-hopework-content" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;table-layout: fixed;margin-bottom: 0;">
+                                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                            <th style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;width: 90px;background-color: transparent;font-weight: normal;text-align: left;vertical-align: top;">직무</th>
+                                                            <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: left;">
+                                                                <table style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+                                                                    <tbody>
+                                                                                <tr style="margin: 0;padding: 0;border: 0;">
+                                                                                    <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: left;">백엔드개발자</td>
+                                                                                </tr>
+                                                                                <tr style="margin: 0;padding: 0;border: 0;">
+                                                                                    <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: left;">웹개발자</td>
+                                                                                </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr style="margin: 0;padding: 0;border: 0;">
+                                                            <th style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;width: 90px;background-color: transparent;font-weight: normal;text-align: left;vertical-align: top;">산업</th>
+                                                            <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: left;">
+                                                                <table style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+                                                                    <tbody>
+                                                                                <tr style="margin: 0;padding: 0;border: 0;">
+                                                                                    <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: left;">웹에이전시 &gt; 웹에이전시</td>
+                                                                                </tr>
+                                                                                <tr style="margin: 0;padding: 0;border: 0;">
+                                                                                    <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: left;">쇼핑몰&#183;오픈마켓&#183;소셜커머스 &gt; B2B, B2C, 전자상거래</td>
+                                                                                </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+
+                                            </table>
+                                        </td>
+                                    </tr>
+                            </table>
+                            <table class="table-blank" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left; margin-bottom: 0; table-layout: fixed;">
+                                <tr style="margin: 0;padding: 0;border: 0;">
+                                    <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <table class="table table-sign" style="margin: 0; padding: 0; border: 0; border-collapse: collapse; width: 100%; text-align: left;">
+                                <tr style="margin: 0;padding: 0;border: 0;">
+                                    <td class="message" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 22px;text-align: center;padding-bottom: 13px;">위의 모든 기재사항은 사실과 다름없음을 확인합니다.</td>
+                                </tr>
+                                <tr style="margin: 0;padding: 0;border: 0;">
+                                    <td class="Writer" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: center;">작성자 : 유치부</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <!--table 2-->
+            </td>
+        </tr>
+    </table>
+    <!--table 1-->
+</body>
+</html>
